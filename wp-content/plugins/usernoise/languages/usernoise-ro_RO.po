@@ -1,0 +1,698 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Usernoise v2.0.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/usernoise\n"
+"POT-Creation-Date: 2012-03-21 12:31:33+00:00\n"
+"PO-Revision-Date: 2012-10-15 06:38:21+0000\n"
+"Last-Translator: Alexis Selagianu <alexis.selagianu@indecosoft.ro>\n"
+"Language-Team: ROMANIAN <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin/admin-bar.php:17
+#, php-format
+#@ default
+msgid "Usernoise %s"
+msgstr "Feedback %s"
+
+#: admin/admin-bar.php:23
+#: html/reply-meta-box.php:5
+#: html/window.php:20
+#: inc/integration.php:21
+#: inc/template.php:119
+#@ usernoise
+msgid "Feedback"
+msgstr "Feedback"
+
+#: admin/admin-bar.php:30
+#: admin/menu.php:16
+#: html/window.php:23
+#: vendor/plugin-options-framework/plugin-options-framework.php:95
+#@ usernoise
+#@ default
+msgid "Settings"
+msgstr "Setări"
+
+#: admin/dashboard.php:15
+#: inc/model.php:28
+#@ usernoise
+msgid "New feedback"
+msgstr "Feedback nou"
+
+#: admin/dashboard.php:32
+#@ default
+msgid "by"
+msgstr "de"
+
+#: admin/dashboard.php:42
+#@ usernoise
+msgid "View all feedback"
+msgstr "Toate feedback-urile"
+
+#: admin/dashboard.php:45
+#@ usernoise
+msgid "No new feedback now."
+msgstr "Niciun feedback"
+
+#: admin/editor-page.php:29
+#: html/publish-meta-box.php:68
+#@ default
+msgid "Publish"
+msgstr "Publică"
+
+#: admin/editor-page.php:36
+#@ usernoise
+msgid "HTTP Headers"
+msgstr "HTTP Headers"
+
+#: admin/editor-page.php:38
+#@ default
+msgid "Discussion"
+msgstr "Discuție"
+
+#: admin/editor-page.php:39
+#@ usernoise
+msgid "WordPress Debug Info"
+msgstr "WordPress Debug Info"
+
+#: admin/editor-page.php:57
+#@ usernoise
+msgid "Feedback was marked as reviewed"
+msgstr "Feedback-ul a fost marcat ca și revizuit"
+
+#: admin/editor-page.php:76
+#@ default
+msgid "Author"
+msgstr "Autor"
+
+#: admin/feedback-list.php:33
+#@ usernoise
+msgid "Type"
+msgstr "Tip"
+
+#: admin/feedback-list.php:56
+#@ usernoise
+msgid "All feedback types"
+msgstr "Toate tipurile de feedback"
+
+#: admin/menu.php:14
+#: inc/model.php:33
+#@ usernoise
+msgid "Usernoise"
+msgstr "Usernoise"
+
+#: admin/notifications.php:20
+#, php-format
+#@ usernoise
+msgid "Usernoise is disabled now. You can enable and configure it at the <a href=\"%s\">settings page</a>."
+msgstr "Usernoise este dezactivat acum. Îl puteţi activa şi configura de la <a href=\"%s\"> pagina de setări</ a>."
+
+#: admin/settings.php:13
+#@ usernoise
+msgid "Usernoise settings"
+msgstr "Setările Usernoise"
+
+#: admin/settings.php:23
+#@ default
+msgid "Left"
+msgstr "Stânga"
+
+#: admin/settings.php:23
+#@ default
+msgid "Right"
+msgstr "Dreapta"
+
+#: admin/settings.php:23
+#@ default
+msgid "Top"
+msgstr "Sus"
+
+#: admin/settings.php:24
+#@ default
+msgid "Bottom"
+msgstr "Jos"
+
+#: admin/settings.php:26
+#: vendor/plugin-options-framework/plugin-options-framework.php:393
+#@ usernoise
+#@ default
+msgid "General"
+msgstr "General"
+
+#: admin/settings.php:28
+#@ usernoise
+msgid "Enable Usernoise"
+msgstr "Activează Usernoise"
+
+#: admin/settings.php:31
+#@ usernoise
+msgid "Show Powered by"
+msgstr "Arată Powered by"
+
+#: admin/settings.php:32
+#@ usernoise
+msgid "Show <strong>\"Powered by Usernoise\"</strong> link at the modal window. Check this, please!"
+msgstr "Arată <strong>\"Powered by Usernoise\"</ strong> link-ul de la fereastra modală. Verificaţi acest lucru, vă rog!"
+
+#: admin/settings.php:34
+#@ default
+msgid "The link will only be visible at the modal window."
+msgstr "Link-ul va fi vizibil doar la fereastra modală."
+
+#: admin/settings.php:36
+#: admin/settings.php:37
+#@ usernoise
+msgid "Disable on mobile devices"
+msgstr "Dezactivează pentru telefoanele mobile"
+
+#: admin/settings.php:39
+#: admin/upgrade.php:42
+#@ usernoise
+msgid "Button"
+msgstr "Buton"
+
+#: admin/settings.php:41
+#@ usernoise
+msgid "Position"
+msgstr "Poziție"
+
+#: admin/settings.php:44
+#@ usernoise
+msgid "Text"
+msgstr "Text"
+
+#: admin/settings.php:45
+#@ usernoise
+msgctxt "button"
+msgid "Feedback"
+msgstr "Feedback"
+
+#: admin/settings.php:47
+#@ usernoise
+msgid "Text color"
+msgstr "Culoarea textului"
+
+#: admin/settings.php:50
+#@ usernoise
+msgid "Background color"
+msgstr "Culoare de fundal"
+
+#: admin/settings.php:53
+#@ usernoise
+msgid "Show border"
+msgstr "Arată contur"
+
+#: admin/settings.php:57
+#: admin/settings.php:58
+#@ usernoise
+msgid "Form"
+msgstr "Formă"
+
+#: admin/settings.php:63
+#@ usernoise
+msgid "Form title"
+msgstr "Titlul formei"
+
+#: admin/settings.php:64
+#@ usernoise
+msgctxt "form"
+msgid "Feedback"
+msgstr "Feedback"
+
+#: admin/settings.php:66
+#@ usernoise
+msgid "Introductional text"
+msgstr "Text introductiv"
+
+#: admin/settings.php:67
+#: inc/template.php:128
+#@ usernoise
+msgid "Please tell us what do you think, any kind of feedback is highly appreciated."
+msgstr "Vă rugăm să ne spuneţi ce credeţi, orice fel de feedback este foarte apreciat."
+
+#: admin/settings.php:68
+#: admin/settings.php:92
+#@ default
+msgid "This text will be wrapped into &lt;p&gt; tag. You can still use HTML code."
+msgstr "Acest text va fi introdus in tag-ul &lt;p&gt;. Puteţi folosi în continuare cod HTML."
+
+#: admin/settings.php:71
+#: admin/settings.php:72
+#@ usernoise
+msgid "Ask for feedback type"
+msgstr "Afișează tipurile feedback-ului"
+
+#: admin/settings.php:75
+#: admin/settings.php:76
+#@ usernoise
+msgid "Ask for a summary"
+msgstr "Afișează câmpul pentru rezumat"
+
+#: admin/settings.php:79
+#: admin/settings.php:80
+#@ usernoise
+msgid "Ask for an email"
+msgstr "Afișează câmpul pentru email"
+
+#: admin/settings.php:83
+#@ usernoise
+msgid "Submit button text"
+msgstr "Textul butonul de submit"
+
+#: admin/settings.php:84
+#: inc/template.php:123
+#@ usernoise
+msgid "Submit feedback"
+msgstr "Trimite feedback-ul"
+
+#: admin/settings.php:85
+#@ usernoise
+msgid "Thank you screen"
+msgstr "Fereastra \"Mulțumim\""
+
+#: admin/settings.php:87
+#@ usernoise
+msgid "Thank you screen title"
+msgstr "Titlul ferestrei \"Mulțumim\""
+
+#: admin/settings.php:88
+#: html/window.php:32
+#@ usernoise
+msgid "Thank you"
+msgstr "Mulțumim"
+
+#: admin/settings.php:90
+#@ usernoise
+msgid "Thank you text"
+msgstr "Textul ferestrei \"Mulțumim\""
+
+#: admin/settings.php:91
+#: html/window.php:34
+#@ usernoise
+msgid "Your feedback has been received."
+msgstr "Părerea dumneavoastră a fost trimisă."
+
+#: admin/settings.php:95
+#@ usernoise
+msgid "Notifications"
+msgstr "Notificări"
+
+#: admin/settings.php:97
+#@ usernoise
+msgid "New feedback received admin notification"
+msgstr "Notificarea administratorului la un feedback nou"
+
+#: admin/settings.php:98
+#@ usernoise
+msgid "Enable"
+msgstr "Activează"
+
+#: admin/settings.php:101
+#, php-format
+#@ usernoise
+msgid "Notification emails will be sent to: <a href=\"mailto:%s\">%s</a>"
+msgstr "Email-urile de notificare vor fi trimise la adresa: <a href=\"mailto:%s\">%s</a>"
+
+#: admin/settings.php:104
+#, php-format
+#@ usernoise
+msgid "(you can change it at <a href=\"%s\">%s</a> page)."
+msgstr "(se poate schimba de la pagina <a href=\"%s\">%s</a>)."
+
+#: admin/settings.php:105
+#@ default
+msgid "General Options"
+msgstr "Opțiuni Generale"
+
+#: admin/settings.php:118
+#@ usernoise
+msgid "Notifications do not work right?"
+msgstr "Notificările nu funcționeză?"
+
+#: admin/upgrade.php:18
+#@ usernoise
+msgid "Pro Settings"
+msgstr "Setări Pro"
+
+#: admin/upgrade.php:19
+#: admin/upgrade.php:20
+#@ usernoise
+msgid "Upgrade to Pro"
+msgstr "Actualizează la versiunea Pro"
+
+#: admin/upgrade.php:21
+#, php-format
+#@ usernoise
+msgid "Please <a href=\"%s\" class=\"un-upgrade\" target='_new'>Upgrade to Pro</a> to enable the settings below."
+msgstr "Vă rugăm faceți <a href=\"%s\" class=\"un-upgrade\" target='_new'>Upgrade la Versiunea Pro</a> pentru a activa setările de mai jos."
+
+#: admin/upgrade.php:26
+#: admin/upgrade.php:27
+#@ usernoise
+msgid "Enable feedback list &amp; discussions."
+msgstr "Activează lista &amp; discuțiile."
+
+#: admin/upgrade.php:30
+#: admin/upgrade.php:36
+#@ usernoise
+msgid "Screenshots"
+msgstr "Imagini"
+
+#: admin/upgrade.php:34
+#: admin/upgrade.php:35
+#@ usernoise
+msgid "Gather advanced debug info"
+msgstr "Afișează informaţii avansate de debug"
+
+#: admin/upgrade.php:44
+#: admin/upgrade.php:45
+#@ usernoise
+msgid "Hide Feedback button"
+msgstr "Ascunde butonul Feedback"
+
+#: admin/upgrade.php:46
+#@ usernoise
+msgid "You can hide Feedback button to show it programmatically."
+msgstr "Puteți ascunde butonul Feedback."
+
+#: admin/upgrade.php:49
+#@ usernoise
+msgid "Alternate \"Feedback\" button ID"
+msgstr "ID alternativ pentru butonul \"Feedback\""
+
+#: admin/upgrade.php:51
+#@ usernoise
+msgid "Usernoise window will be shown upon click of element with that ID. For example, if you have the next link: <code>&lt;a href=\"#\" id=\"my-link\"&gt;some link&lt;/a&gt;</code>, put \"my-link\" here."
+msgstr "Fereastra Usernoise va fi afișată când se va face click pe elementul cu acest ID. De exemplu, dacă aveţi link-ul următor: <code>&lt;a href=\"#\" id=\"link-ul-meu\"&gt;some link&lt;/a&gt;</code>, puneți \"link-ul-meu\" în acest câmp."
+
+#: admin/upgrade.php:54
+#@ usernoise-pro
+msgid "Custom CSS properties"
+msgstr "Proprietăți personalizate de CSS"
+
+#: admin/upgrade.php:55
+#@ usernoise-pro
+msgid "Usernoise button custom CSS properties. Remove /* and */ to enable. Don't put here HTML tags."
+msgstr "Usernoise button custom CSS properties. Remove /* and */ to enable. Don't put here HTML tags.Proprietăți personalizate de CSS pentru butonul Usernoise. Eliminați /* și */ pentru activare. Nu adăugați aici tag-uri HTML."
+
+#: admin/upgrade.php:59
+#@ usernoise-pro
+msgid "Form design"
+msgstr "Design-ul formei"
+
+#: admin/upgrade.php:61
+#@ usernoise-pro
+msgid "Custom CSS for Usernoise window"
+msgstr "Proprietăți personalizate de CSS pentru fereastra Usernoise"
+
+#: admin/upgrade.php:63
+#@ usernoise-pro
+msgid "You can override the form's style by applying your own CSS. Don't forget to remove comment symbols and do not put HTML tags here."
+msgstr "Puteți suprascrie design-ul formei prin aplicarea propriului CSS. Nu uitați sa eliminați simbolurile /* și */ și nu adăugați aici tag-uri HTML."
+
+#: html/powered-by.php:2
+#@ usernoise
+msgid "Powered by"
+msgstr "Powered by"
+
+#: html/publish-meta-box.php:7
+#@ default
+msgid "Status:"
+msgstr "Stare:"
+
+#: html/publish-meta-box.php:12
+#@ default
+msgid "Privately Published"
+msgstr "Publicare privată"
+
+#: html/publish-meta-box.php:15
+#: html/publish-meta-box.php:69
+#@ usernoise
+msgid "Reviewed"
+msgstr "Revizuit"
+
+#: html/publish-meta-box.php:18
+#@ default
+msgid "Scheduled"
+msgstr "Programat"
+
+#: html/publish-meta-box.php:21
+#@ usernoise
+msgid "Pending Review"
+msgstr "Revizuire în așteptare"
+
+#: html/publish-meta-box.php:25
+#@ default
+msgid "Draft"
+msgstr "Ciornă"
+
+#: html/publish-meta-box.php:36
+#@ default
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: html/publish-meta-box.php:37
+#, php-format
+#@ default
+msgid "Sent on: <b>%1$s</b>"
+msgstr "Trimis la: <b>%1$s</b>"
+
+#: html/publish-meta-box.php:57
+#@ default
+msgid "Delete Permanently"
+msgstr "Șterge definitiv"
+
+#: html/publish-meta-box.php:59
+#@ default
+msgid "Move to Trash"
+msgstr "Mută la gunoi"
+
+#: html/publish-meta-box.php:71
+#@ default
+msgid "Update"
+msgstr "Actualizează"
+
+#: html/publish-meta-box.php:72
+#@ default
+msgid "OK"
+msgstr "OK"
+
+#: html/reply-meta-box.php:4
+#@ usernoise
+msgid "Subject"
+msgstr "Subiect"
+
+#: html/reply-meta-box.php:8
+#@ usernoise
+msgid "Send"
+msgstr "Trimite"
+
+#: html/window.php:14
+#@ usernoise
+msgid "Close"
+msgstr "Închide"
+
+#: inc/form.php:12
+#: usernoise.php:84
+#@ usernoise
+#@ default
+msgid "Idea"
+msgstr "Idee"
+
+#: inc/form.php:13
+#: usernoise.php:84
+#@ usernoise
+msgid "Problem"
+msgstr "Problemă"
+
+#: inc/form.php:14
+#: usernoise.php:84
+#@ usernoise
+msgid "Question"
+msgstr "Întrebare"
+
+#: inc/form.php:15
+#: usernoise.php:85
+#@ usernoise
+msgid "Praise"
+msgstr "Laudă"
+
+#: inc/controller.php:37
+#: inc/form.php:19
+#@ usernoise
+msgid "Your feedback"
+msgstr "Părerea ta"
+
+#: inc/controller.php:35
+#: inc/form.php:21
+#@ usernoise
+msgid "Short summary"
+msgstr "Rezumat scurt"
+
+#: inc/controller.php:39
+#: inc/form.php:24
+#@ usernoise
+msgid "Your email (will not be published)"
+msgstr "Email-ul dvs. (nu va fi publicat)"
+
+#: inc/model.php:21
+#: inc/model.php:23
+#: inc/model.php:24
+#@ usernoise
+msgctxt "admin"
+msgid "Feedback"
+msgstr "Feedback"
+
+#: inc/model.php:25
+#@ usernoise
+msgid "Add new"
+msgstr "Adaugă nou"
+
+#: inc/model.php:26
+#@ usernoise
+msgid "Add new feedback"
+msgstr "Adaugă feedback nou"
+
+#: inc/model.php:27
+#: inc/model.php:29
+#@ usernoise
+msgid "View feedback"
+msgstr "Vizualizează feedback"
+
+#: inc/model.php:30
+#@ usernoise
+msgid "Search feedback"
+msgstr "Caută feedback"
+
+#: inc/model.php:31
+#@ usernoise
+msgid "Feedback not found"
+msgstr "Feedback-ul nu a fost găsit"
+
+#: inc/model.php:32
+#@ usernoise
+msgid "Feedback not found in Trash"
+msgstr "Feedback-ul nu a fost găsit în coşul de gunoi"
+
+#: inc/model.php:35
+#@ usernoise
+msgid "Feedback left by users using a form in a lightbox"
+msgstr "Feedback-ul lăsat de utilizatorii care folosesc forma într-un lightbox"
+
+#: inc/model.php:54
+#@ usernoise
+msgid "Please enter a summary."
+msgstr "Vă rugăm să introduceţi un rezumat."
+
+#: inc/model.php:57
+#@ usernoise
+msgid "Please enter the feedback."
+msgstr "Vă rugăm să introduceţi o părere."
+
+#: inc/model.php:60
+#@ usernoise
+msgid "Please enter a valid email address."
+msgstr "Vă rugăm să introduceţi o adresă de email validă."
+
+#: inc/model.php:91
+#@ default
+msgid "feedback"
+msgstr "feedback"
+
+#: inc/model.php:92
+#, php-format
+#@ default
+msgid "A new %s has been submitted. View it: <a href=\"%s\">%s</a>."
+msgstr "Un nou %s a fost trimis. Vizualizează-l: <a href=\"%s\">%s</a>."
+
+#: inc/model.php:100
+#, php-format
+#@ default
+msgid "New %s submitted at %s"
+msgstr "Un nou %s a fost trimis la %s"
+
+#: inc/model.php:153
+#@ usernoise
+msgid "ideas"
+msgstr "idei"
+
+#: inc/model.php:154
+#@ usernoise
+msgid "questions"
+msgstr "întrebări"
+
+#: inc/model.php:155
+#@ usernoise
+msgid "problems"
+msgstr "probleme"
+
+#: inc/model.php:156
+#@ usernoise
+msgid "praises"
+msgstr "laude"
+
+#: inc/template.php:75
+#@ usernoise
+msgid "or"
+msgstr "sau"
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:151
+#@ default
+msgid "Please provide some settings fields when creating an options framework instance"
+msgstr "Vă rugăm să furnizaţi anumite câmpuri atunci când creați o instanță de framework"
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:171
+#@ default
+msgid "This page requires JavaScript to be enabled in your browser. Please enable JavaScript."
+msgstr "Această pagină necesită JavaScript pentru a fi activat în browser-ul dumneavoastră. Vă rugăm activați JavaScript."
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:218
+#@ default
+msgid "Save Options"
+msgstr "Salvează Opțiunile"
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:219
+#@ default
+msgid "Restore Defaults"
+msgstr "Restaurează Setările Implicite"
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:219
+#@ default
+msgid "Click OK to reset. All the settings will be reset to defaults!"
+msgstr "Faceți click pe OK pentru a reseta. Toate setările vor fi resetate la valorile implicite!"
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:296
+#@ default
+msgid "Select a Color"
+msgstr "Selectează o Culoare"
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:330
+#@ default
+msgid "Upgrade to WordPress 3.3 or later to enable WYSIWYG editor"
+msgstr "Faceți upgrade la WordPress 3.3 sau la o versiune mai nouă pentru a activa editorul WYSIWYG"
+
+#: admin/settings.php:59
+#@ usernoise
+msgid "Font"
+msgstr ""
+
+#: admin/settings.php:60
+#@ usernoise
+msgid "Site default font"
+msgstr ""
+
+#: admin/settings.php:119
+#@ usernoise
+msgid "Check out <a href='http://codecanyon.net/item/all-in-one-email-for-wordpress/1290390'>All in One Email plugin</a>. It adds email options missing in WordPress natively."
+msgstr ""
+

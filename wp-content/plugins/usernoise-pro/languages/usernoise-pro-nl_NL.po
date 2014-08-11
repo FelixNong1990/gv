@@ -1,0 +1,666 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Usernoise Pro v3.7.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-07-26 04:57:09+0000\n"
+"Last-Translator: karevn <karev.n@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: the Netherlands\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin/editor-page.php:29
+#@ usernoise-pro
+msgid "Details"
+msgstr "Details"
+
+#: admin/editor-page.php:31
+#@ usernoise
+msgid "HTTP Headers"
+msgstr "HTTP Headers"
+
+#: admin/editor-page.php:33
+#@ usernoise-pro
+msgid "HTML Dump"
+msgstr "HTML Dump"
+
+#: admin/editor-page.php:37
+#@ usernoise
+msgid "Rewrite Rules"
+msgstr "Rewrite Rules"
+
+#: admin/editor-page.php:40
+#@ usernoise-pro
+msgid "SQL Queries"
+msgstr "SQL Queries"
+
+#: admin/editor-page.php:43
+#@ usernoise-pro
+msgid "WP query_vars"
+msgstr "WP query_vars"
+
+#: admin/editor-page.php:47
+#@ usernoise-pro
+msgid "WP filters"
+msgstr "WP filters"
+
+#: admin/editor-page.php:54
+#@ usernoise-pro
+msgid "Type"
+msgstr "Type"
+
+#: admin/editor-page.php:57
+#@ usernoise-pro
+msgid "Likes"
+msgstr "Likes"
+
+#: admin/editor-page.php:63
+#@ default
+msgid "Author"
+msgstr ""
+
+#: admin/editor-page.php:103
+#: inc/widgets.php:101
+#@ default
+#@ usernoise-pro
+msgid "Status:"
+msgstr "Status:"
+
+#: admin/feedback-list.php:12
+#@ usernoise-pro
+msgid "Status"
+msgstr "Status"
+
+#: admin/feedback-list.php:38
+#@ usernoise-pro
+msgid "All feedback statuses"
+msgstr "Alle feedback statussen"
+
+#: admin/settings.php:11
+#@ usernoise-pro
+msgid "Admin notifications email"
+msgstr "Beheerder notificatie e-mail"
+
+#: admin/settings.php:18
+#@ usernoise
+msgid "Pro"
+msgstr "Pro"
+
+#: admin/settings.php:20
+#: admin/settings.php:21
+#@ usernoise-pro
+msgid "Enable feedback list &amp; discussions."
+msgstr "Zet feedback lijst &amp disucssie aan."
+
+#: admin/settings.php:24
+#: admin/settings.php:25
+#@ usernoise-pro
+msgid "Enable advanced debug info"
+msgstr "Zet geavanceerde debug info aan"
+
+#: admin/settings.php:26
+#@ default
+msgid "Dont use in production to prevent system info disclosure."
+msgstr "Gebruik niet in productie omgevingen om te voorkomen dat systeem informatie toegankelijk wordt."
+
+#: admin/settings.php:28
+#@ usernoise-pro
+msgid "Enable RSS feeds for feedback published"
+msgstr "Zet RSS feeds voor gepubliceerde feedback aan"
+
+#: admin/settings.php:30
+#@ usernoise-pro
+msgid "Button"
+msgstr "Knop"
+
+#: admin/settings.php:37
+#: admin/settings.php:38
+#@ usernoise-pro
+msgid "Hide Feedback button on login, registration and password retrieval pages"
+msgstr "Verberg Feedback button op het inloggen, registreren en wachtwoord vergeten paginas."
+
+#: admin/settings.php:42
+#@ default
+msgid "Usernoise window will be shown upon click of element with that ID. For example, if you have the next link: <code>&lt;a href=\"#\" id=\"my-link\"&gt;some link&lt;/a&gt;</code>, put \"my-link\" here."
+msgstr "Usernoise scherm wordt getoond wanneer geklikt is op een element met dat ID. Bijvoorbeeld, wanneer je de volgende link gebruikt: <code>&lt;a href=\"#\" id=\"mijn-link\"&gt;een link&lt;/a&gt;</code>, plaats \"mijn-link\" hier."
+
+#: admin/settings.php:44
+#@ usernoise-pro
+msgid "Custom CSS properties"
+msgstr "Eigen aangepaste CSS eigenschappen"
+
+#: admin/settings.php:45
+#@ usernoise-pro
+msgid "Usernoise button custom CSS properties. Remove /* and */ to enable. Don't put here HTML tags."
+msgstr "Usernoise knop eigen aangepaste CSS eigenschappen. Verwijder /* en */ om te activeren. Gebruik geen HTML tags."
+
+#: admin/settings.php:48
+#@ usernoise-pro
+msgid "Form design"
+msgstr "Formulier opmaak"
+
+#: admin/settings.php:50
+#@ usernoise-pro
+msgid "Custom CSS for Usernoise window"
+msgstr "Eigen aangepaste CSS voor Usernoise venster"
+
+#: admin/settings.php:51
+#@ usernoise-pro
+msgid "You can override the form's style by applying your own CSS. Don't forget to remove comment symbols and do not put HTML tags here."
+msgstr "Je kunt je eigen CSS gebruiken, deze wordt gebruikt in plaats die van het formulier. Vergeet niet om de comment symbolen te verwijderen. En gebruik hier geen HTML tags."
+
+#: html/details_meta_box.php:2
+#@ default
+msgid "URL:"
+msgstr "URL"
+
+#: html/details_meta_box.php:6
+#@ default
+msgid "Browser:"
+msgstr ""
+
+#: html/details_meta_box.php:11
+#@ default
+msgid "Client IP:"
+msgstr "Client IP"
+
+#: html/details_meta_box.php:18
+#@ default
+msgid "X-Forwarded-For:"
+msgstr "X-Forwarded-For:"
+
+#: html/details_meta_box.php:25
+#@ default
+msgid "View page snapshot"
+msgstr "Bekijk pagina snapshot"
+
+#: html/feedback-category.php:22
+#, php-format
+#@ usernoise-pro
+msgid "No %s yet"
+msgstr "Nog geen %s"
+
+#: html/feedback-category.php:24
+#@ usernoise-pro
+msgid "No feedback yet"
+msgstr "Nog geen reacties"
+
+#: html/feedback-discussion.php:37
+#: html/filters-meta-box.php:3
+#: html/query-vars-meta-box.php:3
+#: inc/controller.php:172
+#@ default
+msgid "Name"
+msgstr "Naam"
+
+#: html/feedback-discussion.php:40
+#: inc/controller.php:165
+#@ usernoise-pro
+msgid "Your email (will not be published)"
+msgstr "Jouw e-mail (wordt niet gepubliceerd)"
+
+#: html/feedback-discussion.php:45
+#: inc/controller.php:174
+#@ default
+msgctxt "noun"
+msgid "Comment"
+msgstr "Reactie"
+
+#: html/feedback-discussion.php:49
+#@ default
+msgid "Submit"
+msgstr "Verzend"
+
+#: html/feedback-category.php:2
+#@ usernoise-pro
+msgid "Back"
+msgstr "Terug"
+
+#: html/filters-meta-box.php:4
+#@ default
+msgid "Hooks"
+msgstr "Hooks"
+
+#: html/powered-by.php:2
+#@ usernoise
+msgid "Powered by"
+msgstr "Mogelijk gemaakt door"
+
+#: html/powered-by.php:3
+#@ usernoise-pro
+msgid "Usernoise Pro"
+msgstr "Usernoise Pro"
+
+#: html/query-vars-meta-box.php:4
+#@ default
+msgid "Value"
+msgstr "Waarde"
+
+#: html/query-vars-meta-box.php:18
+#@ default
+msgid "Empty query vars"
+msgstr "Lege query waardes"
+
+#: html/sql-queries-meta-box.php:3
+#@ default
+msgid "SQL"
+msgstr "SQL"
+
+#: html/sql-queries-meta-box.php:4
+#@ default
+msgid "Time"
+msgstr "Tijd"
+
+#: html/sql-queries-meta-box.php:5
+#@ default
+msgid "Stacktrace"
+msgstr "Stacktrace"
+
+#: html/sql-queries-meta-box.php:13
+#: html/sql-queries-meta-box.php:19
+#@ default
+msgid "ms"
+msgstr "ms"
+
+#: html/sql-queries-meta-box.php:18
+#@ default
+msgid "queries"
+msgstr "queries"
+
+#: inc/controller.php:163
+#@ default
+msgid "Hackin, huh?"
+msgstr "Hacken, huh?"
+
+#: inc/controller.php:225
+#@ usernoise-pro
+msgid "No Responses"
+msgstr "Geen reacties"
+
+#: inc/controller.php:225
+#@ usernoise-pro
+msgid "One Response"
+msgstr "één reactie"
+
+#: inc/controller.php:226
+#@ usernoise-pro
+msgid "% Responses"
+msgstr "% reacties"
+
+#: inc/controller.php:243
+#@ usernoise-pro
+msgid "Duplicate comment detected"
+msgstr "Dubbelle reactie gevonden"
+
+#: admin/feedback-types.php:37
+#: inc/model.php:39
+#@ usernoise-pro
+msgid "Feedback types"
+msgstr "Feedback types"
+
+#: inc/model.php:57
+#@ usernoise-pro
+msgid "From:"
+msgstr "Van:"
+
+#: inc/model.php:141
+#: inc/model.php:157
+#: inc/model.php:174
+#: inc/model.php:191
+#@ default
+msgid "Hacking, huh?"
+msgstr "Hacken, huh?"
+
+#: inc/model.php:220
+#@ usernoise-pro
+msgid "Enter your name"
+msgstr "Voer je naam in"
+
+#: inc/model.php:222
+#@ usernoise-pro
+msgid "Enter an email"
+msgstr "Voer je e-mail in"
+
+#: inc/model.php:227
+#@ usernoise-pro
+msgid "Please say something"
+msgstr "Zeg alsjeblieft iets"
+
+#: inc/model.php:233
+#@ usernoise-pro
+msgid "New"
+msgstr "Nieuw"
+
+#: inc/model.php:234
+#@ usernoise-pro
+msgid "Rejected"
+msgstr "Verworpen"
+
+#: inc/model.php:235
+#@ usernoise-pro
+msgid "Planned"
+msgstr "Geplanned"
+
+#: inc/model.php:236
+#@ usernoise-pro
+msgid "In progress"
+msgstr "In ontwikkeling"
+
+#: inc/model.php:237
+#@ usernoise-pro
+msgid "Done"
+msgstr "Afgerond"
+
+#: inc/model.php:293
+#, php-format
+#@ default
+msgid "[%1$s] Comment: \"%2$s\""
+msgstr "[%1$s] Reactie: \"%2$s\""
+
+#: inc/model.php:294
+#, php-format
+#@ usernoise-pro
+msgid "New comment on your feedback \"%s\" at %s"
+msgstr "Nieuwe reactie op jouw feedback \"%s\" at %s"
+
+#. translators: 1: comment author, 2: author IP, 3: author domain 
+#: inc/model.php:297
+#, php-format
+#@ default
+msgid "E-mail : %s"
+msgstr "E-mail: %s"
+
+#: inc/model.php:298
+#, php-format
+#@ default
+msgid "URL    : %s"
+msgstr "URL"
+
+#: inc/model.php:299
+#@ default
+msgid "Comment: "
+msgstr "Reactie: "
+
+#: inc/updater.php:46
+#@ default
+msgid "An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr "Een onverwachte HTTP fout trad op tijdens het API verzoek.</p> <p><a href=\"?\" onclick=\"document.location.reload(); return false;\">Probeer opnieuw</a>"
+
+#: inc/updater.php:50
+#@ default
+msgid "An unknown error occurred"
+msgstr "Er is een onverwachte fout opgetreden"
+
+#: inc/widgets.php:7
+#@ default
+msgid "The most recent feedback"
+msgstr "Meest recente feedback"
+
+#: inc/widgets.php:8
+#: inc/widgets.php:14
+#@ default
+#@ usernoise-pro
+msgid "Recent Feedback"
+msgstr "Recente Feedback"
+
+#: inc/widgets.php:43
+#, php-format
+#@ default
+msgid "%d like"
+msgid_plural "%d likes"
+msgstr[0] "%d vind ik leuk"
+msgstr[1] "%d vind ik leuks"
+
+#: inc/widgets.php:84
+#@ default
+msgid "Title:"
+msgstr "Titel:"
+
+#: inc/widgets.php:89
+#@ default
+msgid "Number of items to show:"
+msgstr "Aantal items te tonen:"
+
+#: inc/widgets.php:93
+#@ default
+msgid "Type:"
+msgstr "Type:"
+
+#: inc/widgets.php:96
+#: inc/widgets.php:103
+#@ usernoise-pro
+msgid "Any"
+msgstr "Elke"
+
+#: inc/widgets.php:109
+#@ usernoise-pro
+msgid "Show likes"
+msgstr "Toon vind ik leuks"
+
+#: inc/widgets.php:115
+#@ usernoise-pro
+msgid "Show feedback type"
+msgstr "Toon feedback type"
+
+#: inc/widgets.php:122
+#@ usernoise-pro
+msgid "Show Powered by"
+msgstr "Toon mogelijk gemaakt door"
+
+#: admin/settings.php:40
+#@ usernoise-pro
+msgid "Custom \"Feedback\" button HTML ID"
+msgstr "Aangepaste \"Feedback\" knop HTML ID"
+
+#: admin/settings.php:32
+#@ usernoise-pro
+msgid "Show feedback button"
+msgstr ""
+
+#: admin/settings.php:33
+#@ usernoise-pro
+msgid "Change the feedback button visibility mode"
+msgstr ""
+
+#: admin/settings.php:34
+#@ usernoise-pro
+msgid "Everywhere"
+msgstr ""
+
+#: admin/settings.php:34
+#@ usernoise-pro
+msgid "To registered users only"
+msgstr ""
+
+#: admin/settings.php:34
+#@ usernoise-pro
+msgid "Nowhere"
+msgstr ""
+
+#: admin/settings.php:78
+#@ usernoise-pro
+msgid "HTML code for external usage."
+msgstr ""
+
+#: admin/settings.php:79
+#@ usernoise-pro
+msgid "Copy this HTML code into your site's <head> tag and use Usernoise on the external site. It is recommended to have your site on the same domain as Usernoise is. <strong>Please make sure to update the code if you change Usernoise settings."
+msgstr ""
+
+#: admin/feedback-types.php:38
+#@ usernoise-pro
+msgid "Feedback type"
+msgstr ""
+
+#: admin/feedback-types.php:39
+#@ usernoise-pro
+msgid "All feedback types"
+msgstr ""
+
+#: admin/feedback-types.php:40
+#@ usernoise-pro
+msgid "Edit feedback type"
+msgstr ""
+
+#: admin/feedback-types.php:41
+#@ usernoise-pro
+msgid "View feedback type"
+msgstr ""
+
+#: admin/feedback-types.php:42
+#@ usernoise-pro
+msgid "Update feedback type"
+msgstr ""
+
+#: admin/feedback-types.php:43
+#@ usernoise-pro
+msgid "Add new feedback type"
+msgstr ""
+
+#: admin/feedback-types.php:44
+#@ usernoise-pro
+msgid "New feedback type name"
+msgstr ""
+
+#: admin/feedback-types.php:50
+#@ usernoise-pro
+msgid "Feedback Types"
+msgstr ""
+
+#: admin/feedback-types.php:58
+#: admin/feedback-types.php:80
+#@ usernoise-pro
+msgid "Icon"
+msgstr ""
+
+#: admin/feedback-types.php:60
+#: admin/feedback-types.php:82
+#@ usernoise-pro
+msgid "Icon used for this feedback type"
+msgstr ""
+
+#: admin/feedback-types.php:63
+#: admin/feedback-types.php:85
+#@ usernoise-pro
+msgid "Position"
+msgstr ""
+
+#: admin/feedback-types.php:65
+#: admin/feedback-types.php:87
+#@ usernoise-pro
+msgid "Type position among other feedback types"
+msgstr ""
+
+#: admin/feedback-types.php:68
+#: admin/feedback-types.php:90
+#@ usernoise-pro
+msgid "Name in plural form"
+msgstr ""
+
+#: admin/feedback-types.php:70
+#: admin/feedback-types.php:92
+#@ usernoise-pro
+msgid "Plural form used by some of the UI"
+msgstr ""
+
+#: html/comment.php:13
+#@ usernoise-pro
+msgid "Your comment is being approved now."
+msgstr ""
+
+#: html/comments-blank-slate.php:2
+#@ usernoise-pro
+msgid "No comments yet. You can be the first commenter!"
+msgstr ""
+
+#: html/feedback-category.php:7
+#@ usernoise-pro
+msgid "Popular"
+msgstr ""
+
+#: inc/model.php:96
+#, php-format
+#@ usernoise-pro
+msgid "Your feedback \"%s\" has been published by admin. Thanks for your feedback!"
+msgstr ""
+
+#: inc/model.php:97
+#, php-format
+#@ usernoise-pro
+msgid "You can view it at %s"
+msgstr ""
+
+#: inc/model.php:98
+#, php-format
+#@ default
+msgid "Feedback approved at %s"
+msgstr ""
+
+#: inc/model.php:224
+#@ usernoise-pro
+msgid "Invalid email format"
+msgstr ""
+
+#: inc/model.php:259
+#, php-format
+#@ usernoise-pro
+msgid "Your feedback \"%s\" was changed from %s to %s."
+msgstr ""
+
+#: inc/model.php:260
+#, php-format
+#@ usernoise-pro
+msgid "You can view your feedback at %s"
+msgstr ""
+
+#: inc/model.php:261
+#@ usernoise-pro
+msgid "Original feedback was:"
+msgstr ""
+
+#: inc/model.php:263
+#, php-format
+#@ usernoise-pro
+msgid "Feedback status changed at %s"
+msgstr ""
+
+#: inc/template.php:61
+#, php-format
+#@ usernoise-pro
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template.php:63
+#, php-format
+#@ usernoise-pro
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template.php:65
+#, php-format
+#@ usernoise-pro
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: html/feedback-category.php:7
+#@ usernoise-pro
+msgid "Feedback"
+msgstr ""
+

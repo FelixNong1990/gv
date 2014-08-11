@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Facebook Style Youtube, Vimeo, Metacafe, Dailymotion & SoundCloud Data Expander with jQuery & PHP</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//connect.soundcloud.com/sdk.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+jQuery(".videos .expand-video a.youtube").live("click", function(){
+		var videoURL = jQuery(this).attr("href");
+		var regExp_YT = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+        var youtubeurl = videoURL.match(regExp_YT);
+		var videoID = youtubeurl[7];
+		var videoWidth = parseInt(jQuery(this).parent().parent().css("width"));
+		var videoHeight = Math.ceil(videoWidth*(0.56)+1);
+		jQuery(this).parent().hide();
+		jQuery(this).parent().next().css('margin-left', '0');
+		jQuery(this).parent().parent().prepend('<iframe width="'+videoWidth+'" height="'+videoHeight+'" src="http://www.youtube.com/embed/'+(videoID)+'?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>');
+		return false;
+});
+
+jQuery(".videos .expand-video a.vimeo").live("click", function(){
+		var videoURL = jQuery(this).attr("href");													   
+		var regExp_VMO = /^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)/;
+		var vimeourl = regExp_VMO.exec(videoURL);													   
+		var videoID = vimeourl[5];
+		var videoWidth = parseInt(jQuery(this).parent().parent().css("width"));
+		var videoHeight = Math.ceil(videoWidth*(0.56)+1);
+		jQuery(this).parent().hide();
+		jQuery(this).parent().next().css('margin-left', '0');
+		jQuery(this).parent().parent().prepend('<iframe src="http://player.vimeo.com/video/'+videoID+'?portrait=0" width="'+videoWidth+'" height="'+videoHeight+'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+		return false;
+});
+
+jQuery(".videos .expand-video a.metacafe").live("click", function(){
+		var videoURL = jQuery(this).attr("href");
+		var n = videoURL.split("/watch/");
+		var videoID = n[1].split("/");
+		var videoWidth = parseInt(jQuery(this).parent().parent().css("width"));
+		var videoHeight = Math.ceil(videoWidth*(0.56)+1);
+		jQuery(this).parent().hide();
+		jQuery(this).parent().next().css('margin-left', '0');
+		jQuery(this).parent().parent().prepend('<iframe src="http://www.metacafe.com/embed/'+videoID[0]+'/" width="'+videoWidth+'" height="'+videoHeight+'" allowFullScreen frameborder=0></iframe>');
+		return false;
+});
+
+jQuery(".videos .expand-video a.dailymotion").live("click", function(){
+		var videoURL = jQuery(this).attr("href");
+		var n = videoURL.split("/video/");
+		var videoID = n[1].split("/");
+		var videoWidth = parseInt(jQuery(this).parent().parent().css("width"));
+		var videoHeight = Math.ceil(videoWidth*(0.56)+1);
+		jQuery(this).parent().hide();
+		jQuery(this).parent().next().css('margin-left', '0');
+		jQuery(this).parent().parent().prepend('<iframe src="http://www.dailymotion.com/embed/video/'+videoID[0]+'/" width="'+videoWidth+'" height="'+videoHeight+'" allowFullScreen frameborder=0></iframe>');
+		return false;
+});
+
+jQuery(".videos .expand-video a.soundcloud").live("click", function(){
+		var scURL = jQuery(this).attr("href");	
+		var obj = jQuery(this);
+		obj.parent().hide();
+		obj.parent().next().css('margin-left', '0');
+		jQuery(this).parent().parent().prepend('<div id="putTheWidgetHere"></div>');
+  		SC.oEmbed(scURL, {color: "ff0066"},  document.getElementById("putTheWidgetHere"));
+		return false;
+});
+
+jQuery(".fetch_video").live("click", function(){
+		var video_url = jQuery("#url").val();
+		var obj = jQuery(this);
+		
+		if(validate_url(video_url)) {
+			obj.attr("disabled", "disabled");
+			obj.prop('value', 'Loading...');
+			obj.css('cursor', 'default');
+			jQuery(".ajax_indi").show();
+			var str = jQuery("#fb_expand").serialize();
+			jQuery.ajax({
+				type: "POST",
+				url: "fetch_data.php",
+				data: str,
+				cache: false,
+				success: function(html){
+					jQuery('#results').prepend(html);
+					obj.attr("disabled", false);
+					obj.prop('value', 'Post');
+					obj.css('cursor', 'pointer');
+					jQuery(".ajax_indi").hide();
+					jQuery("#url").val('');
+				}
+			});
+			
+		} else {
+			alert("Enter Youtube/Vimeo/Soundcloud/Metacafe/Dailymotion url");
+			jQuery("#url").focus();
+		}
+
+});
+function validate_url(url) {
+	var youtube = url.search("youtu");
+	var vimeo = url.search("vimeo");
+	var soundcloud = url.search("soundcloud");
+	var metacafe = url.search("metacafe");
+	var dailymotion = url.search("dailymotion");
+	
+if((youtube != -1) || (vimeo != -1) || (soundcloud != -1) || (metacafe != -1) || (dailymotion != -1))
+  {
+	  if(youtube != -1) { jQuery("#url_type").val('youtube'); }
+	  if(vimeo != -1) { jQuery("#url_type").val('vimeo'); }
+	  if(soundcloud != -1) { jQuery("#url_type").val('soundcloud'); }
+	  if(metacafe != -1) { jQuery("#url_type").val('metacafe'); }
+	  if(dailymotion != -1) { jQuery("#url_type").val('dailymotion'); }
+	  return true;
+  } else {
+	  return false;
+  }
+}
+});
+</script>
+<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body style="background:#ccc;">
+
+<div style="background:#fff; width:60%; margin:0 auto; padding:20px;">
+<center><h2 style="padding:0; margin:0;">Facebook Style Youtube Video, Vimeo Video, Metacafe Video, Dailymotion Video & SoundCloud Audio Expander with jQuery & PHP</h2></center>
+<br />
+<div style="background:#336699; padding:5px; margin:0;">
+<form id="fb_expand" method="post" action="">
+<table style="margin:0 auto;" cellpadding="2">
+<tr>
+<td>
+<textarea style="width:500px; height:50px;" id="url" name="url" placeholder="Enter Youtube/Vimeo/Soundcloud/Metacafe/Dailymotion url"></textarea>
+<input type="hidden" name="url_type" id="url_type" />
+</td>
+</tr>
+<tr>
+<td colspan="2" align="right"><img src="loading.gif" class="ajax_indi" style="display:none" />&nbsp;<input type="button" value="Post" class="fetch_video" name="submit" /></td>
+</tr>
+</table>
+</form>
+</div>
+
+<div id="results">
+
+
+</div>
+
+<br />
+<br />
+
+
+<table>
+<tr>
+<td valign="top">
+<font size="2"><b>Test Urls</b></font>
+<ul style="font-size:11px; background:#fafafa; padding:5px; color:#333;">
+<li>http://soundcloud.com/balajipatturaj/chennais-super-kings-with-rj</li>
+<li>https://www.youtube.com/watch?v=dZpc936_Hgo</li>
+<li>http://youtu.be/lvOFck4dn_8</li>
+<li>http://vimeo.com/65484727</li>
+<li>http://www.metacafe.com/watch/10599819/are_katy_perry_and_john_mayer_back_together</li>
+<li>http://www.dailymotion.com/video/xzdijh_hire-data-entry-expert_news</li>
+</ul>
+</td>
+</tr></table>
+
+
+    
+    
+</div>
+
+<p style="font-size:12px;"><center><a href="http://itzurkarthi.com">by Karthikeyan K</a></center></p>
+
+</body>
+</html>

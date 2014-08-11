@@ -1,0 +1,9 @@
+You have installed the WordPress Chat plugin. Please review the polling interval settings before using. In most cases the default options will work for your host configuration. However, in some unique cases the polling interval is too frequent and could cause your hosting to shutdown your account. Once you have reviewed and saved the chat settings this message will no longer appear.
+
+<strong>This is a bold paragraph</strong>
+<em>This is an italic paragraph</em>
+<a href="http://stackoverflow.com/" title="http://stackoverflow.com/" target="_blank">http://stackoverflow.com/</a>
+<img src="http://stc.v3.news.zing.vn/css/img/logo_zing_trithuc.png" alt="Zing Vn" />
+`$(document).on('click', 'a[href="#add"]', function(e){
+        opentab('add');
+ });`

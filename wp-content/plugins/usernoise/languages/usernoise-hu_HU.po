@@ -1,0 +1,609 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Usernoise v3.6.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/usernoise\n"
+"POT-Creation-Date: 2011-10-07 10:49:55+00:00\n"
+"PO-Revision-Date: 2013-04-25 05:49:38+0000\n"
+"Last-Translator: admin <admin@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin/admin-bar.php:23
+#: admin/settings.php:159
+#: html/reply-meta-box.php:5
+#: html/window.php:23
+#: inc/template.php:117
+#@ usernoise
+msgid "Feedback"
+msgstr "Visszajelzés"
+
+#: admin/admin-bar.php:30
+#: admin/menu.php:16
+#: html/window.php:26
+#: vendor/plugin-options-framework/plugin-options-framework.php:95
+#@ usernoise
+#@ default
+msgid "Settings"
+msgstr "Beállítások"
+
+#: inc/db-upgrade.php:27
+#@ default
+msgid "Idea"
+msgstr "Ötlet"
+
+#: inc/db-upgrade.php:27
+#@ usernoise
+msgid "Problem"
+msgstr "Probléma"
+
+#: inc/db-upgrade.php:27
+#@ usernoise
+msgid "Question"
+msgstr "Kérdés"
+
+#: inc/db-upgrade.php:28
+#@ usernoise
+msgid "Praise"
+msgstr "Dicséret"
+
+#: admin/settings.php:85
+#@ usernoise
+msgid "Your feedback"
+msgstr "Visszajelzésed"
+
+#: admin/settings.php:94
+#@ usernoise
+msgid "Short summary"
+msgstr "Rövid összefoglaló"
+
+#: admin/settings.php:99
+#@ usernoise
+msgid "Your email (will not be published)"
+msgstr "Email-címed (nem lesz publikálva)"
+
+#: html/publish-meta-box.php:7
+#@ default
+msgid "Status:"
+msgstr "Státusz:"
+
+#: html/publish-meta-box.php:25
+#@ default
+msgid "M j, Y @ G:i"
+msgstr "Y M j @ G:i"
+
+#: html/publish-meta-box.php:26
+#, php-format
+#@ default
+msgid "Sent on: <b>%1$s</b>"
+msgstr "Küldve: <b>%1$s</b>"
+
+#: html/publish-meta-box.php:46
+#@ default
+msgid "Delete Permanently"
+msgstr "Végleges törlés"
+
+#: html/publish-meta-box.php:48
+#@ default
+msgid "Move to Trash"
+msgstr "Lomtárba"
+
+#: admin/editor-page.php:29
+#: html/publish-meta-box.php:56
+#: html/publish-meta-box.php:57
+#@ default
+#@ usernoise
+msgid "Publish"
+msgstr "Publikálás"
+
+#: html/publish-meta-box.php:59
+#: html/publish-meta-box.php:60
+#@ default
+msgid "Update"
+msgstr "Frissítés"
+
+#: admin/settings.php:106
+#: html/thankyou.php:2
+#@ usernoise
+msgid "Thank you"
+msgstr "Köszönöm"
+
+#: admin/settings.php:109
+#: html/thankyou.php:4
+#@ usernoise
+msgid "Your feedback has been received."
+msgstr "Visszajelzésedet megkaptuk."
+
+#: html/powered-by.php:2
+#@ usernoise
+msgid "Powered by"
+msgstr "Szolgáltató:"
+
+#: html/reply-meta-box.php:4
+#@ usernoise
+msgid "Subject"
+msgstr "Tárgy"
+
+#: html/reply-meta-box.php:8
+#@ usernoise
+msgid "Send"
+msgstr "Küldés"
+
+#: inc/template.php:75
+#@ usernoise
+msgid "or"
+msgstr "vagy"
+
+#: admin/settings.php:102
+#: inc/template.php:121
+#@ usernoise
+msgid "Submit feedback"
+msgstr "Visszajelzés küldése"
+
+#: admin/settings.php:82
+#: inc/template.php:126
+#@ usernoise
+msgid "Please tell us what do you think, any kind of feedback is highly appreciated."
+msgstr "Kérlek, mondd el a véleményed, bármilyen visszajelzést nagyra értékelünk."
+
+#: inc/model.php:25
+#: inc/model.php:27
+#: inc/model.php:28
+#@ usernoise
+msgctxt "admin"
+msgid "Feedback"
+msgstr "Visszajelzés"
+
+#: inc/model.php:29
+#@ usernoise
+msgid "Add new"
+msgstr "Új hozzáadása"
+
+#: inc/model.php:30
+#@ usernoise
+msgid "Add new feedback"
+msgstr "Új visszajelzés hozzáadása"
+
+#: inc/model.php:31
+#: inc/model.php:33
+#@ usernoise
+msgid "View feedback"
+msgstr "Visszajelzés megtekintése"
+
+#: admin/dashboard.php:16
+#: inc/model.php:32
+#@ usernoise
+msgid "New feedback"
+msgstr "Új visszajelzés"
+
+#: inc/model.php:34
+#@ usernoise
+msgid "Search feedback"
+msgstr "Visszajelzés keresése"
+
+#: inc/model.php:35
+#@ usernoise
+msgid "Feedback not found"
+msgstr "Visszajelzés nem található"
+
+#: inc/model.php:36
+#@ usernoise
+msgid "Feedback not found in Trash"
+msgstr "Visszajelzés nem található a Lomtárban"
+
+#: admin/menu.php:14
+#: inc/model.php:37
+#@ usernoise
+msgid "Usernoise"
+msgstr "FelhasználókHangja"
+
+#: inc/model.php:39
+#@ usernoise
+msgid "Feedback left by users using a form in a lightbox"
+msgstr "Visszajelzések, amiket ligthbox-ot használó felhasználók hagytak."
+
+#: inc/model.php:58
+#@ usernoise
+msgid "Please enter a summary."
+msgstr "Kérlek, írj be egy összefoglalót!"
+
+#: inc/model.php:61
+#@ usernoise
+msgid "Please enter the feedback."
+msgstr "Kérlek, írd meg a visszajelzést!"
+
+#: inc/model.php:65
+#@ usernoise
+msgid "Please enter a valid email address."
+msgstr "Kérlek, helyes email-címet adj meg!"
+
+#: inc/model.php:96
+#@ default
+msgid "feedback"
+msgstr "visszajelzés"
+
+#: inc/model.php:97
+#, php-format
+#@ default
+msgid "A new %s has been submitted. View it: <a href=\"%s\">%s</a>."
+msgstr "Új %s érkezett. Megtekintés: <a href=\"%s\">%s</a>."
+
+#: inc/model.php:105
+#, php-format
+#@ default
+msgid "New %s submitted at %s"
+msgstr "Új %s küldve itt: %s"
+
+#: admin/settings.php:56
+#@ usernoise
+msgctxt "button"
+msgid "Feedback"
+msgstr "Visszajelzés"
+
+#: admin/settings.php:79
+#@ usernoise
+msgctxt "form"
+msgid "Feedback"
+msgstr "Visszajelzés"
+
+#: admin/settings.php:14
+#@ usernoise
+msgid "Usernoise settings"
+msgstr "FelhasználókHangja beállítások"
+
+#: admin/settings.php:37
+#@ usernoise
+msgid "General"
+msgstr "Általános"
+
+#: admin/settings.php:39
+#@ usernoise
+msgid "Enable Usernoise"
+msgstr "FelhasználókHangja aktiválása"
+
+#: admin/settings.php:42
+#@ usernoise
+msgid "Show Powered by"
+msgstr "Mutasd a támogatót:"
+
+#: admin/settings.php:74
+#@ usernoise
+msgid "Font"
+msgstr "Betűtípus"
+
+#: admin/settings.php:50
+#@ usernoise
+msgid "Button"
+msgstr "Gomb"
+
+#: admin/settings.php:65
+#@ usernoise
+msgid "Background color"
+msgstr "Háttér szín"
+
+#: admin/settings.php:55
+#@ usernoise
+msgid "Text"
+msgstr "Szöveg"
+
+#: admin/settings.php:62
+#@ usernoise
+msgid "Text color"
+msgstr "Szöveg színe"
+
+#: admin/settings.php:34
+#@ default
+msgid "Left"
+msgstr "Bal"
+
+#: admin/settings.php:34
+#@ default
+msgid "Right"
+msgstr "Jobb"
+
+#: admin/settings.php:34
+#@ default
+msgid "Top"
+msgstr "Fent"
+
+#: admin/settings.php:35
+#@ default
+msgid "Bottom"
+msgstr "Lent"
+
+#: admin/settings.php:68
+#@ usernoise
+msgid "Show border"
+msgstr "Szegély mutatása"
+
+#: admin/settings.php:52
+#@ usernoise
+msgid "Position"
+msgstr "Pozíció"
+
+#: admin/settings.php:78
+#@ usernoise
+msgid "Form title"
+msgstr "Űrlap címe"
+
+#: admin/settings.php:81
+#@ usernoise
+msgid "Introductional text"
+msgstr "Bemutatkozó szöveg"
+
+#: admin/settings.php:87
+#: admin/settings.php:88
+#@ usernoise
+msgid "Ask for feedback type"
+msgstr "Visszajelzés típusának kérése"
+
+#: admin/settings.php:91
+#: admin/settings.php:92
+#@ usernoise
+msgid "Ask for a summary"
+msgstr "Összefoglaló kérése"
+
+#: admin/settings.php:96
+#: admin/settings.php:97
+#@ usernoise
+msgid "Ask for an email"
+msgstr "Email kérése"
+
+#: admin/settings.php:101
+#@ usernoise
+msgid "Submit button text"
+msgstr "Küldés gomb szövege"
+
+#: admin/settings.php:103
+#@ usernoise
+msgid "Thank you screen"
+msgstr "Köszönő képernyő"
+
+#: admin/settings.php:105
+#@ usernoise
+msgid "Thank you screen title"
+msgstr "Köszönő képernyő címe"
+
+#: admin/settings.php:108
+#@ usernoise
+msgid "Thank you text"
+msgstr "Köszönő szöveg"
+
+#: admin/settings.php:119
+#, php-format
+#@ usernoise
+msgid "Notification emails will be sent to: <a href=\"mailto:%s\">%s</a>"
+msgstr "Értesítő emailek ide fognak érkezni: <a href=\"mailto:%s\">%s</a>"
+
+#: admin/settings.php:122
+#, php-format
+#@ usernoise
+msgid "(you can change it at <a href=\"%s\">%s</a> page)."
+msgstr "(megváltoztathatod a <a href=\"%s\">%s</a> oldalon)."
+
+#: admin/settings.php:123
+#@ default
+msgid "General Options"
+msgstr "Általános beállítások"
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:302
+#@ default
+msgid "Select a Color"
+msgstr "Szín választása"
+
+#: admin/editor-page.php:57
+#@ usernoise
+msgid "Feedback was marked as reviewed"
+msgstr "Visszajelzés átnézettnek jelölve."
+
+#: admin/editor-page.php:77
+#@ default
+msgid "Author"
+msgstr "Szerző"
+
+#: admin/notifications.php:20
+#, php-format
+#@ usernoise
+msgid "Usernoise is disabled now. You can enable and configure it at the <a href=\"%s\">settings page</a>."
+msgstr "FelhasználókHangja jelenleg deaktivált. Itt tudod aktiválni és beállítani: <a href=\"%s\">settings page</a>."
+
+#: admin/feedback-list.php:34
+#@ usernoise
+msgid "Type"
+msgstr "Típus"
+
+#: admin/feedback-list.php:58
+#@ usernoise
+msgid "All feedback types"
+msgstr "Minden visszajelzés típus"
+
+#: admin/dashboard.php:33
+#@ default
+msgid "by"
+msgstr "által"
+
+#: admin/dashboard.php:43
+#@ usernoise
+msgid "View all feedback"
+msgstr "Összes visszajelzés megtekintése"
+
+#: admin/dashboard.php:46
+#@ usernoise
+msgid "No new feedback now."
+msgstr "Most nincs új visszajelzés."
+
+#: admin/admin-bar.php:17
+#, php-format
+#@ default
+msgid "Usernoise %s"
+msgstr "FelhasználókHangja"
+
+#: admin/settings.php:83
+#: admin/settings.php:110
+#@ default
+msgid "This text will be wrapped into &lt;p&gt; tag. You can still use HTML code."
+msgstr ""
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:159
+#@ default
+msgid "Please provide some settings fields when creating an options framework instance"
+msgstr ""
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:224
+#@ default
+msgid "Save Options"
+msgstr ""
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:225
+#@ default
+msgid "Restore Defaults"
+msgstr ""
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:225
+#@ default
+msgid "Click OK to reset. All the settings will be reset to defaults!"
+msgstr ""
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:336
+#@ default
+msgid "Upgrade to WordPress 3.3 or later to enable WYSIWYG editor"
+msgstr ""
+
+#: admin/editor-page.php:36
+#@ usernoise
+msgid "HTTP Headers"
+msgstr ""
+
+#: admin/editor-page.php:38
+#@ default
+msgid "Discussion"
+msgstr ""
+
+#: admin/editor-page.php:39
+#@ usernoise
+msgid "WordPress Debug Info"
+msgstr ""
+
+#: admin/settings.php:43
+#@ usernoise
+msgid "Show <strong>\"Powered by Usernoise\"</strong> link at the modal window. Check this, please!"
+msgstr ""
+
+#: admin/settings.php:45
+#@ default
+msgid "The link will only be visible at the modal window."
+msgstr ""
+
+#: admin/settings.php:47
+#: admin/settings.php:48
+#@ usernoise
+msgid "Disable on mobile devices"
+msgstr ""
+
+#: admin/settings.php:58
+#@ usernoise
+msgid "No icon"
+msgstr ""
+
+#: admin/settings.php:72
+#: admin/settings.php:73
+#@ usernoise
+msgid "Form"
+msgstr ""
+
+#: admin/settings.php:85
+#@ usernoise
+msgid "Textarea placeholder"
+msgstr ""
+
+#: admin/settings.php:94
+#@ usernoise
+msgid "Summary field placeholder"
+msgstr ""
+
+#: admin/settings.php:99
+#@ usernoise
+msgid "Email field placeholder"
+msgstr ""
+
+#: admin/settings.php:113
+#@ usernoise
+msgid "Notifications"
+msgstr ""
+
+#: admin/settings.php:115
+#@ usernoise
+msgid "New feedback received admin notification"
+msgstr ""
+
+#: admin/settings.php:116
+#@ usernoise
+msgid "Enable"
+msgstr ""
+
+#: admin/settings.php:136
+#@ usernoise
+msgid "Notifications do not work right?"
+msgstr ""
+
+#: admin/settings.php:137
+#@ usernoise
+msgid "Check out <a href='http://codecanyon.net/item/all-in-one-email-for-wordpress/1290390'>All in One Email plugin</a>. It adds email options missing in WordPress natively."
+msgstr ""
+
+#: admin/upgrade.php:18
+#@ default
+msgid "Go Pro"
+msgstr ""
+
+#: html/publish-meta-box.php:12
+#@ default
+msgid "Published"
+msgstr ""
+
+#: html/publish-meta-box.php:15
+#@ default
+msgid "Hidden"
+msgstr ""
+
+#: html/window.php:17
+#@ usernoise
+msgid "Close"
+msgstr ""
+
+#: inc/db-upgrade.php:10
+#@ usernoise
+msgid "Ideas"
+msgstr ""
+
+#: inc/db-upgrade.php:10
+#@ usernoise
+msgid "Questions"
+msgstr ""
+
+#: inc/db-upgrade.php:10
+#@ usernoise
+msgid "Problems"
+msgstr ""
+
+#: inc/db-upgrade.php:10
+#@ usernoise
+msgid "Praises"
+msgstr ""
+
+#: vendor/plugin-options-framework/plugin-options-framework.php:179
+#@ default
+msgid "This page requires JavaScript to be enabled in your browser. Please enable JavaScript."
+msgstr ""
+

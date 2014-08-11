@@ -1,0 +1,1 @@
+‘:ËS<?php exit; ?>a:1:{s:7:"content";a:2:{i:159;a:3:{s:4:"type";s:6:"plugin";s:7:"version";s:7:"2.0.8.5";s:8:"filename";s:33:"wordpress-chat/wordpress-chat.php";}i:119;a:3:{s:4:"type";s:6:"plugin";s:7:"version";s:5:"3.4.5";s:8:"filename";s:40:"wpmudev-updates/update-notifications.php";}}}

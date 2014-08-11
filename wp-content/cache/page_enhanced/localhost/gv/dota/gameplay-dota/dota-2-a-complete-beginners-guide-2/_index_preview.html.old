@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+		
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<meta property="og:title" content="Dota 2: A Complete Beginner&amp;#8217;s Guide" />
+	<meta property="og:type" content="Video" />
+	<meta property="og:url" content="http://localhost/gv/dota/gameplay-dota/dota-2-a-complete-beginners-guide-2/" />
+	<meta property='og:site_name' content='GameVeins' />
+	<meta property="og:image" content="http://i1.ytimg.com/vi/nzYNyDF_nDk/hqdefault.jpg" />
+	<meta name="description" content="http://localhost/gv/"/>
+	
+	<title>
+	Game Veins   &#8211;  Dota 2: A Complete Beginner&#8217;s Guide	</title>
+	<link rel="canonical" href="http://localhost/gv/dota/gameplay-dota/dota-2-a-complete-beginners-guide-2/" />
+	
+	
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="http://localhost/gv/wp-content/themes/avada/js/html5shiv.js?e7637f"></script>
+	<![endif]-->
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	
+	
+	
+	
+	
+					<script type="text/javascript">
+					var bhittani_plugin_kksr_js = {"nonce":"8d336b4e31","grs":true,"ajaxurl":"http:\/\/localhost\/gv\/wp-admin\/admin-ajax.php","func":"kksr_ajax","msg":"Rate this video","fuelspeed":400,"thankyou":"Thank you for your vote!","error_msg":"An error occurred","tooltip":"1","tooltips":[{"tip":"Not at all helpful","color":"#444444"},{"tip":"Not very helpful","color":"#444444"},{"tip":"Somewhat helpful","color":"#444444"},{"tip":"Very helpful","color":"#444444"},{"tip":"Extremely helpful","color":"#444444"}]};
+				</script>
+					    <script type="text/javascript">
+			var templateDir = "http://localhost/gv/wp-content/themes/avada";
+			var contentDir = "";
+			var pluginDir = "http://localhost/gv/wp-content/plugins";
+		</script>
+<link rel="alternate" type="application/rss+xml" title="Game Veins &raquo; Feed" href="http://localhost/gv/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Game Veins &raquo; Comments Feed" href="http://localhost/gv/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Game Veins &raquo; Dota 2: A Complete Beginner&#8217;s Guide Comments Feed" href="http://localhost/gv/dota/gameplay-dota/dota-2-a-complete-beginners-guide-2/feed/" />
+<meta property="og:title" content="Dota 2: A Complete Beginner&#8217;s Guide"/><meta property="og:type" content="article"/><meta property="og:url" content="http://localhost/gv/dota/gameplay-dota/dota-2-a-complete-beginners-guide-2/"/><meta property="og:site_name" content="Game Veins"/><link rel='stylesheet' id='jquery-ui-css'  href="http://localhost/gv/wp-content/plugins/wp-user-frontend-pro/css/jquery-ui-1.9.1.custom.css?e7637f" type='text/css' media='all' />
+<link rel='stylesheet' id='avada-stylesheet-css'  href="http://localhost/gv/wp-content/themes/avada-child/style.css?e7637f" type='text/css' media='all' />
+<!--[if lte IE 9]>
+<link rel='stylesheet' id='avada-shortcodes-css'  href="http://localhost/gv/wp-content/themes/avada/shortcodes.css?e7637f" type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='avada-IE8-css'  href="http://localhost/gv/wp-content/themes/avada/css/ie8.css?e7637f" type='text/css' media='all' />
+<![endif]-->
+<!--[if IE]>
+<link rel='stylesheet' id='avada-IE-css'  href="http://localhost/gv/wp-content/themes/avada/css/ie.css?e7637f" type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src="http://localhost/gv/wp-includes/js/jquery/jquery.js?e7637f"></script>
+<script type='text/javascript' src="http://localhost/gv/wp-includes/js/jquery/jquery-migrate.min.js?e7637f"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/gv/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/gv/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.9.1" />
+<link rel='canonical' href='http://localhost/gv/dota/gameplay-dota/dota-2-a-complete-beginners-guide-2/' />
+<link rel='shortlink' href='http://localhost/gv/?p=4977' />
+				<script type="text/javascript">
+			/* <![CDATA[ */
+				var sf_position = '0';
+				var sf_templates = "<a href=\"{search_url_escaped}\"><span class=\"sf_text\">See more results for \"{search_value}\"<\/span><span class=\"sf_small\">Displaying top {total} results<\/span><\/a>";
+				var sf_input = '.sf_input';
+				jQuery(document).ready(function(){
+					jQuery(sf_input).ajaxyLiveSearch({"expand":"0","searchUrl":"http:\/\/localhost\/gv\/?s=%s","text":"Search","delay":"500","iwidth":"180","width":"315","ajaxUrl":"http:\/\/localhost\/gv\/wp-admin\/admin-ajax.php","rtl":"0"});
+					jQuery(".sf_ajaxy-selective-input").keyup(function() {
+						var width = jQuery(this).val().length * 8;
+						if(width < 50) {
+							width = 50;
+						}
+						jQuery(this).width(width);
+					});
+					jQuery(".sf_ajaxy-selective-search").click(function() {
+						jQuery(this).find(".sf_ajaxy-selective-input").focus();
+					});
+					jQuery(".sf_ajaxy-selective-close").click(function() {
+						jQuery(this).parent().remove();
+					});
+				});
+			/* ]]> */
+		</script>
+		<style>.kk-star-ratings { width:120px; }.kk-star-ratings .kksr-stars a { width:24px; }.kk-star-ratings .kksr-stars, .kk-star-ratings .kksr-stars .kksr-fuel, .kk-star-ratings .kksr-stars a { height:24px; }.kk-star-ratings .kksr-star.gray { background-image: url(http://localhost/gv/wp-content/plugins/kk-star-ratings/gray.png); }.kk-star-ratings .kksr-star.yellow { background-image: url(http://localhost/gv/wp-content/plugins/kk-star-ratings/yellow.png); }.kk-star-ratings .kksr-star.orange { background-image: url(http://localhost/gv/wp-content/plugins/kk-star-ratings/orange.png); }</style><style> #responsive-menu .appendLink, #responsive-menu .responsive-menu li a, #responsive-menu #responsive-menu-title a,#responsive-menu .responsive-menu, #responsive-menu div, #responsive-menu .responsive-menu li, #responsive-menu{box-sizing: content-box !important;-moz-box-sizing: content-box !important;-webkit-box-sizing: content-box !important;-o-box-sizing: content-box !important}#click-menu #RMX{display: none;font-size: 24px;line-height: 30px;color: #FFFFFF !important}.RMPushOpen{width: 100% !important;overflow-x: hidden !important;height: 100% !important}.RMPushSlide{position: relative;right: 33%}#responsive-menu{position: fixed;overflow-y: auto;bottom: 0px;width: 33%;top: 0px;right: -33%;background: #3a3a3a;z-index: 9999;box-shadow: 0px 1px 8px #333333;font-size: 13px !important;max-width: 999px;display: none}#responsive-menu .appendLink{right: 0px !important;position: absolute !important;border: 1px solid #989797 !important;padding: 12px 10px !important;color: #bbbbbb !important;background: #3a3a3a !important;height: 20px !important;line-height: 20px !important;border-right: 0px !important}#responsive-menu .appendLink:hover{cursor: pointer;background: #0087bf !important;color: #FFFFFF !important}#responsive-menu .responsive-menu, #responsive-menu div, #responsive-menu .responsive-menu li,#responsive-menu{text-align: left !important}#responsive-menu .RMImage{vertical-align: middle;margin-right: 10px;display: inline-block}#responsive-menu,#responsive-menu input{}#responsive-menu #responsive-menu-title{width: 95% !important;font-size: 14px !important;padding: 20px 0px 20px 5% !important;margin-left: 0px !important;background: #3a3a3a !important}#responsive-menu #responsive-menu-title,#responsive-menu #responsive-menu-title a{color: #FFFFFF !important;text-decoration: none !important;white-space: pre !important;overflow: hidden !important}#responsive-menu #responsive-menu-title a:hover{color: #FFFFFF !important;text-decoration: none !important}#responsive-menu .appendLink,#responsive-menu .responsive-menu li a,#responsive-menu #responsive-menu-title a{transition: 1s all;-webkit-transition: 1s all;-moz-transition: 1s all;-o-transition: 1s all}#responsive-menu .responsive-menu{float: left !important;width: 100% !important;list-style-type: none !important;margin: 0px !important}#responsive-menu .responsive-menu li.current_page_item > a{background: #3a3a3a !important;color: #FFFFFF !important}#responsive-menu.responsive-menu ul{margin-left: 0px !important}#responsive-menu .responsive-menu li{list-style-type: none !important}#responsive-menu .responsive-menu ul li:last-child{padding-bottom: 0px !important}#responsive-menu .responsive-menu li a{padding: 12px 0px 12px 5% !important;width: 95% !important;display: block !important;height: 20px !important;line-height: 20px !important;overflow: hidden !important;white-space: nowrap !important;color: #bbbbbb !important;border-top: 1px solid #989797 !important;text-decoration: none !important}#click-menu{text-align: center;cursor: pointer;width: 50px;font-size: 13px !important;display: none;position: fixed;right: 5%;top: 10px;color: #FFFFFF;padding: 5px;border-radius: 5px;z-index: 9999}#responsive-menu #responsiveSearch{display: block !important;width: 95% !important;padding-left: 5% !important;border-top: 1px solid #989797 !important;clear: both !important;padding-top: 10px !important;padding-bottom: 10px !important;height: 40px !important;line-height: 40px !important}#responsive-menu #responsiveSearchInput{width: 91% !important;padding: 5px 0px 5px 3% !important;-webkit-appearance: none !important;border-radius: 2px !important;border: 1px solid #989797 !important}#responsive-menu .responsive-menu,#responsive-menu div,#responsive-menu .responsive-menu li{width: 100% !important;float: left !important;margin-left: 0px !important;padding-left: 0px !important}#responsive-menu .responsive-menu li li a{padding-left: 10% !important;width: 90% !important;overflow: hidden !important}#responsive-menu .responsive-menu li li li a{padding-left: 15% !important;width: 85% !important;overflow: hidden !important}#responsive-menu .responsive-menu li li li li{display: none !important}#responsive-menu .responsive-menu li a:hover{background: #0087bf !important;color: #FFFFFF !important;list-style-type: none !important;text-decoration: none !important}#click-menu .threeLines{width: 33px !important;height: 33px !important;margin: auto !important}#click-menu .threeLines .line{height: 5px !important;margin-bottom: 6px !important;background: #FFFFFF !important;width: 100% !important}@media only screen and ( min-width : 0px ) and ( max-width : 960px ){#click-menu{display: block}#header,#header-sticky{display: none !important}#responsive-menu .responsive-menu li li .appendLink,#responsive-menu .responsive-menu li li li{display: none}}#wrapper{position: relative !important;left: 0px}</style> <script> var $RMjQuery = jQuery.noConflict();$RMjQuery( document ).ready( function( ){function openRM(){$RMjQuery( 'body' ).addClass( 'RMPushOpen' );$RMjQuery( '#wrapper' ).addClass( 'RMPushSlide' );$RMjQuery( '#wrapper' ).animate({left: "-33%"}, 500, 'linear' );$RMjQuery( '#responsive-menu' ).css( 'display', 'block' );$RMjQuery( '#responsive-menu' ).stop().animate({right: "0"}, 500, 'linear', function(){})}function closeRM(){$RMjQuery( '#wrapper' ).animate({left: "0"}, 500, 'linear' );$RMjQuery( '#responsive-menu' ).animate({right: "-33%"}, 500, 'linear', function(){$RMjQuery( 'body' ).removeClass( 'RMPushOpen' );$RMjQuery( '#wrapper' ).removeClass( 'RMPushSlide' );$RMjQuery( '#responsive-menu' ).css( 'display', 'none' )})}isOpen = false;$RMjQuery( '#click-menu' ).click( function(){if( !isOpen ){openRM();isOpen = true}else{closeRM();isOpen = false}});$RMjQuery( window ).resize( function(){if( $RMjQuery( window ).width() > 960 ){if( $RMjQuery( '#responsive-menu' ).css( 'right' ) != '-33%' ){closeRM()}}});clickLink = '<span class="appendLink">&#9660;</span>';$RMjQuery( '#responsive-menu .responsive-menu .sub-menu' ).css( 'display', 'none' );$RMjQuery( '#responsive-menu .responsive-menu .menu-item-has-children' ).prepend( clickLink );$RMjQuery( '.appendLink' ).on( 'click', function(){$RMjQuery( this ).nextAll( 'ul.sub-menu' ).toggle();if( $RMjQuery( this ).html() == '▼' ){$RMjQuery( this ).html( '&#9650;' )}else{$RMjQuery( this ).html( '&#9660;' )}})});</script> 		<script type="text/javascript">
+		var userpro_ajax_url = 'http://localhost/gv/wp-admin/admin-ajax.php';
+		</script>
+			<script type="text/javascript">
+		var userpro_upload_url = 'http://localhost/gv/wp-content/plugins/userpro/lib/fileupload/fileupload.php';
+		</script>
+	<style type="text/css" id="wpmudev-chat-box-site-css">div.wpmudev-chat-box.wpmudev-chat-box-site {  margin: 0; padding: 0; position: fixed; right: 10px; bottom: 0px; z-index: 10000;  margin: 0 0 0 10px; padding: 0;  } </style>		<script type="text/javascript">
+		var wpb_ajax_url = 'http://localhost/gv/wp-admin/admin-ajax.php';
+		</script>
+	
+<style type="text/css">
+
+#un-button{
+/*
+color: white;
+background: #444;
+font: 14px bold;
+border: 2px solid white;
+*/
+}
+</style>
+
+	
+	<!--[if lte IE 8]>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	var imgs, i, w;
+	var imgs = document.getElementsByTagName( 'img' );
+	for( i = 0; i < imgs.length; i++ ) {
+	    w = imgs[i].getAttribute( 'width' );
+	    imgs[i].removeAttribute( 'width' );
+	    imgs[i].removeAttribute( 'height' );
+	}
+	});
+	</script>
+	
+	<script src="http://localhost/gv/wp-content/themes/avada/js/excanvas.js?e7637f"></script>
+	
+	<![endif]-->
+	
+	<!--[if lte IE 9]>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	
+	// Combine inline styles for body tag
+	jQuery('body').each( function() {	
+		var combined_styles = '<style>';
+
+		jQuery( this ).find( 'style' ).each( function() {
+			combined_styles += jQuery(this).html();
+			jQuery(this).remove();
+		});
+
+		combined_styles += '</style>';
+
+		jQuery( this ).prepend( combined_styles );
+	});
+	});
+	</script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+	/*@cc_on
+		@if (@_jscript_version == 10)
+	    	document.write('<style type="text/css">.search input,#searchform input {padding-left:10px;} .avada-select-parent .avada-select-arrow,.select-arrow{height:33px;background-color:#ffffff;}.search input{padding-left:5px;}header .tagline{margin-top:3px;}.star-rating span:before {letter-spacing: 0;}.avada-select-parent .avada-select-arrow,.gravity-select-parent .select-arrow,.wpcf7-select-parent .select-arrow,.select-arrow{background: #fff;}.star-rating{width: 5.2em;}.star-rating span:before {letter-spacing: 0.1em;}</style>');
+		@end
+	@*/
+
+	var doc = document.documentElement;
+	doc.setAttribute('data-useragent', navigator.userAgent);
+	</script>
+
+	<style type="text/css">
+		Avada_3.5{color:green;}
+	
+		html, body { background-color:#ffffff; }
+		
+	
+	
+	/*IE11 hack */
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		.avada-select-parent .avada-select-arrow,.select-arrow, 
+		.wpcf7-select-parent .select-arrow{height:33px;line-height:33px;}
+		.gravity-select-parent .select-arrow{height:24px;line-height:24px;}
+		
+		#wrapper .gf_browser_ie.gform_wrapper .button,
+		#wrapper .gf_browser_ie.gform_wrapper .gform_footer input.button{ padding: 0 20px; }
+	}
+
+	a:hover, .tooltip-shortcode{
+	color:#1b7fcc;
+}
+#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
+#sticky-nav ul .current_page_item a, #sticky-nav ul .current-menu-item a, #sticky-nav ul > .current-menu-parent a,
+.footer-area ul li a:hover,
+.footer-area .tab-holder .news-list li .post-holder a:hover,
+#slidingbar-area ul li a:hover,
+.portfolio-tabs li.active a, .faq-tabs li.active a,
+.project-content .project-info .project-info-box a:hover,
+#main .post h2 a:hover,
+#main .about-author .title a:hover,
+span.dropcap,.footer-area a:hover,#slidingbar-area a:hover,.copyright a:hover,
+#sidebar .widget_categories li a:hover,
+#sidebar .widget li a:hover,
+#nav ul a:hover, #sticky-nav ul a:hover,
+.date-and-formats .format-box i,
+h5.toggle:hover a,
+.tooltip-shortcode,.content-box-percentage,
+.woocommerce .address .edit:hover:after,
+.my_account_orders .order-actions a:hover:after,
+.more a:hover:after,.read-more:hover:after,.entry-read-more a:hover:after,.pagination-prev:hover:before,.pagination-next:hover:after,.bbp-topic-pagination .prev:hover:before,.bbp-topic-pagination .next:hover:after,
+.single-navigation a[rel=prev]:hover:before,.single-navigation a[rel=next]:hover:after,
+#sidebar .widget_nav_menu li a:hover:before,#sidebar .widget_categories li a:hover:before,
+#sidebar .widget .recentcomments:hover:before,#sidebar .widget_recent_entries li a:hover:before,
+#sidebar .widget_archive li a:hover:before,#sidebar .widget_pages li a:hover:before,
+#sidebar .widget_links li a:hover:before,.side-nav .arrow:hover:after,.woocommerce-tabs .tabs a:hover .arrow:after,
+.star-rating:before,.star-rating span:before,.price ins .amount, .avada-order-details .shop_table.order_details tfoot tr:last-child .amount,
+.price > .amount,.woocommerce-pagination .prev:hover,.woocommerce-pagination .next:hover,.woocommerce-pagination .prev:hover:before,.woocommerce-pagination .next:hover:after,
+.woocommerce-tabs .tabs li.active a,.woocommerce-tabs .tabs li.active a .arrow:after,
+#wrapper .cart-checkout a:hover,#wrapper .cart-checkout a:hover:before,#wrapper .header-social .top-menu .cart-checkout a:hover,
+.widget_shopping_cart_content .total .amount,.widget_layered_nav li a:hover:before,
+.widget_product_categories li a:hover:before,#header-sticky .my-account-link-active:after,#header .my-account-link-active:after,.woocommerce-side-nav li.active a,.woocommerce-side-nav li.active a:after,.my_account_orders .order-number a,.shop_table .product-subtotal .amount,
+.cart_totals .order-total .amount,form.checkout .shop_table tfoot .order-total .amount,#final-order-details .mini-order-details tr:last-child .amount,.rtl .more a:hover:before,.rtl .read-more:hover:before,.rtl .entry-read-more a:hover:before,#header-sticky .my-cart-link-active:after,.header-wrapper .my-cart-link-active:after,#wrapper #sidebar .current_page_item > a,#wrapper #sidebar .current-menu-item > a,#wrapper #sidebar .current_page_item > a:before,#wrapper #sidebar .current-menu-item > a:before,#wrapper .footer-area .current_page_item > a,#wrapper .footer-area .current-menu-item > a,#wrapper .footer-area .current_page_item > a:before,#wrapper .footer-area .current-menu-item > a:before,#wrapper #slidingbar-area .current_page_item > a,#wrapper #slidingbar-area .current-menu-item > a,#wrapper #slidingbar-area .current_page_item > a:before,#wrapper #slidingbar-area .current-menu-item > a:before,.side-nav ul > li.current_page_item > a,.side-nav li.current_page_ancestor > a,
+.gform_wrapper span.ginput_total,.gform_wrapper span.ginput_product_price,.ginput_shipping_price,
+.bbp-topics-front ul.super-sticky a:hover, .bbp-topics ul.super-sticky a:hover, .bbp-topics ul.sticky a:hover, .bbp-forum-content ul.sticky a:hover, .fusion-accordian .panel-title a:hover{
+	color:#1b7fcc;
+}
+.fusion-content-boxes .heading-link:hover h2 {
+	color:#1b7fcc !important;
+}
+.fusion-content-boxes .heading-link:hover .icon i, .fusion-accordian .panel-title a:hover .fa-fusion-box {
+	background-color: #1b7fcc !important;
+	border-color: #1b7fcc !important;
+}
+
+#sidebar .image .image-extras .image-extras-content a:hover { color: #333333; }
+.star-rating:before,.star-rating span:before {
+	color:#1b7fcc;
+}
+.tagcloud a:hover,#slidingbar-area .tagcloud a:hover,.footer-area .tagcloud a:hover{ color: #FFFFFF; text-shadow: none; -moz-text-shadow: none; -webkit-text-shadow: none; }
+#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a, #nav ul .current-menu-ancestor a, .navigation li.current-menu-ancestor a
+#sticky-nav ul .current_page_item a, #sticky-nav ul .current-menu-item a, #sticky-nav ul > .current-menu-parent a, #sticky-nav li.current-menu-ancestor a
+#nav ul ul,#sticky-nav ul ul,
+.reading-box,
+.portfolio-tabs li.active a, .faq-tabs li.active a,
+#wrapper .pyre_tabs .tab-holder .tabs li.active a,
+.post-content blockquote,
+.progress-bar-content,
+.pagination .current,
+.bbp-topic-pagination .current,
+.pagination a.inactive:hover,
+.woocommerce-pagination .page-numbers.current,
+.woocommerce-pagination .page-numbers:hover,
+#wrapper .fusion-megamenu-wrapper .fusion-megamenu-holder,
+#nav ul a:hover,#sticky-nav ul a:hover,.woocommerce-pagination .current,
+.tagcloud a:hover,#header-sticky .my-account-link:hover:after,#header .my-account-link:hover:after,body #header-sticky .my-account-link-active:after,body #header .my-account-link-active:after,
+#bbpress-forums div.bbp-topic-tags a:hover,
+.fusion-tabs .nav-tabs > .active > .tab-link:hover, .fusion-tabs .nav-tabs > .active > .tab-link:focus,.fusion-tabs .nav-tabs > .active > .tab-link,.fusion-tabs.vertical-tabs .nav-tabs > li.active > .tab-link{
+	border-color:#1b7fcc;
+}
+#wrapper .main-nav-search a:hover {border-top: 3px solid transparent;}
+#wrapper .header-v4 .main-nav-search a:hover, #wrapper .header-v5 .main-nav-search a:hover {border-top: 0;}
+#nav ul .current-menu-ancestor a,.navigation li.current-menu-ancestor a, #sticky-nav li.current-menu-ancestor a {
+	color: #1b7fcc;
+}
+#wrapper .side-nav li.current_page_item a{
+	border-right-color:#1b7fcc;
+}
+.rtl #wrapper .side-nav li.current_page_item a{
+	border-left-color:#1b7fcc;
+}
+.header-v2 .header-social, .header-v3 .header-social, .header-v4 .header-social,.header-v5 .header-social,.header-v2{
+	border-top-color:#1b7fcc;
+}
+
+.fusion-accordian .panel-title .active .fa-fusion-box,
+ul.circle-yes li:before,
+.circle-yes ul li:before,
+.progress-bar-content,
+.pagination .current,
+.bbp-topic-pagination .current,
+.header-v3 .header-social,.header-v4 .header-social,.header-v5 .header-social,
+.date-and-formats .date-box,.table-2 table thead,
+.onsale,.woocommerce-pagination .current,
+.woocommerce .social-share li a:hover i,
+.price_slider_wrapper .ui-slider .ui-slider-range,
+.tagcloud a:hover,.cart-loading,
+#toTop:hover,
+#bbpress-forums div.bbp-topic-tags a:hover,
+#wrapper .search-table .search-button input[type="submit"]:hover,
+ul.arrow li:before,
+p.demo_store,
+.avada-myaccount-data .digital-downloads li:before, .avada-thank-you .order_details li:before{
+	background-color:#1b7fcc;
+}
+.woocommerce .social-share li a:hover i {
+	border-color:#1b7fcc;
+}
+.bbp-topics-front ul.super-sticky, .bbp-topics ul.super-sticky, .bbp-topics ul.sticky, .bbp-forum-content ul.sticky	{
+	background-color: #ffffe8;
+	opacity: 1;
+}
+
+
+	#header-sticky .my-cart-link:after, #header-sticky a.search-link:after,
+	#header .my-cart-link:after, #header a.search-link:after,
+	#small-nav .my-cart-link:after, #small-nav a.search-link:after{ border: none; }
+.mobile-nav-holder .mobile-selector, 
+.mobile-topnav-holder .mobile-selector, 
+#mobile-nav {
+	background-color: #f9f9f9}
+.mobile-nav-holder .mobile-selector, .mobile-topnav-holder .mobile-selector, #mobile-nav, #mobile-nav li a, #mobile-nav li a:hover, .mobile-nav-holder .mobile-selector .selector-down { border-color: #dadada; }
+.mobile-nav-holder .mobile-selector .selector-down:before{color:#dadada;}
+#mobile-nav li a:hover {
+	background-color: #f6f6f6}
+
+
+
+body #header-sticky.sticky-header .sticky-shadow{background:rgba(255, 255, 255, 0.97);}
+.no-rgba #header-sticky.sticky-header .sticky-shadow{background:#ffffff; filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=97); opacity: 0.97;}
+
+#header,#small-nav{
+	background-color:#ffffff;
+}
+
+#main,#wrapper,
+.fusion-separator .icon-wrapper, html, body, .bbp-arrow { background-color:#ffffff; }
+
+.footer-area{
+	background-color:#363839;
+}
+#wrapper .footer-area .pyre_tabs .tab-holder .tabs li {
+	border-color:#363839;
+}
+
+.footer-area{
+	border-color:#e9eaee;
+}
+
+#footer{
+	background-color:#282a2b;
+}
+
+#footer{
+	border-color:#4b4c4d;
+}
+
+.sep-boxed-pricing .panel-heading{
+	background-color:#a0ce4e;
+	border-color:#a0ce4e;
+}
+.fusion-pricing-table .panel-body .price .integer-part, .fusion-pricing-table .panel-body .price .decimal-part{
+	color:#a0ce4e;
+}
+.image .image-extras{
+	background-image: linear-gradient(top, rgba(209,233,144,1) 0%, rgba(170,215,91,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(209,233,144,1) 0%, rgba(170,215,91,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(209,233,144,1) 0%, rgba(170,215,91,1) 100%);
+	background-image: -webkit-linear-gradient(top, rgba(209,233,144,1) 0%, rgba(170,215,91,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(209,233,144,1) 0%, rgba(170,215,91,1) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(209,233,144,1)),
+		color-stop(1, rgba(170,215,91,1))
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E990', endColorstr='#AAD75B')
+			progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.no-cssgradients .image .image-extras{
+	background:#D1E990;
+}
+.image:hover .image-extras {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E990', endColorstr='#AAD75B')
+ 			progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+ }
+#main .portfolio-one .button,
+#main .comment-submit,
+#reviews input#submit,
+.comment-form input[type="submit"],
+.wpcf7-form input[type="submit"],.wpcf7-submit,
+.bbp-submit-wrapper button,
+.button-default,
+.button.default,
+.price_slider_amount button,
+.gform_wrapper .gform_button,
+.woocommerce .single_add_to_cart_button,
+.woocommerce .shipping-calculator-form .button,
+.woocommerce form.checkout #place_order,
+.woocommerce .checkout_coupon .button,
+.woocommerce .login .button,
+.woocommerce .register .button,
+.woocommerce .avada-order-details .order-again .button,
+.woocommerce .avada-order-details .order-again .button{
+	background: #D1E990;
+	color: #6e9a1f;
+	
+		
+	background-image: -webkit-gradient( linear, left bottom, left top, from( #AAD75B ), to( #D1E990 ) );
+	background-image: -webkit-linear-gradient( bottom,#AAD75B, #D1E990 );
+	background-image:    -moz-linear-gradient( bottom, #AAD75B, #D1E990 );
+	background-image:      -o-linear-gradient( bottom, #AAD75B, #D1E990 );
+	background-image: linear-gradient( to top,#AAD75B, #D1E990 );	
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E990', endColorstr='#AAD75B');
+		
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;	
+	-o-transition: all .2s;
+	transition: all .2s;	
+}
+.no-cssgradients #main .portfolio-one .button,
+.no-cssgradients #main .comment-submit,
+.no-cssgradients #reviews input#submit,
+.no-cssgradients .comment-form input[type="submit"],
+.no-cssgradients .wpcf7-form input[type="submit"],
+.no-cssgradients .wpcf7-submit,
+.no-cssgradients .bbp-submit-wrapper button,
+.no-cssgradients .button-default,
+.no-cssgradients .button.default,
+.no-cssgradients .price_slider_amount button,
+.no-cssgradients .gform_wrapper .gform_button,
+.no-cssgradients .woocommerce .single_add_to_cart_button,
+.no-cssgradients .woocommerce .shipping-calculator-form .button,
+.no-cssgradients .woocommerce form.checkout #place_order,
+.no-cssgradients .woocommerce .checkout_coupon .button,
+.no-cssgradients .woocommerce .login .button,
+.no-cssgradients .woocommerce .register .button,
+.no-cssgradients .woocommerce .avada-order-details .order-again .button{
+	background:#D1E990;
+}
+#main .portfolio-one .button:hover,
+#main .comment-submit:hover,
+#reviews input#submit:hover,
+.comment-form input[type="submit"]:hover,
+.wpcf7-form input[type="submit"]:hover,.wpcf7-submit:hover,
+.bbp-submit-wrapper button:hover,
+.button-default:hover,
+.button.default:hover,
+.price_slider_amount button:hover,
+.gform_wrapper .gform_button:hover,
+.woocommerce .single_add_to_cart_button:hover,
+.woocommerce .shipping-calculator-form .button:hover,
+.woocommerce form.checkout #place_order:hover,
+.woocommerce .checkout_coupon .button:hover,
+.woocommerce .login .button:hover,
+.woocommerce .register .button:hover,
+.woocommerce .avada-order-details .order-again .button:hover{
+	background: #AAD75B;
+	color: #638e1a;
+	
+		
+	background-image: -webkit-gradient( linear, left bottom, left top, from( #D1E990 ), to( #AAD75B ) );
+	background-image: -webkit-linear-gradient( bottom, #D1E990, #AAD75B );
+	background-image:    -moz-linear-gradient( bottom, #D1E990}, #AAD75B );
+	background-image:      -o-linear-gradient( bottom, #D1E990, #AAD75B );
+	background-image: linear-gradient( to top, #D1E990, #AAD75B );
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAD75B', endColorstr='#D1E990');
+	}
+.no-cssgradients #main .portfolio-one .button:hover,
+.no-cssgradients #main .comment-submit:hover,
+.no-cssgradients #reviews input#submit:hover,
+.no-cssgradients .comment-form input[type="submit"]:hover,
+.no-cssgradients .wpcf7-form input[type="submit"]:hover,
+.no-cssgradients .wpcf7-submit:hover,
+.no-cssgradients .bbp-submit-wrapper button:hover,
+.no-cssgradients .button-default:hover,
+.no-cssgradinets .button.default:hover,
+.no-cssgradients .price_slider_amount button:hover,
+.no-cssgradients .gform_wrapper .gform_button:hover,
+.no-cssgradients .woocommerce .single_add_to_cart_button:hover
+.no-cssgradients .woocommerce .shipping-calculator-form .button:hover,
+.no-cssgradients .woocommerce form.checkout #place_order:hover,
+.no-cssgradients .woocommerce .checkout_coupon .button:hover,
+.no-cssgradients .woocommerce .login .button:hover,
+.no-cssgradients .woocommerce .register .button:hover,
+.no-cssgradients .woocommerce .avada-order-details .order-again .button:hover{
+	background:#AAD75B;
+}
+
+.image .image-extras .image-extras-content .icon.link-icon, .image .image-extras .image-extras-content .icon.gallery-icon { background-color:#333333; }
+.image-extras .image-extras-content h3, .image .image-extras .image-extras-content h3 a, .image .image-extras .image-extras-content h4, .image .image-extras .image-extras-content h4 a,.image .image-extras .image-extras-content h3, .image .image-extras .image-extras-content h2, .image .image-extras .image-extras-content a,.image .image-extras .image-extras-content .cats,.image .image-extras .image-extras-content .cats a{ color:#333333; }
+
+.page-title-container{border-color:#d2d3d4;}
+
+.footer-area{
+	
+		padding-top: 43px;
+	
+		padding-bottom: 40px;
+	}
+
+#footer{
+		padding-top: 18px;
+	
+		padding-bottom: 16px;
+	}
+
+.fontawesome-icon.circle-yes{
+	background-color:#333333;
+}
+
+.fontawesome-icon.circle-yes{
+	border-color:#333333;
+}
+
+.fontawesome-icon,
+.avada-myaccount-data .digital-downloads li:before,
+.avada-myaccount-data .digital-downloads li:after,
+.avada-thank-you .order_details li:before,
+.avada-thank-you .order_details li:after,
+.post-content .error-menu li:before,
+.post-content .error-menu li:after{
+	color:#ffffff;
+}
+
+.fusion-title .title-sep,.product .product-border{
+	border-color:#e0dede;
+}
+
+.review blockquote q,.post-content blockquote,form.checkout .payment_methods .payment_box{
+	background-color:#f6f6f6;
+}
+.fusion-testimonials .author:after{
+	border-top-color:#f6f6f6;
+}
+
+.review blockquote q,.post-content blockquote{
+	color:#747474;
+}
+
+
+
+body,#nav ul li ul li a,#sticky-nav ul li ul li a,
+#wrapper .fusion-megamenu-wrapper .fusion-megamenu-widgets-container,
+.more,
+.avada-container h3,
+.meta .date,
+.review blockquote q,
+.review blockquote div strong,
+.image .image-extras .image-extras-content h4,
+.image .image-extras .image-extras-content h4 a,
+.project-content .project-info h4,
+.post-content blockquote,
+.button.large, .button.small, .button.medium,.button.xlarge,
+.ei-title h3,.cart-contents,
+.comment-form input[type="submit"],
+.wpcf7-form input[type="submit"],
+.gform_wrapper .gform_button,
+.woocommerce-success-message .button,
+.woocommerce .single_add_to_cart_button,
+.woocommerce .shipping-calculator-form .button,
+.woocommerce form.checkout #place_order,
+.woocommerce .checkout_coupon .button,
+.woocommerce .login .button,
+.woocommerce .register .button,
+.page-title h3,
+.blog-shortcode h3.timeline-title,
+#reviews #comments > h2,
+.image .image-extras .image-extras-content h3,
+.image .image-extras .image-extras-content h2,
+.image .image-extras .image-extras-content a,
+.image .image-extras .image-extras-content .cats,
+.image .image-extras .image-extras-content .cats a,
+.image .image-extras .image-extras-content .price {
+	font-family:"Roboto", Arial, Helvetica, sans-serif;
+}
+.avada-container h3,
+.review blockquote div strong,
+.footer-area  h3,
+#slidingbar-area  h3,
+.button.large, .button.small, .button.medium,.button.xlarge,
+.woocommerce .single_add_to_cart_button,
+.woocommerce .shipping-calculator-form .button,
+.woocommerce form.checkout #place_order,
+.woocommerce .checkout_coupon .button,
+.woocommerce .login .button,
+.woocommerce .register .button,
+.woocommerce .avada-order-details .order-again .button,
+.comment-form input[type="submit"],
+.wpcf7-form input[type="submit"],
+.gform_wrapper .gform_button{
+	font-weight:bold;
+}
+.meta .date,
+.review blockquote q,
+.post-content blockquote{
+	font-style:italic;
+}
+
+
+#nav, #sticky-nav, .navigation,
+.side-nav li a{
+	font-family:"Roboto", Arial, Helvetica, sans-serif;
+}
+
+
+#main .reading-box h2,
+#main h2,
+.page-title h1,
+.image .image-extras .image-extras-content h3,.image .image-extras .image-extras-content h3 a,
+#main .post h2,
+#sidebar .widget h3,
+#wrapper .tab-holder .tabs li a,
+.share-box h4,
+.project-content h3,
+.author .author_title,
+.fusion-accordian .panel a,
+.fusion-pricing-table .title-row,
+.fusion-pricing-table .pricing-row,
+.person-author-wrapper,
+.fusion-accordian .panel-title,
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6,
+.ei-title h2, #header-sticky,#header .tagline,
+table th,.project-content .project-info h4,
+.woocommerce-success-message .msg,.product-title, .cart-empty,
+#wrapper .fusion-megamenu-wrapper .fusion-megamenu-title,
+.main-flex .slide-content h2, .main-flex .slide-content h3{
+	font-family:"Roboto Slab", Arial, Helvetica, sans-serif;
+}
+
+
+.footer-area  h3,#slidingbar-area  h3{
+	font-family:"Roboto Slab", Arial, Helvetica, sans-serif;
+}
+
+body,#sidebar .slide-excerpt h2, .footer-area .slide-excerpt h2,#slidingbar-area .slide-excerpt h2,
+#jtwt .jtwt_tweet, #sidebar #jtwt .jtwt_tweet {
+	font-size:13px;
+		line-height:20px;
+}
+.project-content .project-info h4,.gform_wrapper label,.gform_wrapper .gfield_description,
+.footer-area ul, #slidingbar-area ul, .tab-holder .news-list li .post-holder a,
+.tab-holder .news-list li .post-holder .meta, .review blockquote q{
+	font-size:13px;
+		line-height:20px;
+}
+.blog-shortcode h3.timeline-title { font-size:13px;line-height:13px; }
+.counter-box-content, .fusion-alert { font-size:13px; }
+
+body,#sidebar .slide-excerpt h2, .footer-area .slide-excerpt h2,#slidingbar-area .slide-excerpt h2{
+	line-height:20px;
+}
+.project-content .project-info h4{
+	line-height:20px;
+}
+
+#nav,#sticky-nav,.navigation,a.search-link{font-size:14px;}
+
+#wrapper #nav ul li ul li a, #wrapper #sticky-nav ul li ul li a{font-size:13px;}
+
+.header-social *{font-size:12px;}
+
+.page-title ul li,page-title ul li a{font-size:10px;}
+
+.side-nav li a{font-size:14px;}
+
+#sidebar .widget h3{font-size:13px;}
+
+#slidingbar-area h3{font-size:13px;line-height:13px;}
+
+.footer-area h3{font-size:13px;line-height:13px;}
+
+.copyright{font-size:12px;}
+
+#wrapper .fusion-megamenu-wrapper .fusion-megamenu-title{font-size:24px;}
+
+#header-sticky .avada-row,#header .avada-row, #main .avada-row, .footer-area .avada-row,#slidingbar-area .avada-row, #footer .avada-row{ max-width:940px; }
+
+.post-content h1{
+	font-size:32px;
+		line-height:48px;
+}
+
+.post-content h1{
+	line-height:48px;
+}
+
+#wrapper .post-content h2,#wrapper .fusion-title h2,#wrapper #main .post-content .fusion-title h2,#wrapper .title h2,#wrapper #main .post-content .title h2,#wrapper  #main .post h2, #wrapper  #main .post h2, #wrapper .woocommerce .checkout h3, #main .portfolio h2 {
+	font-size:18px;
+		line-height:27px;
+}
+
+#wrapper .post-content h2,#wrapper .fusion-title h2,#wrapper #main .post-content .fusion-title h2,#wrapper .title h2,#wrapper #main .post-content .title h2,#wrapper #main .post h2,#wrapper  .woocommerce .checkout h3, .cart-empty{
+	line-height:27px;
+}
+
+.post-content h3,.project-content h3,#header .tagline,.product-title{
+	font-size:16px;
+		line-height:24px;
+}
+p.demo_store { font-size:16px; }
+
+.post-content h3,.project-content h3,#header .tagline,.product-title{
+	line-height:24px;
+}
+
+.post-content h4, .portfolio-item .portfolio-content h4, .image-extras .image-extras-content h3, .image-extras .image-extras-content h3 a, .image .image-extras .image-extras-content a,
+.fusion-person .person-author-wrapper .person-name, .fusion-person .person-author-wrapper .person-title
+{
+	font-size:13px;
+		line-height:20px;
+}
+#wrapper .tab-holder .tabs li a,.person-author-wrapper, #reviews #comments > h2{
+	font-size:13px;
+}
+.fusion-accordian .panel-title a{font-size:13px;}
+.share-box h4 {font-size:13px;line-height:13px;}
+
+.post-content h4, #reviews #comments > h2,
+.fusion-person .person-author-wrapper .person-name, .fusion-person .person-author-wrapper .person-title {
+	line-height:20px;
+}
+
+.post-content h5{
+	font-size:12px;
+		line-height:18px;
+}
+
+.post-content h5{
+	line-height:18px;
+}
+
+.post-content h6{
+	font-size:11px;
+		line-height:17px;
+}
+
+.post-content h6{
+	line-height:17px;
+}
+
+.ei-title h2{
+	font-size:42px;
+		line-height:63px;
+}
+
+.ei-title h3{
+	font-size:20px;
+		line-height:30px;
+}
+
+.image .image-extras .image-extras-content h4, .image .image-extras .image-extras-content h4 a, .image .image-extras .image-extras-content .cats, .image .image-extras .image-extras-content .cats a, .fusion-recent-posts .columns .column .meta {
+	font-size:12px;
+		line-height:18px;
+}
+.post .meta-info, .fusion-blog-grid .entry-meta-single, .fusion-blog-timeline .entry-meta-single, .fusion-blog-grid .entry-comments, .fusion-blog-timeline .entry-comments, .fusion-blog-grid .entry-read-more, .fusion-blog-timeline .entry-read-more, .fusion-blog-medium .entry-meta, .fusion-blog-large .entry-meta, .fusion-blog-medium-alternate .entry-meta, .fusion-blog-large-alternate .entry-meta, .fusion-blog-medium-alternate .entry-read-more, .fusion-blog-large-alternate .entry-read-more, .fusion-recent-posts .columns .column .meta, .post .single-line-meta { font-size:12px; }
+
+.cart-contents *, .top-menu .cart-content a .cart-title, .top-menu .cart-content a .quantity, .image .image-extras .image-extras-content .product-buttons a, .product-buttons a, #header-sticky .cart-content a .cart-title, #header-sticky .cart-content a .quantity, #header .cart-content a .cart-title, #header .cart-content a .quantity, .sticky-header #sticky-nav .cart-checkout a, #header .cart-checkout a {
+	font-size:12px;
+		line-height:18px;
+}
+
+.pagination, .woocommerce-pagination, .pagination .pagination-next, .woocommerce-pagination .next, .pagination .pagination-prev, .woocommerce-pagination .prev { font-size:12px; }
+
+body,.post .post-content,.post-content blockquote,#wrapper .tab-holder .news-list li .post-holder .meta,#sidebar #jtwt,#wrapper .meta,.review blockquote div,.search input,.project-content .project-info h4,.title-row,.simple-products-slider .price .amount,
+.quantity .qty,.quantity .minus,.quantity .plus,.timeline-layout h3.timeline-title, .blog-timeline-layout h3.timeline-title, #reviews #comments > h2{color:#747474;}
+
+.post-content h1,.title h1,.woocommerce-success-message .msg, .woocommerce-message{
+	color:#333333;
+}
+
+#main .post h2,.post-content h2,.fusion-title h2,.title h2,.woocommerce-tabs h2,.search-page-search-form h2, .cart-empty, .woocommerce h2, .woocommerce .checkout h3{
+	color:#333333;
+}
+
+.post-content h3,#sidebar .widget h3,.project-content h3,.fusion-title h3,.title h3,#header .tagline,.person-author-wrapper span,.product-title{
+	color:#333333;
+}
+
+.post-content h4,.project-content .project-info h4,.share-box h4,.fusion-title h4,.title h4,#wrapper .tab-holder .tabs li a, .fusion-accordian .panel a{
+	color:#333333;
+}
+
+.post-content h5,.fusion-title h5,.title h5{
+	color:#333333;
+}
+
+.post-content h6,.fusion-title h6,.title h6{
+	color:#333333;
+}
+
+.page-title h1{
+	color:#333333;
+}
+
+.sep-boxed-pricing .panel-heading h3{
+	color:#333333;
+}
+
+.full-boxed-pricing.fusion-pricing-table .panel-heading h3{
+	color:#333333;
+}
+
+body a,
+body a:before,
+body a:after,
+.single-navigation a[rel="prev"]:before,
+.single-navigation a[rel="next"]:after
+{color:#333333;}
+.project-content .project-info .project-info-box a,#sidebar .widget li a, #sidebar .widget .recentcomments, #sidebar .widget_categories li, #main .post h2 a, .about-author .title a,
+.shop_attributes tr th,.image-extras a,.products-slider .price .amount,z.my_account_orders thead tr th,.shop_table thead tr th,.cart_totals table th,form.checkout .shop_table tfoot th,form.checkout .payment_methods label,#final-order-details .mini-order-details th,#main .product .product_title,.shop_table.order_details tr th
+{color:#333333;}
+
+body #toTop:before {color:#fff;}
+
+.page-title ul li,.page-title ul li a{color:#333333;}
+
+#slidingbar-area h3{color:#DDDDDD;}
+
+#slidingbar-area,#slidingbar-area article.col,#slidingbar-area #jtwt,#slidingbar-area #jtwt .jtwt_tweet{color:#8C8989;}
+
+#slidingbar-area a,#wrapper #slidingbar-area .pyre_tabs .tab-holder .tabs li a{color:#BFBFBF;}
+
+#sidebar .widget h3, #sidebar .widget .heading h3{color:#333333;}
+
+.footer-area h3{color:#DDDDDD;}
+
+.footer-area,.footer-area article.col,.footer-area #jtwt,.footer-area #jtwt .jtwt_tweet,.copyright{color:#8C8989;}
+
+.footer-area a,#wrapper .footer-area .pyre_tabs .tab-holder .tabs li a,.footer-area .tab-holder .news-list li .post-holder a,.copyright a{color:#BFBFBF;}
+
+#nav ul a,#sticky-nav ul a,.side-nav li a,#header-sticky .cart-content a,#header-sticky .cart-content a:hover,#header .cart-content a,#header .cart-content a:hover,#small-nav .cart-content a,
+#small-nav .cart-content a:hover,#wrapper .header-social .top-menu .cart > a,#wrapper .header-social .top-menu .cart > a > .amount,
+#wrapper .header-social .top-menu .cart-checkout a, #wrapper .fusion-megamenu-wrapper .fusion-megamenu-title,.my-cart-link:after,a.search-link:after
+{color:#333333;}
+#header-sticky .my-account-link:after, #header .my-account-link:after{border-color:#333333;}
+
+#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a, #nav ul ul,.navigation li.current-menu-ancestor a,#nav ul li a:hover,
+#sticky-nav ul .current_page_item a, #sticky-nav ul .current-menu-item a, #sticky-nav ul > .current-menu-parent a, #sticky-nav ul ul,#sticky-nav li.current-menu-ancestor a,.navigation li.current-menu-ancestor a,#sticky-nav ul li a:hover
+{color:#a0ce4e;border-color:#a0ce4e;}
+#nav ul ul,#sticky-nav ul ul{border-color:#a0ce4e;}
+
+#wrapper .main-nav-search a:hover {border-top: 3px solid transparent;}
+
+#nav ul ul,#sticky-nav ul ul,
+#nav ul .login-box,#sticky-nav ul .login-box,
+#nav ul .cart-contents,#sticky-nav ul .cart-contents,
+#small-nav ul .login-box,#small-nav ul .cart-contents,
+#main-nav-search-form, #sticky-nav-search-form
+{background-color:#edebeb;}
+
+#wrapper #nav ul li ul li a,#wrapper #sticky-nav ul li ul li a,.side-nav li li a,.side-nav li.current_page_item li a
+{color:#333333;}
+#wrapper .fusion-megamenu-wrapper .fusion-megamenu-bullet, .fusion-megamenu-bullet{border-left-color:#333333;}
+
+.ei-title h2{color:#333333;}
+
+.ei-title h3{color:#747474;}
+
+#wrapper .header-social .header-info, #wrapper .header-social a {color:#747474;}
+#wrapper .header-social .mobile-topnav-holder li a {color: #333333;}
+
+.header-social .menu .sub-menu {width:100px;}
+
+
+
+.sep-single,.sep-double,.sep-dashed,.sep-dotted,.search-page-search-form{border-color:#e0dede;}
+.ls-avada, .avada-skin-rev,.es-carousel-wrapper.fusion-carousel-small .es-carousel ul li img,.fusion-accordian .panel,.progress-bar,
+#small-nav,.portfolio-tabs,.faq-tabs,.single-navigation,.project-content .project-info .project-info-box,
+.fusion-blog-medium-alternate .post, .fusion-blog-large-alternate .post,
+.post .meta-info,.grid-layout .post,.grid-layout .post .content-sep,
+.grid-layout .post .flexslider,.timeline-layout .post,.timeline-layout .post .content-sep,
+.timeline-layout .post .flexslider,h3.timeline-title,.timeline-arrow,
+.fusion-counters-box .fusion-counter-box .counter-box-border, tr td,
+.table, .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,
+.table-1 table,.table-1 table th,.table-1 tr td,
+.table-2 table thead,.table-2 tr td,
+#sidebar .widget li a,#sidebar .widget .recentcomments,#sidebar .widget_categories li,
+#wrapper .pyre_tabs .tab-holder,.commentlist .the-comment,
+.side-nav,#wrapper .side-nav li a,.rtl .side-nav,h5.toggle.active + .toggle-content,
+#wrapper .side-nav li.current_page_item li a,.tabs-vertical .tabset,
+.tabs-vertical .tabs-container .tab_content,.pagination a.inactive,.woocommerce-pagination .page-numbers,.bbp-topic-pagination .page-numbers,.rtl .woocommerce .social-share li,.author .author_social, .fusion-blog-medium .entry-meta, .fusion-blog-large .entry-meta
+{border-color:#e0dede;}
+.side-nav li a,#sidebar .product_list_widget li,#sidebar .widget_layered_nav li,.price_slider_wrapper,.tagcloud a,#header-sticky .cart-content a,#header-sticky .cart-content a:hover,#header-sticky .login-box,#header-sticky .cart-contents,
+#header .cart-content a,#header .cart-content a:hover,#header .login-box,#header .cart-contents,#small-nav .login-box,#small-nav .cart-contents,#small-nav .cart-content a,#small-nav .cart-content a:hover,
+#customer_login_box,.avada_myaccount_user,#wrapper .myaccount_user_container span,
+.woocommerce-side-nav li a,.woocommerce-content-box,.woocommerce-content-box h2,.my_account_orders tr,.woocommerce .address h4,.shop_table tr,.cart_totals .total,.chzn-container-single .chzn-single,.chzn-container-single .chzn-single div,.chzn-drop,form.checkout .shop_table tfoot,.input-radio,#final-order-details .mini-order-details tr:last-child,p.order-info,.cart-content a img,.panel.entry-content,
+.woocommerce-tabs .tabs li a,.woocommerce .social-share,.woocommerce .social-share li,.quantity,.quantity .minus, .quantity .qty,.shop_attributes tr,.woocommerce-success-message,#reviews li .comment-text,
+.cart_totals, .shipping_calculator, .coupon, .woocommerce .cross-sells, #customer_login .col-1, #customer_login .col-2, .woocommerce-message, .woocommerce form.checkout #customer_details .col-1, .woocommerce form.checkout #customer_details .col-2,
+.cart_totals h2, .shipping_calculator h2, .coupon h2, .woocommerce .checkout h3, #customer_login h2, .woocommerce .cross-sells h2, .order-total, .woocommerce .addresses .title, #main .cart-empty, #main .return-to-shop
+{border-color:#e0dede;}
+.price_slider_wrapper .ui-widget-content{background-color:#e0dede;}
+.gform_wrapper .gsection{border-bottom:1px dotted #e0dede;}
+
+.quantity .minus,.quantity .plus{background-color:#fbfaf9;}
+
+.quantity .minus:hover,.quantity .plus:hover{background-color:#ffffff;}
+
+#slidingbar-area .widget_categories li a, #slidingbar-area li.recentcomments, #slidingbar-area ul li a, #slidingbar-area .product_list_widget li {border-bottom: 1px solid #282A2B;}
+#slidingbar-area .tagcloud a, #wrapper #slidingbar-area .pyre_tabs .tab-holder .tabs-wrapper, #wrapper #slidingbar-area .pyre_tabs .tab-holder .news-list li {border-color: #282A2B;}
+
+.footer-area .widget_categories li a, .footer-area li.recentcomments, .footer-area ul li a, .footer-area .product_list_widget li,
+.footer-area .tagcloud a,#wrapper .footer-area .pyre_tabs .tab-holder .tabs-wrapper, #wrapper .footer-area .pyre_tabs .tab-holder .news-list li {border-color: #505152;}
+
+input#s,#comment-input input,#comment-textarea textarea,.comment-form-comment textarea,.input-text, .post-password-form .password,
+.wpcf7-form .wpcf7-text,.wpcf7-form .wpcf7-quiz,.wpcf7-form .wpcf7-number,.wpcf7-form textarea,.wpcf7-form .wpcf7-select,.wpcf7-captchar,.wpcf7-form .wpcf7-date,
+.gform_wrapper .gfield input[type=text],.gform_wrapper .gfield input[type=email],.gform_wrapper .gfield textarea,.gform_wrapper .gfield select,
+#bbpress-forums .bbp-search-form #bbp_search,.bbp-reply-form input#bbp_topic_tags,.bbp-topic-form input#bbp_topic_title, .bbp-topic-form input#bbp_topic_tags, .bbp-topic-form select#bbp_stick_topic_select, .bbp-topic-form select#bbp_topic_status_select,#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content,
+.main-nav-search-form input,.search-page-search-form input,.chzn-container-single .chzn-single,.chzn-container .chzn-drop,
+.avada-select-parent select,.avada-select-parent .avada-select-arrow, #wrapper .select-arrow,
+#lang_sel_click a.lang_sel_sel,
+#lang_sel_click ul ul a, #lang_sel_click ul ul a:visited,
+#lang_sel_click a, #lang_sel_click a:visited,#wrapper .search-table .search-field input{
+background-color:#ffffff;}
+
+input#s,input#s .placeholder,#comment-input input,#comment-textarea textarea,#comment-input .placeholder,#comment-textarea .placeholder,.comment-form-comment textarea,.input-text, .post-password-form .password,
+.wpcf7-form .wpcf7-text,.wpcf7-form .wpcf7-quiz,.wpcf7-form .wpcf7-number,.wpcf7-form textarea,.wpcf7-form .wpcf7-select,.wpcf7-select-parent .select-arrow,.wpcf7-captchar,.wpcf7-form .wpcf7-date,
+.gform_wrapper .gfield input[type=text],.gform_wrapper .gfield input[type=email],.gform_wrapper .gfield textarea,.gform_wrapper .gfield select,
+#bbpress-forums .bbp-search-form #bbp_search,.bbp-reply-form input#bbp_topic_tags,.bbp-topic-form input#bbp_topic_title, .bbp-topic-form input#bbp_topic_tags, .bbp-topic-form select#bbp_stick_topic_select, .bbp-topic-form select#bbp_topic_status_select,#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content,
+.main-nav-search-form input,.search-page-search-form input,.chzn-container-single .chzn-single,.chzn-container .chzn-drop,.avada-select-parent select, #wrapper .search-table .search-field input
+{color:#aaa9a9;}
+input#s::-webkit-input-placeholder,#comment-input input::-webkit-input-placeholder,.post-password-form .password::-webkit-input-placeholder,#comment-textarea textarea::-webkit-input-placeholder,.comment-form-comment textarea::-webkit-input-placeholder,.input-text::-webkit-input-placeholder{color:#aaa9a9;}
+input#s:-moz-placeholder,#comment-input input:-moz-placeholder,.post-password-form .password::-moz-input-placeholder,#comment-textarea textarea:-moz-placeholder,.comment-form-comment textarea:-moz-placeholder,.input-text:-moz-placeholder,
+input#s:-ms-input-placeholder,#comment-input input:-ms-input-placeholder,.post-password-form .password::-ms-input-placeholder,#comment-textarea textarea:-moz-placeholder,.comment-form-comment textarea:-ms-input-placeholder,.input-text:-ms-input-placeholder
+{color:#aaa9a9;}
+
+input#s,#comment-input input,#comment-textarea textarea,.comment-form-comment textarea,.input-text, .post-password-form .password,
+.wpcf7-form .wpcf7-text,.wpcf7-form .wpcf7-quiz,.wpcf7-form .wpcf7-number,.wpcf7-form textarea,.wpcf7-form .wpcf7-select,.wpcf7-select-parent .select-arrow,.wpcf7-captchar,.wpcf7-form .wpcf7-date,
+.gform_wrapper .gfield input[type=text],.gform_wrapper .gfield input[type=email],.gform_wrapper .gfield textarea,.gform_wrapper .gfield_select[multiple=multiple],.gform_wrapper .gfield select,.gravity-select-parent .select-arrow,.select-arrow,
+#bbpress-forums .quicktags-toolbar,#bbpress-forums .bbp-search-form #bbp_search,.bbp-reply-form input#bbp_topic_tags,.bbp-topic-form input#bbp_topic_title, .bbp-topic-form input#bbp_topic_tags, .bbp-topic-form select#bbp_stick_topic_select, .bbp-topic-form select#bbp_topic_status_select,#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content,#wp-bbp_topic_content-editor-container,#wp-bbp_reply_content-editor-container,
+.main-nav-search-form input,.search-page-search-form input,.chzn-container-single .chzn-single,.chzn-container .chzn-drop,
+.avada-select-parent select,.avada-select-parent .avada-select-arrow,
+#lang_sel_click a.lang_sel_sel,
+#lang_sel_click ul ul a, #lang_sel_click ul ul a:visited,
+#lang_sel_click a, #lang_sel_click a:visited,
+#wrapper .search-table .search-field input
+{border-color:#d2d2d2;}
+
+#wrapper #nav ul li ul li a,#wrapper #sticky-nav ul li ul li a,
+#header-sticky .cart-content a,#header .cart-content a,#small-nav .cart-content a,
+#main-nav-search-form, #sticky-nav-search-form
+{border-bottom:1px solid #dcdadb;}
+
+#wrapper #nav ul li ul li a:hover, #wrapper #nav ul li ul li.current-menu-item > a,
+#wrapper #sticky-nav ul li ul li a:hover, #wrapper #sticky-nav ul li ul li.current-menu-item > a,
+#header-sticky .cart-content a:hover,#header .cart-content a:hover,#small-nav .cart-content a:hover,
+#lang_sel_click a.lang_sel_sel:hover,
+#lang_sel_click ul ul a:hover,
+#lang_sel_click a:hover
+{background-color:#f5f4f4;}
+
+#header .tagline{
+	color:#747474;
+}
+
+#header .tagline{
+	font-size:16px;
+	line-height:30px;
+}
+
+#wrapper .page-title h1{
+	font-size:18px;
+	line-height:normal;
+}
+
+#wrapper .page-title h3{
+	font-size:14px;
+	line-height: 26px;
+}
+
+.header-social,.header-v2 #header,.header-v3 #header,#header,.header-v4 #small-nav,.header-v5 #small-nav{
+	border-bottom-color:#e5e5e5;
+}
+
+#nav ul ul,#sticky-nav ul ul{
+	width:170px;
+}
+#nav ul ul li ul,#sticky-nav ul ul li ul{
+	left:170px;
+}
+ul.navigation > li:last-child ul ul{
+	left:-170px;
+}
+#nav .fusion-megamenu-wrapper ul{left:auto;}
+.rtl #header #nav ul ul li:hover ul, .rtl #small-nav #nav ul ul li:hover ul, .rtl .sticky-header #sticky-nav ul ul li:hover ul {
+	right:170px;
+	left: auto;
+}
+.rtl ul.navigation > li:last-child ul ul{
+	right:-170px;
+	left: auto;
+}
+.rtl #wrapper #nav .fusion-megamenu-wrapper ul,
+.rtl #wrapper #header-sticky #nav .fusion-megamenu-wrapper ul{
+	left:auto;
+	right:auto;
+}
+
+#main #sidebar{
+	background-color:transparent;
+}
+
+#content{
+	width:65%;
+}
+
+#main #sidebar{
+	width:30%;
+}
+
+
+#wrapper .header-social{
+	background-color:#ffffff;
+}
+
+#wrapper .header-social .menu > li{
+	border-color:#efefef;
+}
+
+#wrapper .header-social .menu .sub-menu,#wrapper .header-social .login-box,#wrapper .header-social .cart-contents,.main-nav-search-form{
+	background-color:#ffffff;
+}
+
+#wrapper .header-social .menu .sub-menu li, #wrapper .header-social .menu .sub-menu li a,#wrapper .header-social .login-box *,#wrapper .header-social .cart-contents *{
+	color:#747474;
+}
+
+#wrapper .header-social .menu .sub-menu li a:hover,.top-menu .cart-content a:hover{
+	background-color:#fafafa;
+}
+
+#wrapper .header-social .menu .sub-menu li a:hover{
+	color:#333333;
+}
+
+#wrapper .header-social .menu .sub-menu,#wrapper .header-social .menu .sub-menu li,.top-menu .cart-content a,#wrapper .header-social .login-box,#wrapper .header-social .cart-contents,.main-nav-search-form{
+	border-color:#e5e5e5;
+}
+
+#header-sticky .cart-checkout,#header .cart-checkout,.top-menu .cart,.top-menu .cart-checkout,#small-nav .cart-checkout{
+	background-color:#fafafa;
+}
+
+.fusion-accordian .panel-title a .fa-fusion-box{background-color:#333333;}
+
+.progress-bar-content{background-color:#a0ce4e;border-color:#a0ce4e;}
+.content-box-percentage{color:#a0ce4e;}
+
+.progress-bar{background-color:#f6f6f6;border-color:#f6f6f6;}
+
+#wrapper .date-and-formats .format-box{background-color:#eef0f2;}
+
+.es-nav-prev,.es-nav-next{background-color:#999999;}
+
+.es-nav-prev:hover,.es-nav-next:hover{background-color:#808080;}
+
+.content-boxes .col{background-color:transparent;}
+
+#wrapper #sidebar .tab-holder,#sidebar .tab-holder .news-list li{border-color:#ebeaea;}
+#wrapper #sidebar .pyre_tabs .tabs-container{background-color:#ffffff;}
+body #sidebar .tab-hold .tabs li{border-right:1px solid #ffffff;}
+body #sidebar .pyre_tabs .tab-holder .tabs li a, #sidebar .pyre_tabs .tab-holder .tabs li a{background:#ebeaea;border-bottom:0;color:#747474;}
+body #sidebar .tab-hold .tabs li a:hover{background:#ffffff;border-bottom:0;}
+body #sidebar .tab-hold .tabs li.active a{background:#ffffff;border-bottom:0;}
+body #sidebar .tab-hold .tabs li.active a{border-top-color:#1b7fcc;}
+
+.fusion-sharing-box{background-color:#f6f6f6;}
+
+.grid-layout .post,.timeline-layout .post,.blog-timeline-layout .post{background-color:transparent;}
+
+.grid-layout .post .flexslider,.grid-layout .post,.grid-layout .post .content-sep,.products li,.product-details-container,.product-buttons,.product-buttons-container, .product .product-buttons,.blog-timeline-layout .post,.blog-timeline-layout .post .content-sep,
+.blog-timeline-layout .post .flexslider,.timeline-layout .post,.timeline-layout .post .content-sep,
+.timeline-layout .post .flexslider,.timeline-layout h3.timeline-title{border-color:#ebeaea;}
+.timeline-layout  .timeline-circle,.timeline-layout .timeline-title,.blog-timeline-layout  .timeline-circle,.blog-timeline-layout .timeline-title{background-color:#ebeaea;}
+.timeline-icon,.timeline-arrow:before,.blog-timeline-layout timeline-icon,.blog-timeline-layout .timeline-arrow:before{color:#ebeaea;}
+
+	#bbpress-forums li.bbp-header,
+	#bbpress-forums div.bbp-reply-header,#bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a,div.bbp-template-notice, div.indicator-hint{ background:#ebeaea; }
+	#bbpress-forums .bbp-replies div.even { background: transparent; }
+
+	#bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-topics, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results,
+	#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic,
+	#bbpress-forums div.bbp-reply-content,#bbpress-forums div.bbp-reply-header,
+	#bbpress-forums div.bbp-reply-author .bbp-reply-post-date,
+	#bbpress-forums div.bbp-topic-tags a,#bbpress-forums #bbp-single-user-details,div.bbp-template-notice, div.indicator-hint,
+	.bbp-arrow{ border-color:#ebeaea; }
+
+
+.quicktags-toolbar input {
+    background: linear-gradient(to top, #ffffff, #ffffff ) #3E3E3E;
+    background: -o-linear-gradient(to top, #ffffff, #ffffff ) #3E3E3E;
+    background: -moz-linear-gradient(to top, #ffffff, #ffffff ) #3E3E3E;
+    background: -webkit-linear-gradient(to top, #ffffff, #ffffff ) #3E3E3E;
+    background: -ms-linear-gradient(to top, #ffffff, #ffffff ) #3E3E3E;
+    background: linear-gradient(to top, #ffffff, #ffffff ) #3E3E3E;
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #ffffff),
+		color-stop(1, #ffffff)
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff')
+			progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+
+    border: 1px solid #d2d2d2;
+    color: #aaa9a9;
+}
+
+.quicktags-toolbar input:hover {
+	background: #ffffff;
+}
+
+
+@media only screen and (max-width: 940px){
+	.page-title .breadcrumbs{display:none;}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
+	.page-title .breadcrumbs{display:none;}
+}
+
+
+
+#nav.nav-holder .navigation > li > a{height:70px;line-height:70px;}
+
+#nav ul li, #sticky-nav ul li { padding-right: 35px; }
+
+.ei-slider{width:100%;}
+
+.ei-slider{height:400px;}
+
+.button.default,.gform_wrapper .gform_button,#comment-submit,.woocommerce form.checkout #place_order,.woocommerce .single_add_to_cart_button,#reviews input#submit,.woocommerce .login .button,.woocommerce .register .button,
+.bbp-submit-wrapper button,.wpcf7-form input[type="submit"], .wpcf7-submit
+{border-color:#6e9a1f;}
+.button.default:hover,.gform_wrapper .gform_button:hover,#comment-submit:hover,.woocommerce form.checkout #place_order:hover.woocommerce .single_add_to_cart_button::hover,#reviews input#submit:hover,.woocommerce .login .button:hover,.woocommerce .register .button:hover,
+.bbp-submit-wrapper button:hover,.wpcf7-form input[type="submit"]:hover, .wpcf7-submit:hover
+{border-color:#638e1a;}
+
+
+
+.button.default,.fusion-button,.button-default,.gform_wrapper .gform_button,#comment-submit,.woocommerce form.checkout #place_order,.woocommerce .single_add_to_cart_button,#reviews input#submit,.woocommerce .login .button,.woocommerce .register .button,
+.bbp-submit-wrapper button,.wpcf7-form input[type="submit"], .wpcf7-submit
+{border-width:1px;border-style: solid;}
+.button.default:hover, .fusion-button.button-default:hover{border-width:1px;border-style: solid;}
+
+
+.button.default,#comment-submit,.woocommerce form.checkout #place_order,.woocommerce .single_add_to_cart_button,#reviews input#submit,.woocommerce .avada-shipping-calculator-form .button,.woocommerce .login .button,.woocommerce .register .button,
+.bbp-submit-wrapper button,.wpcf7-form input[type="submit"], .wpcf7-submit
+{border-radius: 2px;}
+
+
+
+
+.reading-box{background-color:#f6f6f6;}
+
+.isotope .isotope-item {
+  -webkit-transition-property: top, left, opacity;
+     -moz-transition-property: top, left, opacity;
+      -ms-transition-property: top, left, opacity;
+       -o-transition-property: top, left, opacity;
+          transition-property: top, left, opacity;
+}
+
+
+
+
+.header-v5 #header .logo{float:left;}
+
+.rtl #header-sticky.sticky-header .logo{ float: left; }
+
+
+.bbp_reply_admin_links .admin_links_sep, .bbp-admin-links .admin_links_sep{
+	display: none;
+}
+
+.rev_slider_wrapper{
+	position:relative
+}
+
+.rev_slider_wrapper .shadow-left{
+	position:absolute;
+	pointer-events:none;
+	background-image:url(http://localhost/gv/wp-content/themes/avada/images/shadow-top.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	height:42px;
+	width:100%;
+	top:0;
+	z-index:99;
+}
+
+.rev_slider_wrapper .shadow-left{top:-1px;}
+
+.rev_slider_wrapper .shadow-right{
+	position:absolute;
+	pointer-events:none;
+	background-image:url(http://localhost/gv/wp-content/themes/avada/images/shadow-bottom.png);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	height:32px;
+	width:100%;
+	bottom:0;
+	z-index:99;
+}
+
+.avada-skin-rev{
+	border-top: 1px solid #d2d3d4;
+	border-bottom: 1px solid #d2d3d4;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	//overflow: hidden !important;
+}
+
+.tparrows{border-radius:0;}
+
+.rev_slider_wrapper .tp-leftarrow, .rev_slider_wrapper .tp-rightarrow{
+	background:none;
+	background-color: rgba(0, 0, 0, 0.5) ;
+	width: 63px !important;
+	height: 63px !important;
+	position: absolute;
+	top: 50%;
+	margin-top:-31px;
+	opacity:0.8;
+	position:absolute;
+	color:#fff;
+}
+
+.rev_slider_wrapper .tp-leftarrow:before{
+	content:"\e61e";
+	-webkit-font-smoothing: antialiased;
+}
+
+.rev_slider_wrapper .tp-rightarrow:before{
+	content:"\e620";
+	-webkit-font-smoothing: antialiased;
+}
+
+.rev_slider_wrapper .tp-leftarrow:before, .rev_slider_wrapper .tp-rightarrow:before{
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    font-family: IcoMoon;
+    height: 63px;
+    margin: 21px 0 0 0;
+    padding:0;
+    width: 63px;
+}
+
+.rev_slider_wrapper .tp-leftarrow:before{
+	margin-left: -2px;
+}
+
+.rev_slider_wrapper .tp-rightarrow:before{
+	margin-left: -1px;
+}
+
+.rev_slider_wrapper .tp-rightarrow{
+	left:auto;
+	right:0;
+}
+
+.no-rgba .rev_slider_wrapper .tp-leftarrow, .no-rgba .rev_slider_wrapper .tp-rightarrow{
+	background-color:#ccc ;
+}
+
+.rev_slider_wrapper:hover .tp-leftarrow,.rev_slider_wrapper:hover .tp-rightarrow{
+	display:block;
+	opacity:0.8;
+}
+
+.rev_slider_wrapper .tp-leftarrow:hover, .rev_slider_wrapper .tp-rightarrow:hover{
+	opacity:1;
+}
+
+.rev_slider_wrapper .tp-leftarrow{
+	background-position: 19px 19px ;
+	left: 0;
+	margin-left:0;
+	z-index:100;
+	opacity: 0;
+}
+
+.rev_slider_wrapper .tp-rightarrow{
+	background-position: 29px 19px ;
+	right: 0 ;
+	margin-left:0;
+	z-index:100;
+	opacity: 0;
+}
+
+.tp-bullets .bullet.last{
+	clear:none;
+}
+
+
+
+.woocommerce form.checkout .col-2, .woocommerce form.checkout #order_review_heading, .woocommerce form.checkout #order_review {
+	display: none;
+}
+
+
+.imageframe-glow img{
+		-moz-box-shadow: 0 0 3px rgba(0,0,0,.3);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.3);
+		box-shadow: 0 0 3px rgba(0,0,0,.3);
+	}.imageframe-dropshadow img{
+		-moz-box-shadow: 2px 3px 7px rgba(0,0,0,.3);
+		-webkit-box-shadow: 2px 3px 7px rgba(0,0,0,.3);
+		box-shadow: 2px 3px 7px rgba(0,0,0,.3);
+	}	
+		#wrapper{
+		width:100%;
+	}
+	//.wrapper_blank { display: block; }
+	@media only screen and (min-width: 801px) and (max-width: 1014px){
+		#wrapper{
+			width:auto;
+		}
+	}
+	@media only screen and (min-device-width: 801px) and (max-device-width: 1014px){
+		#wrapper{
+			width:auto;
+		}
+	}
+	
+	
+	
+		.page-title-container{
+		background-image:url(http://localhost/gv/wp-content/themes/Avada/images/page_title_bg.png);
+	}
+	
+		.page-title-container{
+		background-color:#F6F6F6;
+	}
+	
+	#header{
+			}
+
+	#header{
+					}
+
+	
+	#main{
+		
+				padding-top: 55px;
+		
+				padding-bottom: 40px;
+			}
+
+	
+	#main{
+				
+		
+		
+	}
+
+	
+	.page-title-container{
+		
+		
+		
+		
+	}
+
+		.page-title-container{
+		height:87px;
+	}
+	
+	
+	
+	
+		.width-100 .fullwidth-box, .width-100 .fusion-section-separator {
+		margin-left: -0px; margin-right: -0px;
+	}
+	
+		
+	
+	.woocommerce-invalid:after { content: 'Please enter correct details for this required field.'; display: inline-block; margin-top: 7px; color: red; }
+
+	
+	
+		</style>
+
+			
+	
+			
+	
+				<script type="text/javascript">
+	WebFontConfig = {
+		google: { families: [ "Roboto:400,400italic,700,700italic:latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese", "Roboto+Slab:400,400italic,700,700italic:latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese" ] },		custom: { families: ['FontAwesome'],
+				  urls: 	['http://localhost/gv/wp-content/themes/avada/fonts/fontawesome/font-awesome.css']
+				}	};
+	(function() {
+		var wf = document.createElement('script');
+		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	})();
+	</script>
+	
+	
+	</head>
+<body class="single single-post postid-4977 single-format-video no-tablet-sticky-header no-mobile-sticky-header no-totop no-mobile-totop" data-spy="scroll">
+	<div id="wrapper" class="">
+					<div class="header-wrapper">
+				<div class="header-v2">
+		<div class="header-social">
+		<div class="avada-row">
+			<div class="alignleft">
+				<div class="fusion-social-links-header">
+<div class="fusion-social-networks"><a class="fusion-social-network-icon fusion-tooltip fusion-facebook icon-facebook" style="color:#bebdbd;" href="1" target="_blank" data-placement="bottom" data-title="Facebook" data-toggle="tooltip"></a><a class="fusion-social-network-icon fusion-tooltip fusion-rss icon-rss" style="color:#bebdbd;" href="1" target="_blank" data-placement="bottom" data-title="Rss" data-toggle="tooltip"></a><a class="fusion-social-network-icon fusion-tooltip fusion-twitter icon-twitter" style="color:#bebdbd;" href="1" target="_blank" data-placement="bottom" data-title="Twitter" data-toggle="tooltip"></a><a class="fusion-social-network-icon fusion-tooltip fusion-youtube icon-youtube" style="color:#bebdbd;" href="1" target="_blank" data-placement="bottom" data-title="Youtube" data-toggle="tooltip"></a><div class="fusion-clearfix"></div></div></div>
+			</div>
+			<div class="middle-search">
+				
+		<div id="53e81e8421fa3" class="sf_container">
+			<form role="search" method="get" class="searchform" action="http://localhost/gv/" >
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<div class="sf_search">
+						<input id="txtSearch" maxlength="45" name="s" type="text" class="sf_input i-search" value="Search" name="s" rel="Tìm bài hát, video, playlist, ca sĩ" autocomplete="off" autofocus="" />
+						<input id="btnSearch" type="submit" class="sf_button searchsubmit b-search" value="  " />
+					</div>
+				</div>
+			</form>
+		</div><a style="display:none" href="http://www.ajaxy.org">Powered by Ajaxy</a>
+		<script type="text/javascript">
+			/* <![CDATA[ */
+				function sf_custom_data_53e81e8421fa3(data){ 
+					data.show_category = "1";
+					data.show_post_category = "1";
+					data.post_types = "post";
+					return data;
+				}
+				jQuery(document).ready(function(){
+					jQuery("#53e81e8421fa3 .sf_input").ajaxyLiveSearch({"expand":"0","searchUrl":"http:\/\/localhost\/gv\/?s=%s","text":"Search","delay":"500","iwidth":"180","width":"315","ajaxUrl":"http:\/\/localhost\/gv\/wp-admin\/admin-ajax.php","ajaxData":"sf_custom_data_53e81e8421fa3","search":false,"rtl":"0"});					
+				});
+			/* ]]> */
+		</script>			</div>
+			<div class="alignright">
+												    <!-- /register/ -->
+					<a href="#" class="popup-login btn btn-primary btn-lg"><i class="fa fa-sign-in fa-lg login"></i> Log In</a>
+					<a href="#" class="popup-register btn btn-success btn-lg"><i class="fa fa-pencil fa-lg signup"></i> Register</a>
+							</div>
+		</div>
+	</div>
+		<header id="header">
+		<div class="avada-row main_nav" style="padding-top:0px;padding-bottom:0px;">
+			<!--<div class="logo" data-margin-right="" data-margin-left="" data-margin-top="" data-margin-bottom="" style="margin-right:;margin-top:;margin-left:;margin-bottom:;">
+				<a href="">
+					<img src="" alt="" class="normal_logo" />
+															<img src="" alt="" style="width:;max-height:; height: auto !important" class="retina_logo" />
+									</a>-->
+			<!--</div>-->
+			<nav>
+				<ul class="sky-mega-menu sky-mega-menu-response-to-icons sky-mega-menu-anim-flip">
+	<li class="menu-item fusion-dropdown-menu"><a href="http://localhost/gv"><i class="fa fa-home"> </i></a></li><li id="menu-item-4793" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-4793 fusion-dropdown-menu"><a    href="http://localhost/gv/category/dota/">Dota <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4797" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4797 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/gameplay-dota/">Gameplay</a></li>
+	<li id="menu-item-4795" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4795 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/characters-skills-dota/">Characters &#038; Skills</a></li>
+	<li id="menu-item-4794" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4794 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/beginner-dota/">Beginner</a></li>
+	<li id="menu-item-4799" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4799 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/public-clanwar-dota/">Public &#038; Clan War</a></li>
+	<li id="menu-item-4798" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4798 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/professional-player-dota/">Professional Player</a></li>
+	<li id="menu-item-4801" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4801 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/tournament-dota/">Tournament</a></li>
+	<li id="menu-item-4800" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4800 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/top-moments-dota/">Top Moments</a></li>
+	<li id="menu-item-4796" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4796 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/fun-corner-dota/">Fun Corner</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4802" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4802 fusion-dropdown-menu"><a    href="http://localhost/gv/category/lol/">League of Legends <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4806" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4806 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/gameplay-lol/">Gameplay</a></li>
+	<li id="menu-item-4804" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4804 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/characters-skills-lol/">Characters &#038; Skills</a></li>
+	<li id="menu-item-4803" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4803 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/beginner-lol/">Beginner</a></li>
+	<li id="menu-item-4808" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4808 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/public-clanwar-lol/">Public &#038; Clan War</a></li>
+	<li id="menu-item-4807" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4807 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/professional-player-lol/">Professional Player</a></li>
+	<li id="menu-item-4810" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4810 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/tournament-lol/">Tournament</a></li>
+	<li id="menu-item-4809" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4809 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/top-moments-lol/">Top Moments</a></li>
+	<li id="menu-item-4805" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4805 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/fun-corner-lol/">Fun Corner</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4811" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4811 fusion-dropdown-menu"><a    href="http://localhost/gv/category/smite/">Smite <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4815" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4815 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/gameplay-smite/">Gameplay</a></li>
+	<li id="menu-item-4813" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4813 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/characters-skills-smite/">Characters &#038; Skills</a></li>
+	<li id="menu-item-4812" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4812 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/beginner-smite/">Beginner</a></li>
+	<li id="menu-item-4817" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4817 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/public-clanwar-smite/">Public &#038; Clan War</a></li>
+	<li id="menu-item-4816" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4816 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/professional-player-smite/">Professional Player</a></li>
+	<li id="menu-item-4819" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4819 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/tournament-smite/">Tournament</a></li>
+	<li id="menu-item-4818" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4818 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/top-moments-smite/">Top Moments</a></li>
+	<li id="menu-item-4814" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4814 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/fun-corner-smite/">Fun Corner</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4820" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4820 fusion-dropdown-menu"><a    href="http://localhost/gv/category/starcraft/">StarCraft <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4821" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4821 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/campaign-smite/">Campaign</a></li>
+	<li id="menu-item-4823" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4823 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/gameplay-starcraft/">Gameplay</a></li>
+	<li id="menu-item-4824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4824 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/protoss/">Protoss</a></li>
+	<li id="menu-item-4825" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4825 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/terran/">Terran</a></li>
+	<li id="menu-item-4837" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4837 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/zerg/">Zerg</a></li>
+	<li id="menu-item-4827" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4827 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/tournament-starcraft/">Tournament</a></li>
+	<li id="menu-item-4826" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4826 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/top-moments-starcraft/">Top Moments</a></li>
+	<li id="menu-item-4822" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4822 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/cinematics-starcraft/">Cinematics</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4828" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4828 fusion-dropdown-menu"><a    href="http://localhost/gv/category/cod/">Call of Duty <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4835" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4835 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/weapon-cod/">Weapon</a></li>
+	<li id="menu-item-4831" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4831 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/ghosts-cod/">Ghosts</a></li>
+	<li id="menu-item-4829" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4829 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/black-ops-cod/">Black Ops</a></li>
+	<li id="menu-item-4832" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4832 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/modern-warfare-cod/">Modern Warfare</a></li>
+	<li id="menu-item-4836" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4836 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/world-at-war-cod/">World at War</a></li>
+	<li id="menu-item-4834" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4834 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/tournament-starcraft-cod/">Tournament</a></li>
+	<li id="menu-item-4833" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4833 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/top-moments-starcraft-cod/">Top Moments</a></li>
+	<li id="menu-item-4830" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4830 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/cinematics-starcraft-cod/">Cinematics</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4838 fusion-dropdown-menu"><a    href="http://localhost/gv/category/yolo/">YOLO <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4840 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/esports-yolo/">eSports</a></li>
+	<li id="menu-item-4842" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4842 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/funny-yolo/">Funny</a></li>
+	<li id="menu-item-4839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/adventure-yolo/">Adventure</a></li>
+	<li id="menu-item-4843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/horror-yolo/">Horror</a></li>
+	<li id="menu-item-4844" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4844 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/music-video-yolo/">Music Video</a></li>
+	<li id="menu-item-4841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4841 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/fighting-yolo/">Fighting</a></li>
+	<li id="menu-item-4845" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4845 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/racing-yolo/">Racing</a></li>
+	<li id="menu-item-4846" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4846 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/sports-yolo/">Sports</a></li>
+	<li id="menu-item-4847" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4847 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/strategy-yolo/">Strategy</a></li>
+</ul></div>
+</li>
+<li class="menu-item fusion-dropdown-menu"><a href="http://localhost/gv/forums/">Forum</a></li>		</ul>
+			</nav>
+		</div>
+		
+	</header>
+</div>				<div class="init-sticky-header"></div>		
+			</div>
+			
+<header id="header-sticky" class="sticky-header">
+<div class="sticky-shadow">
+	<div class="avada-row">
+		<div class="logo">
+			<a href="http://localhost/gv">
+				<img src="" alt="Game Veins" data-max-width="" class="normal_logo" />
+							</a>
+		</div>
+		<nav id="sticky-navigation">
+		<ul class="sky-mega-menu sky-mega-menu-response-to-icons sky-mega-menu-anim-flip">
+			<li class="menu-item fusion-dropdown-menu"><a href="http://localhost/gv"><i class="fa fa-home"> </i></a></li><li id="menu-item-4793" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-4793 fusion-dropdown-menu"><a    href="http://localhost/gv/category/dota/">Dota <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4797" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4797 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/gameplay-dota/">Gameplay</a></li>
+	<li id="menu-item-4795" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4795 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/characters-skills-dota/">Characters &#038; Skills</a></li>
+	<li id="menu-item-4794" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4794 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/beginner-dota/">Beginner</a></li>
+	<li id="menu-item-4799" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4799 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/public-clanwar-dota/">Public &#038; Clan War</a></li>
+	<li id="menu-item-4798" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4798 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/professional-player-dota/">Professional Player</a></li>
+	<li id="menu-item-4801" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4801 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/tournament-dota/">Tournament</a></li>
+	<li id="menu-item-4800" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4800 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/top-moments-dota/">Top Moments</a></li>
+	<li id="menu-item-4796" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4796 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/dota/fun-corner-dota/">Fun Corner</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4802" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4802 fusion-dropdown-menu"><a    href="http://localhost/gv/category/lol/">League of Legends <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4806" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4806 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/gameplay-lol/">Gameplay</a></li>
+	<li id="menu-item-4804" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4804 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/characters-skills-lol/">Characters &#038; Skills</a></li>
+	<li id="menu-item-4803" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4803 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/beginner-lol/">Beginner</a></li>
+	<li id="menu-item-4808" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4808 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/public-clanwar-lol/">Public &#038; Clan War</a></li>
+	<li id="menu-item-4807" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4807 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/professional-player-lol/">Professional Player</a></li>
+	<li id="menu-item-4810" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4810 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/tournament-lol/">Tournament</a></li>
+	<li id="menu-item-4809" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4809 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/top-moments-lol/">Top Moments</a></li>
+	<li id="menu-item-4805" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4805 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/lol/fun-corner-lol/">Fun Corner</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4811" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4811 fusion-dropdown-menu"><a    href="http://localhost/gv/category/smite/">Smite <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4815" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4815 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/gameplay-smite/">Gameplay</a></li>
+	<li id="menu-item-4813" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4813 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/characters-skills-smite/">Characters &#038; Skills</a></li>
+	<li id="menu-item-4812" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4812 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/beginner-smite/">Beginner</a></li>
+	<li id="menu-item-4817" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4817 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/public-clanwar-smite/">Public &#038; Clan War</a></li>
+	<li id="menu-item-4816" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4816 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/professional-player-smite/">Professional Player</a></li>
+	<li id="menu-item-4819" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4819 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/tournament-smite/">Tournament</a></li>
+	<li id="menu-item-4818" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4818 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/top-moments-smite/">Top Moments</a></li>
+	<li id="menu-item-4814" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4814 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/smite/fun-corner-smite/">Fun Corner</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4820" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4820 fusion-dropdown-menu"><a    href="http://localhost/gv/category/starcraft/">StarCraft <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4821" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4821 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/campaign-smite/">Campaign</a></li>
+	<li id="menu-item-4823" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4823 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/gameplay-starcraft/">Gameplay</a></li>
+	<li id="menu-item-4824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4824 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/protoss/">Protoss</a></li>
+	<li id="menu-item-4825" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4825 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/terran/">Terran</a></li>
+	<li id="menu-item-4837" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4837 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/zerg/">Zerg</a></li>
+	<li id="menu-item-4827" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4827 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/tournament-starcraft/">Tournament</a></li>
+	<li id="menu-item-4826" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4826 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/top-moments-starcraft/">Top Moments</a></li>
+	<li id="menu-item-4822" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4822 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/starcraft/cinematics-starcraft/">Cinematics</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4828" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4828 fusion-dropdown-menu"><a    href="http://localhost/gv/category/cod/">Call of Duty <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4835" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4835 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/weapon-cod/">Weapon</a></li>
+	<li id="menu-item-4831" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4831 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/ghosts-cod/">Ghosts</a></li>
+	<li id="menu-item-4829" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4829 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/black-ops-cod/">Black Ops</a></li>
+	<li id="menu-item-4832" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4832 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/modern-warfare-cod/">Modern Warfare</a></li>
+	<li id="menu-item-4836" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4836 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/world-at-war-cod/">World at War</a></li>
+	<li id="menu-item-4834" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4834 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/tournament-starcraft-cod/">Tournament</a></li>
+	<li id="menu-item-4833" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4833 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/top-moments-starcraft-cod/">Top Moments</a></li>
+	<li id="menu-item-4830" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4830 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/cod/cinematics-starcraft-cod/">Cinematics</a></li>
+</ul></div>
+</li>
+<li id="menu-item-4838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4838 fusion-dropdown-menu"><a    href="http://localhost/gv/category/yolo/">YOLO <span class="caret"></span></a>
+<div class="grid-container3"><ul class="sub-menu">
+	<li id="menu-item-4840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4840 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/esports-yolo/">eSports</a></li>
+	<li id="menu-item-4842" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4842 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/funny-yolo/">Funny</a></li>
+	<li id="menu-item-4839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/adventure-yolo/">Adventure</a></li>
+	<li id="menu-item-4843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/horror-yolo/">Horror</a></li>
+	<li id="menu-item-4844" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4844 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/music-video-yolo/">Music Video</a></li>
+	<li id="menu-item-4841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4841 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/fighting-yolo/">Fighting</a></li>
+	<li id="menu-item-4845" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4845 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/racing-yolo/">Racing</a></li>
+	<li id="menu-item-4846" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4846 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/sports-yolo/">Sports</a></li>
+	<li id="menu-item-4847" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4847 fusion-dropdown-submenu"><a    href="http://localhost/gv/category/yolo/strategy-yolo/">Strategy</a></li>
+</ul></div>
+</li>
+<li class="menu-item fusion-dropdown-menu"><a href="http://localhost/gv/forums/">Forum</a></li>								</ul>
+		</nav>
+				<div class="mobile-nav-holder"></div>
+			</div>
+	</div>
+</header>
+	<div id="sliders-container">
+		</div>
+								<div id="main" class="clearfix " style="">
+		<div class="avada-row" style=""><!-- <link rel="stylesheet" type="text/css" media="all" href="http://localhost/gv/wp-content/themes/avada-child/single-dota.css?e7637f" /> -->
+
+				<span title="Amazing !" class="post-single-rate post-small-rate stars-small"><span style="width:%"></span></span>
+						<!-- <iframe width="920" height="315" src="//www.youtube.com/embed/nzYNyDF_nDk?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe> -->
+
+<div class="flexslider post-slideshow">
+	<ul class="slides">
+		<li>
+			<div class="full-video">
+									<iframe width="854" height="480" src="https://www.youtube.com/embed/nzYNyDF_nDk?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+							</div>
+		</li>
+	</ul>
+</div>
+
+
+<div id="content" class="single-post-content">
+		<div id="post-4977" class="post-4977 post type-post status-publish format-video hentry category-gameplay-dota tag-beginner-dota tag-gameplay-dota tag-quill18 post">
+														<h2 class="entry-title">Dota 2: A Complete Beginner&#8217;s Guide</h2>
+		
+
+
+
+
+
+<div class="details">
+	<div class="user">
+		<img src="http://localhost/gv/wp-content/plugins/userpro/lib/timthumb.php?src=%2Fwp-content%2Fuploads%2Fuserpro%2F5%2F539735428b87d.jpg&amp;w=52&amp;h=52&amp;a=t&amp;q=100" width="52" height="52" alt="" class="modified avatar" />		<div class="user-data">
+			<h4>
+			<a href="http://localhost/gv/author/resolution/" title="Posts by Resolution" rel="author">Resolution</a>			</h4>
+			<p>
+				<i class="fa fa-video-camera"></i>
+				58				Videos
+			</p>
+		</div>
+		
+	</div>
+	<div class="ratings">
+		
+			<div class="kk-star-ratings  top-left lft" data-id="4977">
+			    <div class="kksr-stars kksr-star gray">
+			        <div class="kksr-fuel kksr-star yellow" style="width:0%;"></div>
+			        <!-- kksr-fuel --><a href="#1"></a><a href="#2"></a><a href="#3"></a><a href="#4"></a><a href="#5"></a>
+			    </div>
+			    <!-- kksr-stars -->
+			    <div class="kksr-legend"><div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review-aggregate"><span property="v:itemreviewed" class="kksr-title">Dota 2: A Complete Beginner&#8217;s Guide</span><span class="tooltip-rating" rel="v:rating">    <span typeof="v:Rating"><span property="v:average">4.73</span> average based on <span property="v:votes">52</span> ratings    </span></span></div></div>
+			    <!-- kksr-legend -->
+			</div>
+			<!-- kk-star-ratings -->
+				</div>
+	<div class="video-toolbar-item pull-right video-toolbar-item-like-bar">
+                        <div class="wrap-toolbar-item">
+						  <style type="text/css">
+                              .video-toolbar-item.like-dislike .status{display:none !important;}
+							  .video-toolbar-item.like-dislike:hover .status{display:none !important;}</style>                            
+							  <div class="like-bar"><span style="width:100%"><!----></span></div>
+                            <div class="like-dislike pull-right">
+                            	<a href="#" data-status="like" class="vid-feeling" data-post_id="4977"> <span class="like"><img src="http://localhost/gv/wp-content/images/pixel.gif?e7637f" width="16" height="18" title="Like" /><span class="like_count">1</span></span></a>
+                            	<a href="#" data-status="dislike" class="vid-feeling" data-post_id="4977"> <span class="dislike"><img src="http://localhost/gv/wp-content/images/pixel.gif?e7637f" width="16" height="18" title="Dislike" /><span class="dislike_count">0</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+	<div class="clr"></div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="post-content">
+								</div>
+		
+				<div class="fusion-sharing-box share-box">
+			<h4>Share This Story, Choose Your Platform!</h4>
+			<div class="fusion-social-networks boxed-icons">
+				<a class="fusion-social-network-icon fusion-tooltip fusion-facebook icon-facebook" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="http://www.facebook.com/sharer.php?m2w&amp;s=100&amp;p[url]=http://theme-fusion.com/avada/donec-at-mauris-enim-duis-nisi-tellus/&amp;p[images][0]=http://www.gravatar.com/avatar/2f8ec4a9ad7a39534f764d749e001046.png&amp;p[title]=Blog+Video+Post" target="_blank" data-placement="top" data-title="Facebook" data-toggle="tooltip" data-original-title="" title=""></a><a class="fusion-social-network-icon fusion-tooltip fusion-twitter icon-twitter" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="http://twitter.com/home?status=Blog+Video+Post http://theme-fusion.com/avada/donec-at-mauris-enim-duis-nisi-tellus/" target="_blank" data-placement="top" data-title="Twitter" data-toggle="tooltip" data-original-title="" title=""></a><a class="fusion-social-network-icon fusion-tooltip fusion-pinterest icon-pinterest" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftheme-fusion.com%2Favada%2Fdonec-at-mauris-enim-duis-nisi-tellus%2F&amp;description=Blog%2BVideo%2BPost&amp;media=" target="_blank" data-placement="top" data-title="Pinterest" data-toggle="tooltip" data-original-title="" title=""></a><a class="fusion-social-network-icon fusion-tooltip fusion-tumblr icon-tumblr" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Ftheme-fusion.com%2Favada%2Fdonec-at-mauris-enim-duis-nisi-tellus%2F&amp;name=Blog%2BVideo%2BPost&amp;description=Blog+Video+Post" target="_blank" data-placement="top" data-title="Tumblr" data-toggle="tooltip" data-original-title="" title=""></a><a class="fusion-social-network-icon fusion-tooltip fusion-googleplus icon-googleplus" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="https://plus.google.com/share?url=http://theme-fusion.com/avada/donec-at-mauris-enim-duis-nisi-tellus/&quot; onclick=&quot;javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="_blank" data-placement="top" data-title="Googleplus" data-toggle="tooltip" data-original-title="" title=""></a><a class="fusion-social-network-icon fusion-tooltip fusion-linkedin icon-linkedin" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="http://linkedin.com/shareArticle?mini=true&amp;url=http://theme-fusion.com/avada/donec-at-mauris-enim-duis-nisi-tellus/&amp;title=Blog+Video+Post" target="_blank" data-placement="top" data-title="Linkedin" data-toggle="tooltip" data-original-title="" title=""></a><a class="fusion-social-network-icon fusion-tooltip fusion-reddit icon-reddit" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="http://reddit.com/submit?url=http://theme-fusion.com/avada/donec-at-mauris-enim-duis-nisi-tellus/&amp;title=Blog+Video+Post" target="_blank" data-placement="top" data-title="Reddit" data-toggle="tooltip" data-original-title="" title=""></a><a class="fusion-social-network-icon fusion-tooltip fusion-mail icon-mail" style="color:#bebdbd;background-color:#e8e8e8;border-color:#e8e8e8;border-radius:4px;" href="mailto:?subject=Blog+Video+Post&amp;body=http://theme-fusion.com/avada/donec-at-mauris-enim-duis-nisi-tellus/" target="_blank" data-placement="top" data-title="Mail" data-toggle="tooltip" data-original-title="" title=""></a>
+				<div class="fusion-clearfix">
+				</div>
+			</div>
+		</div>
+
+				
+
+		
+		<div class="clr"></div>
+		<p class="vid_description">Posted on June 11, 2014</p>
+		<article class="description-wrapper">
+	        <div class="video-description">
+	        	<p>From Wikipedia:</p>
+<p>Dota 2 is a 2013 multiplayer online battle arena video game and the stand-alone sequel to the Defense of the Ancients (DotA) mod. Developed by Valve Corporation, Dota 2 was officially released on July 9, 2013 as a free-to-play title for Microsoft Windows, concluding a beta testing phase that began in 2011. OS X and Linux versions of Dota 2 were released on July 18, 2013. In most regions, the game is available exclusively through Valve&#8217;s content-delivery platform, Steam.</p>
+<p>Each match of Dota 2 is independent and involves two five-player teams, each of which occupies a stronghold at an end of the map. Located in each stronghold is a building called the &#8220;Ancient&#8221;; to win, a team must destroy the enemy&#8217;s Ancient. Each player controls a &#8220;Hero&#8221; character and focuses on leveling up, collecting gold, acquiring items and fighting against the other team to achieve victory.</p>
+<p>Development of Dota 2 began in 2009, when DotA developer IceFrog was hired as lead designer. Dota 2 was praised by video game critics, who lauded it for its rewarding gameplay, enhanced production quality and faithfulness to its predecessor. However, the game was criticised for its steep learning curve and inhospitable community. Dota 2 has become the most actively played game on Steam, with highest daily peaks at over 700,000 concurrent players.</p>
+<p>You need to <a href="http://localhost/gv/wp-login.php?redirect_to=http%3A%2F%2Flocalhost%2Fgv%2Fdota%2Fgameplay-dota%2Fdota-2-a-complete-beginners-guide-2%2F">login</a> or <a href="http://localhost/gv/wp-login.php?action=register&redirect_to=http://localhost/gv/dota/gameplay-dota/dota-2-a-complete-beginners-guide-2/">register</a> to bookmark/favorite this content.</p>	        </div>
+        </article>
+
+        <div class="vid_categories">
+        	<span class="vid_cat_icon">
+				<i class="fa fa-folder-open-o"></i>
+				<span>Categories:</span> 
+        	</span>
+        	<div class="vid_cat_btn">
+        						<a class="btn btn-cyan" href="http://localhost/gv/category/dota/gameplay-dota/" title="View all posts in Gameplay">Gameplay</a>
+    			        	</div>
+        </div>
+
+		<div class="vid_tags">
+        	<span class="vid_tag_icon">
+				<i class="fa fa-tags"></i>
+				<span>Tags:</span> 
+        	</span>
+			<div class="vid_tag_btn">
+        						<a href="http://localhost/gv/tag/beginner-dota/" rel="tag" title="View all posts tagged with Beginner">Beginner</a>
+    								<a href="http://localhost/gv/tag/gameplay-dota/" rel="tag" title="View all posts tagged with Gameplay">Gameplay</a>
+    								<a href="http://localhost/gv/tag/quill18/" rel="tag" title="View all posts tagged with quill18">quill18</a>
+    			        	</div>
+        </div>
+
+								
+
+					
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://localhost/gv/dota/gameplay-dota/dota-2-a-complete-beginners-guide-2/';
+    var disqus_identifier = '4977 http://www.gameveins.com/dota-2-a-complete-beginners-guide-2/';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'gameveins';
+    var disqus_title = "Dota 2: A Complete Beginner&#8217;s Guide";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=4977';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/localhost\/gv\/dota\/gameplay-dota\/dota-2-a-complete-beginners-guide-2\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+					</div>
+	</div>
+<div id="sidebar" class="single-post-sidebar">
+	<div class="posts-list">
+		<ul>
+			</ul>
+	</div>
+</div>
+
+
+		</div>
+	</div>
+						<footer id="footer">
+		<div class="avada-row">
+			<div class="copyright-area-content">
+				<div class="copyright">
+					<div>© 2014 Gameveins.com. All rights reserved.</div>
+				</div>
+				<div class="fusion-social-links-footer">
+				<div class="fusion-social-networks"><a class="fusion-social-network-icon fusion-tooltip fusion-facebook icon-facebook" style="color:#46494a;" href="1" target="_blank" data-placement="top" data-title="Facebook" data-toggle="tooltip"></a><a class="fusion-social-network-icon fusion-tooltip fusion-rss icon-rss" style="color:#46494a;" href="1" target="_blank" data-placement="top" data-title="Rss" data-toggle="tooltip"></a><a class="fusion-social-network-icon fusion-tooltip fusion-twitter icon-twitter" style="color:#46494a;" href="1" target="_blank" data-placement="top" data-title="Twitter" data-toggle="tooltip"></a><a class="fusion-social-network-icon fusion-tooltip fusion-youtube icon-youtube" style="color:#46494a;" href="1" target="_blank" data-placement="top" data-title="Youtube" data-toggle="tooltip"></a><div class="fusion-clearfix"></div></div>				</div>
+			</div>
+		</div>
+	</footer>
+			</div><!-- wrapper -->
+		
+	<!-- W3TC-include-js-head -->
+
+	<div id="wpmudev-chat-box-bottom_corner" style="display:none;" class="wpmudev-chat-box wpmudev-chat-box-site wpmudev-chat-box-site wpmudev-chat-box-can-minmax wpmudev-chat-box-invite- wpmudev-chat-box-min wpmudev-chat-box-sound-on wpmudev-chat-session-open"></div><div id="responsive-menu"><div class="menu-visitor-container"><ul id="menu-visitor" class="responsive-menu"><li class="menu-item fusion-dropdown-menu"><a href="http://localhost/gv"><i class="fa fa-home"> </i></a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-4793"><a href="http://localhost/gv/category/dota/">Dota</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4797"><a href="http://localhost/gv/category/dota/gameplay-dota/">Gameplay</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4795"><a href="http://localhost/gv/category/dota/characters-skills-dota/">Characters &#038; Skills</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4794"><a href="http://localhost/gv/category/dota/beginner-dota/">Beginner</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4799"><a href="http://localhost/gv/category/dota/public-clanwar-dota/">Public &#038; Clan War</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4798"><a href="http://localhost/gv/category/dota/professional-player-dota/">Professional Player</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4801"><a href="http://localhost/gv/category/dota/tournament-dota/">Tournament</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4800"><a href="http://localhost/gv/category/dota/top-moments-dota/">Top Moments</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4796"><a href="http://localhost/gv/category/dota/fun-corner-dota/">Fun Corner</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4802"><a href="http://localhost/gv/category/lol/">League of Legends</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4806"><a href="http://localhost/gv/category/lol/gameplay-lol/">Gameplay</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4804"><a href="http://localhost/gv/category/lol/characters-skills-lol/">Characters &#038; Skills</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4803"><a href="http://localhost/gv/category/lol/beginner-lol/">Beginner</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4808"><a href="http://localhost/gv/category/lol/public-clanwar-lol/">Public &#038; Clan War</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4807"><a href="http://localhost/gv/category/lol/professional-player-lol/">Professional Player</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4810"><a href="http://localhost/gv/category/lol/tournament-lol/">Tournament</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4809"><a href="http://localhost/gv/category/lol/top-moments-lol/">Top Moments</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4805"><a href="http://localhost/gv/category/lol/fun-corner-lol/">Fun Corner</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4811"><a href="http://localhost/gv/category/smite/">Smite</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4815"><a href="http://localhost/gv/category/smite/gameplay-smite/">Gameplay</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4813"><a href="http://localhost/gv/category/smite/characters-skills-smite/">Characters &#038; Skills</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4812"><a href="http://localhost/gv/category/smite/beginner-smite/">Beginner</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4817"><a href="http://localhost/gv/category/smite/public-clanwar-smite/">Public &#038; Clan War</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4816"><a href="http://localhost/gv/category/smite/professional-player-smite/">Professional Player</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4819"><a href="http://localhost/gv/category/smite/tournament-smite/">Tournament</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4818"><a href="http://localhost/gv/category/smite/top-moments-smite/">Top Moments</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4814"><a href="http://localhost/gv/category/smite/fun-corner-smite/">Fun Corner</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4820"><a href="http://localhost/gv/category/starcraft/">StarCraft</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4821"><a href="http://localhost/gv/category/starcraft/campaign-smite/">Campaign</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4823"><a href="http://localhost/gv/category/starcraft/gameplay-starcraft/">Gameplay</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4824"><a href="http://localhost/gv/category/starcraft/protoss/">Protoss</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4825"><a href="http://localhost/gv/category/starcraft/terran/">Terran</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4837"><a href="http://localhost/gv/category/starcraft/zerg/">Zerg</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4827"><a href="http://localhost/gv/category/starcraft/tournament-starcraft/">Tournament</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4826"><a href="http://localhost/gv/category/starcraft/top-moments-starcraft/">Top Moments</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4822"><a href="http://localhost/gv/category/starcraft/cinematics-starcraft/">Cinematics</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4828"><a href="http://localhost/gv/category/cod/">Call of Duty</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4835"><a href="http://localhost/gv/category/cod/weapon-cod/">Weapon</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4831"><a href="http://localhost/gv/category/cod/ghosts-cod/">Ghosts</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4829"><a href="http://localhost/gv/category/cod/black-ops-cod/">Black Ops</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4832"><a href="http://localhost/gv/category/cod/modern-warfare-cod/">Modern Warfare</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4836"><a href="http://localhost/gv/category/cod/world-at-war-cod/">World at War</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4834"><a href="http://localhost/gv/category/cod/tournament-starcraft-cod/">Tournament</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4833"><a href="http://localhost/gv/category/cod/top-moments-starcraft-cod/">Top Moments</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4830"><a href="http://localhost/gv/category/cod/cinematics-starcraft-cod/">Cinematics</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4838"><a href="http://localhost/gv/category/yolo/">YOLO</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4840"><a href="http://localhost/gv/category/yolo/esports-yolo/">eSports</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4842"><a href="http://localhost/gv/category/yolo/funny-yolo/">Funny</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839"><a href="http://localhost/gv/category/yolo/adventure-yolo/">Adventure</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843"><a href="http://localhost/gv/category/yolo/horror-yolo/">Horror</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4844"><a href="http://localhost/gv/category/yolo/music-video-yolo/">Music Video</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4841"><a href="http://localhost/gv/category/yolo/fighting-yolo/">Fighting</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4845"><a href="http://localhost/gv/category/yolo/racing-yolo/">Racing</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4846"><a href="http://localhost/gv/category/yolo/sports-yolo/">Sports</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4847"><a href="http://localhost/gv/category/yolo/strategy-yolo/">Strategy</a></li>
+</ul>
+</li>
+<li class="menu-item fusion-dropdown-menu"><a href="http://localhost/gv/forums/">Forum</a></li></ul></div><form action="http://localhost/gv" id="responsiveSearch" method="get" role="search">
+
+                        <input type="text" name="s" value="" placeholder="Search" id="responsiveSearchInput">
+
+                    </form></div><div id="click-menu"><img id="RM3Lines" src="http://localhost/gv/wp-content/uploads/2014/05/Game-Center-Logo-1.png?e7637f" class="click-menu-image" /></div>
+
+
+
+
+<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="http://localhost/gv/wp-content/plugins/usernoise/images/ok.png?e7637f" id="thankyou-image" alt="Close"/></a>
+</div>
+<script type='text/javascript' src="http://localhost/gv/wp-content/themes/avada/js/script.js?e7637f"></script>
+
+	
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="http://localhost/gv/wp-content/themes/avada/js/respond.js?e7637f"></script>
+	<![endif]-->
+</body>
+</html>
+<!-- W3 Total Cache used in preview mode -->
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+Database Caching 3/156 queries in 0.250 seconds using disk
+Object Caching 6471/6849 objects using disk
+
+ Served from: localhost @ 2014-08-11 01:38:13 by W3 Total Cache -->
