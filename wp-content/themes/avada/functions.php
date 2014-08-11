@@ -1,4 +1,21 @@
 <?php
+
+// Move jQuery and jquery migrate to bottom
+// add_action( 'wp_enqueue_scripts', 'register_jquery' );
+// function register_jquery() {
+    // wp_deregister_script( 'jquery' );
+    // wp_register_script( 'jquery', ( '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' ), false, null, true );
+    // wp_enqueue_script( 'jquery' );
+// }
+
+// add_action( 'wp_enqueue_scripts', 'register_jquery_migrate' );
+// function register_jquery_migrate() {
+    // wp_deregister_script( 'jquery-migrate' );
+    // wp_register_script( 'jquery-migrate', ( '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js' ), false, null, true );
+    // wp_enqueue_script( 'jquery-migrate' );
+// }
+
+
 function de_style() {
 	// Dequeue jQuery
 	wp_dequeue_style( 'usernoise-adminbar' );
@@ -108,14 +125,6 @@ function de_style() {
 add_action( 'wp_enqueue_scripts', 'de_style', 100 );
 
 function de_script() {
-	// Dequeue jQuery
-	wp_dequeue_script( 'jQuery' );
-    wp_deregister_script( 'jQuery' );
-	
-	// Dequeue jQuery
-	wp_dequeue_script( 'jQuery-migrate' );
-    wp_deregister_script( 'jQuery-migrate' );
-	
 	// Dequeue usernoise
 	wp_dequeue_script( 'usernoise' );
     wp_deregister_script( 'usernoise' );

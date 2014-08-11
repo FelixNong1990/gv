@@ -235,7 +235,7 @@ get_header(); ?>
 				<div class="item">
 					<div class="box">
 						<div class="he-wrap tpl4">
-							<div class="rounded-div" style="background: url('http://i1.ytimg.com/vi/<?php echo $vidIdArr[$n]; ?>/mqdefault.jpg'); background-size: 100% 100%;"></div>
+							<div class="rounded-div" data-original="http://i1.ytimg.com/vi/<?php echo $vidIdArr[$n]; ?>/mqdefault.jpg" style="background-image: url('http://www.appelsiini.net/projects/lazyload/img/grey.gif'); background-size: 100% 100%;"></div>
 							<div class="he-view">
 								<div class="bg">
 									<div class="a0" data-animate="fadeIn"></div>
