@@ -885,5 +885,7 @@ jQuery(document).ready(function($) {
 		effect : "fadeIn",
 		threshold: -80
 	});
+	
+	$("img.icon_play").lazyload();
       
 });

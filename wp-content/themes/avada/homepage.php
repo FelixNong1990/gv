@@ -47,9 +47,27 @@ get_header(); ?>
 		<div class="advanced-slider slider-pro video-slider" id="slider-pro-1" tabindex="0" style="width: 100%; height: 430px;">
 			<div class="slides">
 				<?php
-					$catquery = new WP_Query( array('category_name'=> 'featured' , 'posts_per_page' => 5) );
+					$catquery = new WP_Query( array(
+							'category_name'=> 'featured' , 
+							'posts_per_page' => 3,
+							'post_type'      		 => 'post',
+							'post_status'            => 'publish',
+							'orderby'                => 'date',
+							'order'                  => 'DESC',		
+							'no_found_rows'          => true,
+							'update_post_term_cache' => false,
+							'update_post_meta_cache' => false
+							//'cache_results'          => true
+						) 
+					);
 					while($catquery->have_posts()) : $catquery->the_post();
 					$post_id = get_the_ID();
+					
+					// $meta = get_post_meta( $post_id );
+					// echo "<pre>";
+					// print_r($meta);
+					// echo "</pre>";
+					
 					$ratings = get_post_meta( $post_id, '_kksr_avg' , true );
 					$per = ($ratings/5)*100;
 					$views = getPostViews($post_id);
@@ -199,49 +217,68 @@ get_header(); ?>
 
 		<div class="owl-carousel">
 			<?php
-				$lpIdArr = array();
-				$vidIdArr = array();
-				$titleArr = array();
-				$args = array( 'numberposts' => '8', 'category_name' => $gameArr);
-				$recent_posts = wp_get_recent_posts( $args );
-				foreach( $recent_posts as $recent ){
-					//echo get_post_meta($recent['ID'], 'pyre_video', true);
-					array_push($lpIdArr, $recent);
-				};
+				// $lpIdArr = array();
+				// $vidIdArr = array();
+				// $titleArr = array();
+				// $args = array( 'numberposts' => '4', 'category_name' => $gameArr);
+				// $recent_posts = wp_get_recent_posts( $args );
+				// foreach( $recent_posts as $recent ){
+					// //echo get_post_meta($recent['ID'], 'pyre_video', true);
+					// array_push($lpIdArr, $recent);
+				// };
 				
-				foreach( $lpIdArr as $lpIdArr ){
-					$url = get_post_meta($lpIdArr['ID'], 'post_meta_embed_code', true);
-					if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match)) {
-						$video_id = $match[1];
-						array_push($vidIdArr, $video_id);
-					};
+				// foreach( $lpIdArr as $lpIdArr ){
+					// $url = get_post_meta($lpIdArr['ID'], 'post_meta_embed_code', true);
+					// if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match)) {
+						// $video_id = $match[1];
+						// array_push($vidIdArr, $video_id);
+					// };
 
-					$title = get_the_title($lpIdArr['ID']);
-					array_push($titleArr, $title);
-				};
+					// $title = get_the_title($lpIdArr['ID']);
+					// array_push($titleArr, $title);
+				// };
 
 				$n = 0;
-				$catquery = new WP_Query( array('category_name'=> $gameArr , 'posts_per_page' => 8) );
+				$catquery = new WP_Query( array(
+							'category_name'  		 => $gameArr , 
+							'posts_per_page' 		 => 4,
+							'post_type'      		 => 'post',
+							'post_status'            => 'publish',
+							'orderby'                => 'date',
+							'order'                  => 'DESC',		
+							'no_found_rows'          => true,
+							//'update_post_term_cache' => false,
+							//'update_post_meta_cache' => false,
+							'cache_results'          => true
+					)
+				);
+				
+				
 				while($catquery->have_posts()) : $catquery->the_post();
 				$post_id = get_the_ID();
 				$views = getPostViews($post_id);
+				$rating = get_post_meta( $post_id, '_kksr_avg' , true );
+				$percentage = ($ratings/5)*100;
 				$author_id=$post->post_author;
 				$author_url = get_author_posts_url($author_id);
 				$post_like_count = getTotalLike($post_id) ?: 0;
 				$post_dislike_count = getTotalDislike($post_id) ?: 0;
 				$published_date = get_the_time('F j, Y', $post_id);
+				$embed = get_post_meta($post_id, 'post_meta_embed_code', true);
+				$vid_info = getVideoInfo($embed);
+				$vidId = $vid_info['video_id'];
 			?>
 			<div class="fusion-animated" data-animationtype="fadeInUp" data-animationduration="1">
 				<div class="item">
 					<div class="box">
 						<div class="he-wrap tpl4">
-							<div class="rounded-div" data-original="http://i1.ytimg.com/vi/<?php echo $vidIdArr[$n]; ?>/mqdefault.jpg" style="background-image: url('http://www.appelsiini.net/projects/lazyload/img/grey.gif'); background-size: 100% 100%;"></div>
+							<div class="rounded-div" data-original="http://i1.ytimg.com/vi/<?php echo $vidId; ?>/mqdefault.jpg" style="background-image: url('<?php echo content_url(); ?>/images/blank.gif'); background-size: 100% 100%;"></div>
 							<div class="he-view">
 								<div class="bg">
 									<div class="a0" data-animate="fadeIn"></div>
 								</div>
 								<div class="content">
-									<a class="he-link" href="<?php the_permalink(); ?>"><img class="a0 icon_play" data-animate="jellyInDown" src="<?php echo content_url(); ?>/images/icon_play.png" /></a>
+									<a class="he-link" href="<?php the_permalink(); ?>"><img class="a0 icon_play" data-animate="jellyInDown" data-original="<?php echo content_url(); ?>/images/icon_play.png" src="<?php echo content_url(); ?>/images/blank.gif" /></a>
 								</div>
 							</div>
 						</div>
@@ -272,8 +309,8 @@ get_header(); ?>
 								?>
 							</div>
 							<div class="ca-ratings vid_ratings">
-								<span title="Ratings: <?php echo $ratings; ?>" class="post-small-rate">
-									<span style="width:<?php echo $per; ?>%"></span>
+								<span title="Ratings: <?php echo $rating; ?>" class="post-small-rate">
+									<span style="width:<?php echo $percentage; ?>%"></span>
 								</span>
 							</div>
 						</div>

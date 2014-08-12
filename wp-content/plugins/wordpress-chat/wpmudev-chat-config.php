@@ -1,1 +1,1 @@
-a:1:{s:7:"ABSPATH";s:84:"QzpcUHJvZ3JhbSBGaWxlc1xYQU1QUFx4YW1wcC13aW4zMi0xLjguMC1WQzlceGFtcHBcaHRkb2NzXGd2Lw==";}
+a:1:{s:7:"ABSPATH";s:28:"QzpceGFtcHBcaHRkb2NzXGd2Lw==";}
