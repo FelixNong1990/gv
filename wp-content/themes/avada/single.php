@@ -28,7 +28,7 @@ foreach ($category as $key) {
 		//update_post_meta( $post_id, '_kksr_avg', random_float(4,5));
 		//update_post_meta( $post_id, '_kksr_casts', rand(40,100));
 		// update_post_meta( $post_id, '_kksr_avg', 4.8);
-		// update_post_meta( $post_id, '_kksr_casts', 51);
+		// update_post_meta( $post_id, '_kksr_casts', 50);
 		// update_post_meta( $post_id, '_kksr_ips', 'YToxOntpOjA7czo5OiIxMjcuMC4wLjEiO30=');
 		// update_post_meta( $post_id, '_kksr_ratings', 240);
 	}

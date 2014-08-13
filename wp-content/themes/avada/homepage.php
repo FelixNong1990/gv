@@ -258,7 +258,7 @@ get_header(); ?>
 				$post_id = get_the_ID();
 				$views = getPostViews($post_id);
 				$rating = get_post_meta( $post_id, '_kksr_avg' , true );
-				$percentage = ($ratings/5)*100;
+				$percentage = ($rating/5)*100;
 				$author_id=$post->post_author;
 				$author_url = get_author_posts_url($author_id);
 				$post_like_count = getTotalLike($post_id) ?: 0;
