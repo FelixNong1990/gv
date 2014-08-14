@@ -52,3 +52,4 @@
 - Link facebook and other social network in user main profile
 - Check if gliphycon and fontawesome is working and correct all broken images path after optimized.
 - Change grey.gif image from lazy load official website to local image
+- Test if chat sound is working

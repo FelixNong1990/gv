@@ -21,21 +21,26 @@ foreach ($category as $key) {
 	   return ($min+lcg_value()*(abs($max-$min)));
 	}
 	
-	global $wpdb;
-	$results = $wpdb->get_results("SELECT * FROM gv_posts where post_status='publish' and post_type='post'",ARRAY_A);
-	foreach ($results as $key=>$val) {
-		$post_id = $val['ID'];
+	
+	//global $wpdb;
+	//$results = $wpdb->get_results("SELECT * FROM gv_posts where post_status='publish' and post_type='post'",ARRAY_A);
+	//foreach ($results as $key=>$val) {
+		//$post_id = $val['ID'];
 		//update_post_meta( $post_id, '_kksr_avg', random_float(4,5));
 		//update_post_meta( $post_id, '_kksr_casts', rand(40,100));
 		// update_post_meta( $post_id, '_kksr_avg', 4.8);
 		// update_post_meta( $post_id, '_kksr_casts', 50);
 		// update_post_meta( $post_id, '_kksr_ips', 'YToxOntpOjA7czo5OiIxMjcuMC4wLjEiO30=');
 		// update_post_meta( $post_id, '_kksr_ratings', 240);
-	}
+	//}
 ?>
 
 		<?php 
 			$id = get_the_ID();
+			//$meta = get_post_meta($id);
+			// echo "<pre>";
+			// print_r($meta);
+			// echo "</pre>";
 			//echo $id;
 			
 			//echo do_shortcode('[ajaxy-live-search show_category="1" show_post_category="1" post_types="post" label="Search" iwidth="180" delay="500" width="315" url="http://localhost/gv/?s=%s" border="1px solid #eee"]');

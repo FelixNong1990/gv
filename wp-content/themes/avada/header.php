@@ -21,7 +21,7 @@
 	<meta property='og:site_name' content='GameVeins' />
 	<meta property="og:image" content="http://i1.ytimg.com/vi/<?php echo $video_id; ?>/hqdefault.jpg" />
 	<meta name="description" content="<?php echo getBaseUrl(); ?>"/>
-	
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<title>
 	<?php
 	if ( defined('WPSEO_VERSION') ) {

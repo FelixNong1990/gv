@@ -4052,11 +4052,17 @@ class WPMUDEV_Chat {
 				}
 
 				if ($chat_session['box_sound'] == "enabled") {
+					//$content .= '<li class="wpmudev-chat-action-menu-item-sound-on"><a href="#" class="wpmudev-chat-action-sound" title="'.
+						//__('Turn chat sound off', $this->translation_domain) .'"><img height="16" width="16" src="'. plugins_url('/images/sound-on.png', __FILE__) .'" alt="'. __('Turn chat sound off', $this->translation_domain) .'" class="wpmudev-chat-sound-on" title="'. __('Turn chat sound off', $this->translation_domain).'" /></a></li>';
+
+					//$content .= '<li class="wpmudev-chat-action-menu-item-sound-off"><a href="#" class="wpmudev-chat-action-sound" title="'.
+						//__('Turn chat sound on', $this->translation_domain) .'"><img height="16" width="16" src="'. plugins_url('/images/sound-off.png', __FILE__) .'" alt="'. __('Turn chat sound on', $this->translation_domain) .'" class="wpmudev-chat-sound-off" title="'. __('Turn chat sound on', $this->translation_domain).'" /></a></li>';
+				
 					$content .= '<li class="wpmudev-chat-action-menu-item-sound-on"><a href="#" class="wpmudev-chat-action-sound" title="'.
-						__('Turn chat sound of', $this->translation_domain) .'"><img height="16" width="16" src="'. plugins_url('/images/sound-on.png', __FILE__) .'" alt="'. __('Turn chat sound off', $this->translation_domain) .'" class="wpmudev-chat-sound-on" title="'. __('Turn chat sound off', $this->translation_domain).'" /></a></li>';
+						__('Turn chat sound off', $this->translation_domain) .'"></a></li>';
 
 					$content .= '<li class="wpmudev-chat-action-menu-item-sound-off"><a href="#" class="wpmudev-chat-action-sound" title="'.
-						__('Turn chat sound on', $this->translation_domain) .'"><img height="16" width="16" src="'. plugins_url('/images/sound-off.png', __FILE__) .'" alt="'. __('Turn chat sound on', $this->translation_domain) .'" class="wpmudev-chat-sound-off" title="'. __('Turn chat sound on', $this->translation_domain).'" /></a></li>';
+						__('Turn chat sound on', $this->translation_domain) .'"></a></li>';
 				}
 
 

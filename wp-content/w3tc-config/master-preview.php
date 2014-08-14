@@ -429,7 +429,7 @@ return array(
 	'browsercache.other.etag' => true,
 	'browsercache.other.w3tc' => true,
 	'browsercache.other.replace' => true,
-	'browsercache.timestamp' => '1407913522',
+	'browsercache.timestamp' => '1408001498',
 	'browsercache.replace.exceptions' => array(
 		0 => '',
 	),
