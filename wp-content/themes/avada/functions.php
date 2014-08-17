@@ -120,6 +120,9 @@ function de_style() {
 	// Dequeue usernoise button
     wp_dequeue_style( 'jnewsticker_css' );
     wp_deregister_style( 'jnewsticker_css' );
+
+    wp_dequeue_style( 'avada-stylesheet' );
+    wp_deregister_style( 'avada-stylesheet' );
 }
  
 add_action( 'wp_enqueue_scripts', 'de_style', 100 );

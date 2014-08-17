@@ -22,6 +22,15 @@
 	<meta property="og:image" content="http://i1.ytimg.com/vi/<?php echo $video_id; ?>/hqdefault.jpg" />
 	<meta name="description" content="<?php echo getBaseUrl(); ?>"/>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+
+	<?php
+		if(is_front_page()){
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/home.css" />';
+	  	}else if(is_category()) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/category.css" />';
+	  	}
+	?>
+
 	<title>
 	<?php
 	if ( defined('WPSEO_VERSION') ) {
