@@ -129,27 +129,27 @@ endif;
                         
 if ( !$options['RMExpand'] ) :
 
-    $clickedLink = '<span class=\"appendLink\">▼</span>';  
-    $clickLink = '<span class=\"appendLink\">▼</span>';  
+    $clickedLink = '<span class=\"appendLink\">&#9660;</span>';  
+    $clickLink = '<span class=\"appendLink\">&#9660;</span>';  
 
 else :
 
-    $clickedLink = '<span class=\"appendLink\">▲</span>';
-    $clickLink = '<span class=\"appendLink\">▲</span>'; 
+    $clickedLink = '<span class=\"appendLink\">&#9650;</span>';
+    $clickLink = '<span class=\"appendLink\">&#9650;</span>'; 
 
 endif;
 
 if( $options['RMExpandPar'] ) :
 
-    $clickedLink = '<span class=\"appendLink\">▲</span>';
-    $clickLink = '<span class=\"appendLink\">▼</span>'; 
+    $clickedLink = '<span class=\"appendLink\">&#9650;</span>';
+    $clickLink = '<span class=\"appendLink\">&#9660;</span>'; 
 
 endif;
 
 if( $options['RMExpandPar'] && $options['RMExpand'] ) :
 
-    $clickedLink = '<span class=\"appendLink\">▲</span>';
-    $clickLink = '<span class=\"appendLink\">▲</span>'; 
+    $clickedLink = '<span class=\"appendLink\">&#9650;</span>';
+    $clickLink = '<span class=\"appendLink\">&#9650;</span>'; 
 
 endif;
     
@@ -409,7 +409,7 @@ $js .= "
 
         \$RMjQuery( this ).nextAll( 'ul.sub-menu' ).toggle(); 
 
-        \$RMjQuery( this ).html() == '▲' ? \$RMjQuery( this ).html( '▼' ) : \$RMjQuery( this ).html( '▲' );
+        \$RMjQuery( this ).html( \$RMjQuery( this ).html() == '\u25B2' ? '&#9660;' : '&#9650;' );
 
         $setHeight
 
@@ -419,7 +419,7 @@ $js .= "
 
         \$RMjQuery( this ).nextAll( 'ul.sub-menu' ).toggle(); 
 
-        \$RMjQuery( this ).siblings( '.appendLink' ).html() == '▲' ? \$RMjQuery( this ).siblings( '.appendLink' ).html( '▼' ) : \$RMjQuery( this ).siblings( '.appendLink' ).html( '▲' );
+        \$RMjQuery( this ).siblings( '.appendLink' ).html( \$RMjQuery( this ).siblings( '.appendLink' ).html() == '\u25B2' ? '&#9660;' : '&#9650;' );
 
         $setHeight
 

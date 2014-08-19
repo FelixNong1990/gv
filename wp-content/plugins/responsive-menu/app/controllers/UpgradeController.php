@@ -21,7 +21,7 @@ class RM_UpgradeController extends RM_BaseController {
                 
                 RM_FolderModel::create();
             
-                $js = RM_JSModel::getJs();        
+                $js = RM_JSModel::getJs( ResponsiveMenu::getOptions() );        
                 $js = ResponsiveMenu::getOption( 'RMMinify' ) == 'minify' ? RM_JSModel::Minify( $js ) : $js = $js; 
                 
                 RM_JSModel::createJSFile( $js );

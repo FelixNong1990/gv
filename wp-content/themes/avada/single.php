@@ -389,6 +389,7 @@ foreach ($category as $key) {
 
 		<?php if($smof_data['blog_comments']): ?>
 			<?php comments_template(); ?>
+			<?php //echo do_shortcode('[js-disqus]'); ?>
 		<?php endif; ?>
 		<?php endif; // password check ?>
 	</div>

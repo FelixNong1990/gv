@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Responsive Menu WordPress\n"
-"POT-Creation-Date: 2014-08-17 14:19-0000\n"
-"PO-Revision-Date: 2014-08-17 14:19-0000\n"
+"POT-Creation-Date: 2014-08-18 11:41-0000\n"
+"PO-Revision-Date: 2014-08-18 11:41-0000\n"
 "Last-Translator: Peter Featherstone <peter.featherstone@networkintellect."
 "com>\n"
 "Language-Team: Peter Featherstone <peter.featherstone@networkintellect.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.7\n"
 "X-Poedit-Basepath: ..\\\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -90,8 +90,9 @@ msgid "Shortcode Support"
 msgstr ""
 
 #: app/views/admin/page.phtml:195
+#, fuzzy
 msgid "Click to use shortcode"
-msgstr ""
+msgstr "Veličina slova za dugme za klik"
 
 #: app/views/admin/page.phtml:197
 #, fuzzy

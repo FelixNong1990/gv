@@ -7,3 +7,8 @@ You have installed the WordPress Chat plugin. Please review the polling interval
 `$(document).on('click', 'a[href="#add"]', function(e){
         opentab('add');
  });`
+
+
+Disqus Conditional Load:
+
+remove included jQuery core from js-comments.php 
