@@ -28,7 +28,19 @@
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/home.css" />';
 	  	}else if(is_category()) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/category.css" />';
-	  	}
+	  	} else if(is_single()) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/single.css" />';
+	  	} else {
+			echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/default.css" />';
+		}
+
+		if(is_front_page()) { 
+			wp_register_script('homejs', get_bloginfo('template_directory') . '/js/home.js', array(), null, true);
+			wp_enqueue_script('homejs');
+		} else if(is_single()) { 
+			wp_register_script('singlejs', get_bloginfo('template_directory') . '/js/single.js', array(), null, true);
+			wp_enqueue_script('singlejs');
+		}
 	?>
 
 	<title>
