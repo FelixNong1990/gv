@@ -1,0 +1,1 @@
+mysqldump -u[root] -p[] --add-drop-table --no-data [gv] | grep ^DROP | mysql -u[root] -p[] [gv]
