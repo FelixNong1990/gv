@@ -36,6 +36,8 @@
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/edit-profile.css" />';
 	  	} else if(is_page('video-submission')) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/video-submission.css" />';
+	  	} else if(is_page('video-manager')) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/video-manager.css" />';
 	  	} else {
 			echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/default.css" />';
 		}
@@ -55,7 +57,10 @@
 		} else if(is_page('video-submission')) { 
 			wp_register_script('videosubmissionjs', get_bloginfo('template_directory') . '/js/video-submission.js', array(), null, true);
 			wp_enqueue_script('videosubmissionjs');
-		} else {
+		} else if(is_page('video-manager')) {
+	    	wp_register_script('videomanagerjs', get_bloginfo('template_directory') . '/js/video-manager.js', array(), null, true);
+			wp_enqueue_script('videomanagerjs');
+	  	} else {
 			wp_register_script('defaultjs', get_bloginfo('template_directory') . '/js/default.js', array(), null, true);
 			wp_enqueue_script('defaultjs');
 		}
