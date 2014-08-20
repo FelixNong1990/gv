@@ -143,6 +143,10 @@ function de_style() {
 	// Dequeue usernoise button
     wp_dequeue_style( 'jnewsticker_css' );
     wp_deregister_style( 'jnewsticker_css' );
+	
+	// Dequeue usernoise button
+    wp_dequeue_style( 'd4p-bbtools-css' );
+    wp_deregister_style( 'd4p-bbtools-css' );
 
     wp_dequeue_style( 'avada-stylesheet' );
     wp_deregister_style( 'avada-stylesheet' );
@@ -310,6 +314,10 @@ function de_script() {
 	// Dequeue usernoise button
     wp_dequeue_script( 'jquery.fitvids' );
     wp_deregister_script( 'jquery.fitvids' );
+	
+	// Dequeue usernoise button
+    wp_dequeue_script( 'd4p-bbtools-js' );
+    wp_deregister_script( 'd4p-bbtools-js' );
 	
 	// Dequeue usernoise button
     wp_dequeue_script( 'avada' );

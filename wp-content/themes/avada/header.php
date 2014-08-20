@@ -19,7 +19,7 @@
 	<meta property="og:type" content="Video" />
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
 	<meta property='og:site_name' content='GameVeins' />
-	<meta property="og:image" content="http://i1.ytimg.com/vi/<?php echo $video_id; ?>/hqdefault.jpg" />
+	<meta property="og:image" content="<?php echo get_the_ID(); ?>" />
 	<meta name="description" content="<?php echo getBaseUrl(); ?>"/>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
@@ -28,8 +28,14 @@
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/home.css" />';
 	  	}else if(is_category()) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/category.css" />';
-	  	} else if(is_single()) {
+	  	} else if(is_single() && !is_bbpress()) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/single.css" />';
+	  	} else if(is_bbpress()) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/forums.css" />';
+	  	} else if(is_page('edit')) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/edit-profile.css" />';
+	  	} else if(is_page('video-submission')) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/video-submission.css" />';
 	  	} else {
 			echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/default.css" />';
 		}
@@ -37,9 +43,21 @@
 		if(is_front_page()) { 
 			wp_register_script('homejs', get_bloginfo('template_directory') . '/js/home.js', array(), null, true);
 			wp_enqueue_script('homejs');
-		} else if(is_single()) { 
+		} else if(is_single() && !is_bbpress()) { 
 			wp_register_script('singlejs', get_bloginfo('template_directory') . '/js/single.js', array(), null, true);
 			wp_enqueue_script('singlejs');
+		} else if(is_bbpress()) { 
+			wp_register_script('forumsjs', get_bloginfo('template_directory') . '/js/forums.js', array(), null, true);
+			wp_enqueue_script('forumsjs');
+		} else if(is_page('edit')) { 
+			wp_register_script('forumsjs', get_bloginfo('template_directory') . '/js/edit-profile.js', array(), null, true);
+			wp_enqueue_script('forumsjs');
+		} else if(is_page('video-submission')) { 
+			wp_register_script('videosubmissionjs', get_bloginfo('template_directory') . '/js/video-submission.js', array(), null, true);
+			wp_enqueue_script('videosubmissionjs');
+		} else {
+			wp_register_script('defaultjs', get_bloginfo('template_directory') . '/js/default.js', array(), null, true);
+			wp_enqueue_script('defaultjs');
 		}
 	?>
 
