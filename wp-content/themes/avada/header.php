@@ -22,7 +22,9 @@
 	<meta property="og:image" content="<?php echo get_the_ID(); ?>" />
 	<meta name="description" content="<?php echo getBaseUrl(); ?>"/>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<?php
 		if(is_front_page()){
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/home.css" />';
@@ -38,30 +40,40 @@
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/video-submission.css" />';
 	  	} else if(is_page('video-manager')) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/video-manager.css" />';
+	  	} else if(is_page('edit-video')) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/edit-video.css" />';
+	  	} else if(is_category()) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/category.css" />';
 	  	} else {
 			echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/default.css" />';
 		}
 
 		if(is_front_page()) { 
-			wp_register_script('homejs', get_bloginfo('template_directory') . '/js/home.js', array(), null, true);
+			wp_register_script('homejs', get_bloginfo('template_directory') . '/js/home.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('homejs');
 		} else if(is_single() && !is_bbpress()) { 
-			wp_register_script('singlejs', get_bloginfo('template_directory') . '/js/single.js', array(), null, true);
+			wp_register_script('singlejs', get_bloginfo('template_directory') . '/js/single.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('singlejs');
 		} else if(is_bbpress()) { 
-			wp_register_script('forumsjs', get_bloginfo('template_directory') . '/js/forums.js', array(), null, true);
+			wp_register_script('forumsjs', get_bloginfo('template_directory') . '/js/forums.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('forumsjs');
 		} else if(is_page('edit')) { 
-			wp_register_script('forumsjs', get_bloginfo('template_directory') . '/js/edit-profile.js', array(), null, true);
+			wp_register_script('forumsjs', get_bloginfo('template_directory') . '/js/edit-profile.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('forumsjs');
 		} else if(is_page('video-submission')) { 
-			wp_register_script('videosubmissionjs', get_bloginfo('template_directory') . '/js/video-submission.js', array(), null, true);
+			wp_register_script('videosubmissionjs', get_bloginfo('template_directory') . '/js/video-submission.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('videosubmissionjs');
 		} else if(is_page('video-manager')) {
-	    	wp_register_script('videomanagerjs', get_bloginfo('template_directory') . '/js/video-manager.js', array(), null, true);
+	    	wp_register_script('videomanagerjs', get_bloginfo('template_directory') . '/js/video-manager.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('videomanagerjs');
+	  	} else if(is_page('edit-video')) {
+	    	wp_register_script('editvideojs', get_bloginfo('template_directory') . '/js/edit-video.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('editvideojs');
+	  	} else if(is_category()) {
+	    	wp_register_script('categoryjs', get_bloginfo('template_directory') . '/js/category.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('categoryjs');
 	  	} else {
-			wp_register_script('defaultjs', get_bloginfo('template_directory') . '/js/default.js', array(), null, true);
+			wp_register_script('defaultjs', get_bloginfo('template_directory') . '/js/default.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('defaultjs');
 		}
 	?>

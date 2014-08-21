@@ -2413,20 +2413,20 @@ class PHPDataTable {
         $tpl = new PDTTpl();
         if(true || $this->_isFirst && $this->scriptsEnabled) {
 	        if(PDT_INCLUDE_DATATABLES_CORE){
-	             wp_register_script('datatables',PDT_JS_PATH.'jquery-datatables/jquery.dataTables.min.js',array('jquery'));
-	             wp_enqueue_script('datatables');
+	            //wp_register_script('datatables',PDT_JS_PATH.'jquery-datatables/jquery.dataTables.min.js',array('jquery'));
+	            //wp_enqueue_script('datatables');
 	        }
 	        if($this->tableToolsEnabled()){
 	             wp_register_script('tabletools',PDT_JS_PATH.'jquery-datatables/TableTools.min.js',array('jquery','datatables'));
 	             wp_enqueue_script('tabletools');
 	        }
-	        wp_register_script('wpdatatables-funcs',PDT_JS_PATH.'php-datatables/wpdatatables.funcs.min.js',array('jquery','datatables'));
-	        wp_register_script('wpdatatables-rowgrouping',PDT_JS_PATH.'jquery-datatables/jquery.dataTables.rowGrouping.js',array('jquery','datatables'));
-           	wp_enqueue_script('wpdatatables-funcs');
-           	wp_enqueue_script('wpdatatables-rowgrouping');
+	        //wp_register_script('wpdatatables-funcs',PDT_JS_PATH.'php-datatables/wpdatatables.funcs.min.js',array('jquery','datatables'));
+	        //wp_register_script('wpdatatables-rowgrouping',PDT_JS_PATH.'jquery-datatables/jquery.dataTables.rowGrouping.js',array('jquery','datatables'));
+           	//wp_enqueue_script('wpdatatables-funcs');
+           	//wp_enqueue_script('wpdatatables-rowgrouping');
 			if($this->filterEnabled()){
-				wp_register_script('wpdatatables-advancedfilter',PDT_JS_PATH.'jquery-datatables/jquery.dataTables.columnFilter.js');
-	           	wp_enqueue_script('wpdatatables-advancedfilter');
+				//wp_register_script('wpdatatables-advancedfilter',PDT_JS_PATH.'jquery-datatables/jquery.dataTables.columnFilter.js');
+	           	//wp_enqueue_script('wpdatatables-advancedfilter');
 			}
 			if($this->isEditable()){
 		        wp_register_script('jquery-fileupload-iframe',PDT_JS_PATH.'fileupload/jquery.iframe-transport.js',array('jquery'));
@@ -2439,15 +2439,15 @@ class PHPDataTable {
 		        wp_enqueue_style('jquery-fileupload');
 			}
 			if($this->isResponsive()){
-				wp_register_script('lodash',PDT_JS_PATH.'responsive/lodash.min.js');
-				wp_register_script('wpdatatables-responsive',PDT_JS_PATH.'responsive/datatables.responsive.js');
-		        wp_enqueue_script('lodash');
-		        wp_enqueue_script('wpdatatables-responsive');
+				//wp_register_script('lodash',PDT_JS_PATH.'responsive/lodash.min.js');
+				//wp_register_script('wpdatatables-responsive',PDT_JS_PATH.'responsive/datatables.responsive.js');
+		        //wp_enqueue_script('lodash');
+		        //wp_enqueue_script('wpdatatables-responsive');
 			}
-	        wp_enqueue_script('jquery-effects-core');
-	        wp_enqueue_script('jquery-effects-fade');
-	        wp_register_script('wpdatatables',PDT_JS_PATH.'wpdatatables/wpdatatables.min.js',array('jquery','datatables'));
-	        wp_enqueue_script('wpdatatables');
+	        //wp_enqueue_script('jquery-effects-core');
+	        //wp_enqueue_script('jquery-effects-fade');
+	        //wp_register_script('wpdatatables',PDT_JS_PATH.'wpdatatables/wpdatatables.min.js',array('jquery','datatables'));
+	        //wp_enqueue_script('wpdatatables');
         }
         $this->addClass( 'data-t' );
         $tpl->setTemplate('plain_html_table.inc');
@@ -2486,14 +2486,14 @@ class PHPDataTable {
         $tpl = new PDTTpl();
         // include the styles if the table is first on the page
         if($this->_isFirst && $this->scriptsEnabled) {
-            $tpl->addCss(PDT_CSS_PATH.'wpdatatables.min.css');
-            $tpl->addCss(PDT_CSS_PATH.'TableTools.css');
-            $tpl->addCss(PDT_ASSETS_PATH.'css/datatables.responsive.css');
+            //$tpl->addCss(PDT_CSS_PATH.'wpdatatables.min.css');
+            //$tpl->addCss(PDT_CSS_PATH.'TableTools.css');
+            //$tpl->addCss(PDT_ASSETS_PATH.'css/datatables.responsive.css');
             // Get skin setting
             $skin = get_option('wdtBaseSkin');
             if(empty($skin)){ $skin = 'skin1'; }
             $renderSkin = $skin == 'skin1' ? PDT_ASSETS_PATH.'css/wpDataTablesSkin.css' : PDT_ASSETS_PATH.'css/wpDataTablesSkin_1.css';
-            $tpl->addCss($renderSkin);
+            //$tpl->addCss($renderSkin);
         }
         if ($this->_tableType == self::PLAIN_TABLE) {
             $table_content = $this->_getPlainHtmlView();

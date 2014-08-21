@@ -9,6 +9,13 @@ You have installed the WordPress Chat plugin. Please review the polling interval
  });`
 
 
-Disqus Conditional Load:
+================= PLUGINS UPDATE MANUALLY ===========================
 
-remove included jQuery core from js-comments.php 
+1. Disqus Conditional Load:
+
+- Remove included jQuery core from js-comments.php
+
+
+2. WPDatatables
+
+- Remove all enqueued scripts and styles inside wpdatatables.php and class.table.php(inside source folder) 

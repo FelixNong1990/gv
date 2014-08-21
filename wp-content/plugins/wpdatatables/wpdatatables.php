@@ -267,16 +267,16 @@ Author URI: http://codecanyon.net/user/cjbug
 				wp_enqueue_script('jquery-ui-core');
 				wp_enqueue_script('jquery-ui-progressbar');
 				wp_enqueue_script('jquery-ui-datepicker');
-				wp_enqueue_script('formstone-selecter',PDT_JS_PATH.'selecter/jquery.fs.selecter.min.js');
-				wp_enqueue_style('formstone-selecter',PDT_CSS_PATH.'jquery.fs.selecter.css');
-				wp_enqueue_script('formstone-picker',PDT_JS_PATH.'picker/jquery.fs.picker.min.js');
-				wp_enqueue_style('formstone-picker',PDT_CSS_PATH.'jquery.fs.picker.css');
-				wp_enqueue_script('remodal-popup',PDT_JS_PATH.'popup/jquery.remodal.min.js');
-				wp_enqueue_style('remodal-popup',PDT_CSS_PATH.'jquery.remodal.css');
-				wp_enqueue_script('pickadate-main',PDT_JS_PATH.'datepicker/picker.js');
-				wp_enqueue_script('pickadate-date',PDT_JS_PATH.'datepicker/picker.date.js');
-				wp_enqueue_style('pickadate-main',PDT_CSS_PATH.'datepicker.default.css');
-				wp_enqueue_style('pickadate-date',PDT_CSS_PATH.'datepicker.default.date.css');
+				//wp_enqueue_script('formstone-selecter',PDT_JS_PATH.'selecter/jquery.fs.selecter.min.js');
+				//wp_enqueue_style('formstone-selecter',PDT_CSS_PATH.'jquery.fs.selecter.css');
+				//wp_enqueue_script('formstone-picker',PDT_JS_PATH.'picker/jquery.fs.picker.min.js');
+				//wp_enqueue_style('formstone-picker',PDT_CSS_PATH.'jquery.fs.picker.css');
+				//wp_enqueue_script('remodal-popup',PDT_JS_PATH.'popup/jquery.remodal.min.js');
+				//wp_enqueue_style('remodal-popup',PDT_CSS_PATH.'jquery.remodal.css');
+				//wp_enqueue_script('pickadate-main',PDT_JS_PATH.'datepicker/picker.js');
+				//wp_enqueue_script('pickadate-date',PDT_JS_PATH.'datepicker/picker.date.js');
+				//wp_enqueue_style('pickadate-main',PDT_CSS_PATH.'datepicker.default.css');
+				//wp_enqueue_style('pickadate-date',PDT_CSS_PATH.'datepicker.default.date.css');
 		    }else{
 		    	$tbl->disableScripts();
 		    }

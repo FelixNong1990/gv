@@ -9439,6 +9439,10 @@ jQuery(window).load(function($) {
 			if(jQuery().isotope && jQuery('#posts-container').hasClass('isotope')) {
 				jQuery('#posts-container').isotope('reLayout');
 			}
+			
+			jQuery('img.lazy').lazyload({
+				skip_invisible: false
+			});
 		});
 	}
 
