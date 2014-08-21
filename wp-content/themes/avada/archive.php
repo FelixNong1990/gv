@@ -206,7 +206,7 @@
 	<a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" class="loop-entry-img-link">
 	<div class="thumb">
 			<span class="clip">
-				<img class="lazy" src="<?php echo content_url(); ?>/images/blank.gif" height="160" data-original="<?php echo $src ?>" /><span class="vertical-align"></span>
+				<img class="lazy" src="<?php echo content_url(); ?>/images/blank.gif" data-original="<?php echo $src ?>" /><span class="vertical-align"></span>
 			</span>
 			<span class="overlay"></span>
 		

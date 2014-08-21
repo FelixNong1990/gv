@@ -161,6 +161,9 @@ jQuery(document).ready(function($) {
 	$('#un-button i').addClass('fa fa-edit').removeClass('icon-edit');
 	
 	$("img.lazy").lazyload({
-		skip_invisible: false
+		skip_invisible: false,
+		threshold: 200
 	});
+	
+	$("window").resize();
 });
