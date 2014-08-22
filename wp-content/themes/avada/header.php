@@ -748,6 +748,8 @@
 	<?php echo $smof_data['google_analytics']; ?>
 
 	<?php echo $smof_data['space_head']; ?>
+	
+	<?php flush(); ?>
 </head>
 <?php
 $body_classes = array();
