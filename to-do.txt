@@ -54,3 +54,5 @@
 - Change grey.gif image from lazy load official website to local image
 - Test if chat sound is working
 - z-index of user menu when view editor of video submission in full screen mode
+- Change all CDATA data for required plugins
+- Convert all bloginfo() or other function that initialize query database by using full url gamveins

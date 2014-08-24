@@ -158,7 +158,7 @@ var dsq = document.createElement('script'); dsq.type = 'text/javascript';
 if($type=='scroll'){ ?>
 <script type="text/javascript">
 /* <![CDATA[ */
-(function() {
+(function($) {
 var disqus_div = $('#disqus_thread');
 if (disqus_div.size() > 0 ) {
 var ds_loaded = false,
@@ -181,7 +181,7 @@ window['disqus_' + key.replace('disqus','').toLowerCase()] = disqus_data[key];
 $(window).scroll(check);
 check();
 }
-	})();
+	})(jQuery);
 /* ]]> */
 </script>
 <?php }

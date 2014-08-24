@@ -23,8 +23,9 @@
 	<meta name="description" content="<?php echo getBaseUrl(); ?>"/>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="http://localhost/gv/wp-content/themes/avada-child/global.css" rel="stylesheet" />
 	<?php
 		if(is_front_page()){
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/home.css" />';
@@ -54,6 +55,11 @@
 		} else if(is_single() && !is_bbpress()) { 
 			wp_register_script('singlejs', get_bloginfo('template_directory') . '/js/single.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('singlejs');
+			wp_localize_script( 'singlejs', 'ajax_var', array(
+				'url' => admin_url( 'admin-ajax.php' ),
+				'nonce' => wp_create_nonce( 'ajax-nonce' )
+				)
+			);
 		} else if(is_bbpress()) { 
 			wp_register_script('forumsjs', get_bloginfo('template_directory') . '/js/forums.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('forumsjs');
