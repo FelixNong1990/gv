@@ -25,7 +25,7 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-	
+	<link href="http://localhost/gv/wp-content/themes/avada-child/global.css" rel="stylesheet" />
 	<?php
 		if(is_front_page()){
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/home.css" />';
@@ -83,7 +83,7 @@
 			wp_enqueue_script('defaultjs');
 		}
 	?>
-	<link href="http://localhost/gv/wp-content/themes/avada-child/global.css" rel="stylesheet" />
+	
 	<title>
 	<?php
 	if ( defined('WPSEO_VERSION') ) {
