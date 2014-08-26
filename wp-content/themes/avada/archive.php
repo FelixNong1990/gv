@@ -104,13 +104,13 @@
 				</div>
 				<?php endif; ?>
 				<?php
-				if($smof_data['featured_images']):
-				if($smof_data['legacy_posts_slideshow']) {
-					get_template_part('legacy-slideshow');
-				} else {
-					get_template_part('new-slideshow');
-				}
-				endif;
+				// if($smof_data['featured_images']):
+				// if($smof_data['legacy_posts_slideshow']) {
+					// get_template_part('legacy-slideshow');
+				// } else {
+					// get_template_part('new-slideshow');
+				// }
+				// endif;
 				?>
 				<!--<div class="post-content-container">-->
 					<?php if($smof_data['blog_archive_layout'] == 'Timeline'): ?>

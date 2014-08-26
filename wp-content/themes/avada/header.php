@@ -938,5 +938,10 @@ if( $smof_data['layout'] == 'Boxed' || get_post_meta($c_pageID, 'pyre_page_bg_la
 	// echo('</pre>');
   //var_dump( $wp_styles );
 	?>
+	<div class="breadcrumbs">
+	<?php if(function_exists('bcn_display')) {
+	bcn_display();
+	} ?>
+	</div>
 	<div id="main" class="clearfix <?php echo $main_class; ?>" style="<?php echo $main_css; ?>">
 		<div class="avada-row" style="<?php echo $row_css; ?>">
