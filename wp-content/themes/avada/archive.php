@@ -118,7 +118,7 @@
 					<div class="timeline-arrow"></div>
 					<?php endif; ?>
 					<?php if($smof_data['blog_archive_layout'] != 'Large Alternate' && $smof_data['blog_archive_layout'] != 'Medium Alternate' && $smof_data['blog_archive_layout'] != 'Grid'  && $smof_data['blog_archive_layout'] != 'Timeline'): ?>
-					<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<h2 class="entry-title"><a href="<?php the_permalink(); ?>?myname=john&age=23"><?php the_title(); ?></a></h2>
 					<?php endif; ?>
 					<?php if($smof_data['blog_archive_layout'] == 'Large Alternate'): ?>
 					<div class="date-and-formats">
@@ -214,7 +214,7 @@
 	</div>
 	</a>
 	<h2 class="loop-entry-title-margin">
-		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+		<a href="<?php the_permalink(); ?>?myname=john&age=23" title="<?php the_title(); ?>">
 			<?php 
 			// if (strlen($post->post_title) > 35) {
 				// echo substr(the_title($before = '', $after = '', FALSE), 0, 35) . '...'; 

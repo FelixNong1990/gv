@@ -35,12 +35,16 @@ foreach ($category as $key) {
 	//}
 ?>
 
-		<?php 
+		<?php
+			echo "<pre>";
+			print_r($_GET);
+			echo "</pre>";
+			
 			$id = get_the_ID();
-			//$meta = get_post_meta($id);
-			// echo "<pre>";
-			// print_r($meta);
-			// echo "</pre>";
+			$meta = get_post_meta($id);
+			//echo "<pre>";
+			//print_r($meta);
+			//echo "</pre>";
 			//echo $id;
 			
 			//echo do_shortcode('[ajaxy-live-search show_category="1" show_post_category="1" post_types="post" label="Search" iwidth="180" delay="500" width="315" url="http://localhost/gv/?s=%s" border="1px solid #eee"]');

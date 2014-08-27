@@ -20,7 +20,6 @@
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
 	<meta property='og:site_name' content='GameVeins' />
 	<meta property="og:image" content="<?php echo get_the_ID(); ?>" />
-	<meta name="description" content="<?php echo getBaseUrl(); ?>"/>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
@@ -939,9 +938,11 @@ if( $smof_data['layout'] == 'Boxed' || get_post_meta($c_pageID, 'pyre_page_bg_la
   //var_dump( $wp_styles );
 	?>
 	<div class="breadcrumbs">
-	<?php if(function_exists('bcn_display')) {
-	bcn_display();
-	} ?>
+	<?php 
+	if(function_exists('blix_breadcrumbs')) {
+		blix_breadcrumbs();
+	} 
+	?>
 	</div>
 	<div id="main" class="clearfix <?php echo $main_class; ?>" style="<?php echo $main_css; ?>">
 		<div class="avada-row" style="<?php echo $row_css; ?>">
