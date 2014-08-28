@@ -44,6 +44,8 @@
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/edit-video.css" />';
 	  	} else if(is_category()) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/category.css" />';
+	  	} else if(is_author()) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/author.css" />';
 	  	} else {
 			echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/default.css" />';
 		}
@@ -77,6 +79,8 @@
 	  	} else if(is_category()) {
 	    	wp_register_script('categoryjs', get_bloginfo('template_directory') . '/js/category.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('categoryjs');
+	  	} else if(is_author()) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/author.css" />';
 	  	} else {
 			wp_register_script('defaultjs', get_bloginfo('template_directory') . '/js/default.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('defaultjs');
