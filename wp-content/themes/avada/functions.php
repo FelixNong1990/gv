@@ -7,38 +7,39 @@
 function blix_breadcrumbs() {
 
 	/* === OPTIONS === */
-	$text['home']     = 'Home'; // text for the 'Home' link
-	$text['category'] = 'Archive by Category "%s"'; // text for a category page
-	$text['search']   = 'Search Results for "%s" Query'; // text for a search results page
-	$text['tag']      = 'Posts Tagged "%s"'; // text for a tag page
-	$text['author']   = 'Articles Posted by %s'; // text for an author page
+	$text['home']     = '<i class="fa fa-home fa-lg"> </i>'; // text for the 'Home' link
+	$text['category'] = '%s'; // text for a category page
+	$text['search']   = 'Search results for : <span style="color: #bb3914">%s</span>'; // text for a search results page
+	$text['tag']      = 'Tag archive for : <span style="color: #bb3914">%s</span>'; // text for a tag page
+	$text['author']   = 'Videos posted by %s'; // text for an author page
 	$text['404']      = 'Error 404'; // text for the 404 page
 
 	$show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show
 	$show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
 	$show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
 	$show_title     = 1; // 1 - show the title for the links, 0 - don't show
-	$delimiter      = ' &raquo; '; // delimiter between crumbs
+	//$delimiter      = ' &raquo; '; // delimiter between crumbs
+	$delimiter      = ''; // delimiter between crumbs
 	$before         = '<span class="current">'; // tag before the current crumb
 	$after          = '</span>'; // tag after the current crumb
 	/* === END OF OPTIONS === */
 
 	global $post;
 	$home_link    = home_url('/');
-	$link_before  = '<span typeof="v:Breadcrumb">';
+	$link_before  = '<span typeof="v:Breadcrumb" class="breadcrumb-cat">';
 	$link_after   = '</span>';
 	$link_attr    = ' rel="v:url" property="v:title"';
 	$link         = $link_before . '<a' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
 	$parent_id    = $parent_id_2 = $post->post_parent;
 	$frontpage_id = get_option('page_on_front');
 
-	if (is_home() || is_front_page()) {
+	if (is_home() || is_front_page() || is_bbpress()) {
 
 		if ($show_on_home == 1) echo '<div class="breadcrumbs"><a href="' . $home_link . '">' . $text['home'] . '</a></div>';
 
 	} else {
 
-		echo '<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">';
+		echo '<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><div class="inner-breadcrumbs">';
 		if ($show_home_link == 1) {
 			echo '<a href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a>';
 			//if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
@@ -47,7 +48,7 @@ function blix_breadcrumbs() {
 		if ( is_category() ) {
 			$this_cat = get_category(get_query_var('cat'), false);
 			if ($this_cat->parent != 0) {
-				$cats = get_category_parents($this_cat->parent, TRUE, $delimiter);
+				$cats = get_category_parents($this_cat->parent, TRUE, '');
 				if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
 				$cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
 				$cats = str_replace('</a>', '</a>' . $link_after, $cats);
@@ -91,16 +92,22 @@ function blix_breadcrumbs() {
 				$count = 0;
         		foreach ($categories as $category) {
 					$count++;
-					if ( count( $categories ) != $count ) {
+					if ($count == 1 && count( $categories ) > 1) {
 						$result .=
-						'<span class="breadcrumb-cat" typeof="v:Breadcrumb">
+						'<span typeof="v:Breadcrumb">
 							<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
 							<span class="delimeter-holder"></span>
 						</span>';
-					} else {
+					} else if(count( $categories ) == $count) {
 						$result .=
 						'<span class="breadcrumb-cat-last" typeof="v:Breadcrumb">
 							<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
+						</span>';
+					} else {
+						$result .=
+						'<span typeof="v:Breadcrumb">
+							<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
+							<span class="delimeter-holder"></span>
 						</span>';						
 					}
         		}
@@ -167,7 +174,7 @@ function blix_breadcrumbs() {
 			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
 		}
 
-		echo '</div><!-- .breadcrumbs -->';
+		echo '</div></div><!-- .breadcrumbs -->';
 
 	}
 } // end blix_breadcrumbs()

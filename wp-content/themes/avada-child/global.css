@@ -34,6 +34,60 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	box-sizing: initial;
 }
 
+@font-face {
+    font-family:'MuseoSansRounded100';
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-100-webfont.eot');
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-100-webfont.woff') format('woff'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-100-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-100-webfont.svg#museo_sans_rounded100') format('svg');
+}
+
+@font-face {
+    font-family:'MuseoSansRounded300';
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-300-webfont.eot');
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-300-webfont.woff') format('woff'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-300-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-300-webfont.svg#museo_sans_rounded300') format('svg');
+}
+
+@font-face {
+    font-family:'MuseoSansRounded500';
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-500-webfont.eot');
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-500-webfont.woff') format('woff'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-500-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-500-webfont.svg#museo_sans_rounded900') format('svg');
+}
+
+@font-face {
+    font-family:'MuseoSansRounded700';
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-700-webfont.eot');
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-700-webfont.woff') format('woff'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-700-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-700-webfont.svg#museo_sans_rounded700') format('svg');
+}
+
+@font-face {
+    font-family:'MuseoSansRounded900';
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.eot');
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.woff') format('woff'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.svg#museo_sans_rounded900') format('svg');
+}
+
+@font-face {
+    font-family:'MuseoSansRounded1000';
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-1000-webfont.eot');
+    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-1000-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-1000-webfont.woff') format('woff'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-1000-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-rounded-webfont/museosansrounded-1000-webfont.svg#museo_sans_rounded1000') format('svg');
+}
+
 .post-content *,.fusion-sharing-box {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -143,28 +197,61 @@ div.userpro-overlay {
 	margin-left: 0;
 }
 
-.breadcrumbs span.breadcrumb-cat:before {
+.breadcrumbs {
+	width: 100%;
+	background: #fcfcfc;
+	padding: 10px 0;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.inner-breadcrumbs {
+	width: 1000px;
+	margin: auto;
+}
+
+.inner-breadcrumbs > span,.inner-breadcrumbs a {
+	font-family:'MuseoSansRounded500';
+	font-size:15px;
+	color: #313131;
+}
+
+.inner-breadcrumbs  a:hover {
+	color: #64686a;
+}
+
+.inner-breadcrumbs  span.current {
+	color: #64686a;
+}
+
+.inner-breadcrumbs  i.fa-home {
+	margin-right: 3px;
+}
+
+/*.breadcrumbs span.breadcrumb-cat-first:before {
 	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaUlEQVR42r3TsQ2AMAxEUTYhm7CNh4GlGAJq2MQ4pzTWicKHRPGlFNwLTSZ3T5lZb40azlz6/g04owuICDQAAxEARgSAEQFgRADQEnm0K8A8br+FP+BxAeBxAeBxFTjSWAC2r28B/QnoPcZMIf3wsKR/AAAAAElFTkSuQmCC);
 	display: inline-block;
 	position: relative;
 	top: 5px;
-}
+}*/
 
-.breadcrumbs span.breadcrumb-cat-last:after {
+.breadcrumbs span.breadcrumb-cat:after,.breadcrumbs span.breadcrumb-cat-last:after,.inner-breadcrumbs > a:after {
 	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaUlEQVR42r3TsQ2AMAxEUTYhm7CNh4GlGAJq2MQ4pzTWicKHRPGlFNwLTSZ3T5lZb40azlz6/g04owuICDQAAxEARgSAEQFgRADQEnm0K8A8br+FP+BxAeBxAeBxFTjSWAC2r28B/QnoPcZMIf3wsKR/AAAAAElFTkSuQmCC);
 	display: inline-block;
 	position: relative;
 	top: 5px;
+	margin-right: 3px;
 }
 
-.breadcrumbs span.breadcrumb-cat span.delimeter-holder{
+.breadcrumbs span.delimeter-holder{
 	display: inline-block;
 	position: relative;
-	top: 2px;
-	width: 10px;
-	height: 10px;
+	top: -2px;
+	margin: 0 2px;
+	width: 6px;
+	height: 6px;
 	background:url(../../images/main-sprite.png) no-repeat;
-	background-position: -236px -85px;
+	background-position: -239px -86px;
 }
 
 /* Sky Menu */
@@ -206,17 +293,6 @@ body #wrapper .header-social a {
 i.login,i.signup {
 	margin-right: 5px;
 	vertical-align: 0;
-}
-
-@font-face {
-    font-family:'MuseoSansRounded';
-    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.eot');
-    src: url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.woff') format('woff'),
-         url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.ttf') format('truetype'),
-         url('fonts/museo-sans-rounded-webfont/museosansrounded-900-webfont.svg#museo_sans_rounded500') format('svg');
-    font-weight:900;
-    font-style:bold;
 }
 
 /*====================
