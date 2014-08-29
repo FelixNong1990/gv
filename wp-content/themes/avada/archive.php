@@ -215,7 +215,7 @@
 	</a>
 	<h2 class="loop-entry-title-margin">
 		<a href="<?php the_permalink(); ?>?myname=john&age=23" title="<?php the_title(); ?>">
-			<?php 
+			<?php
 			// if (strlen($post->post_title) > 35) {
 				// echo substr(the_title($before = '', $after = '', FALSE), 0, 35) . '...'; 
 			// } 

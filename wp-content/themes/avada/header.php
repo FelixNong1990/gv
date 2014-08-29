@@ -80,7 +80,8 @@
 	    	wp_register_script('categoryjs', get_bloginfo('template_directory') . '/js/category.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('categoryjs');
 	  	} else if(is_author()) {
-	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/author.css" />';
+	    	wp_register_script('authorjs', get_bloginfo('template_directory') . '/js/author.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('authorjs');
 	  	} else {
 			wp_register_script('defaultjs', get_bloginfo('template_directory') . '/js/default.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('defaultjs');

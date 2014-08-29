@@ -576,8 +576,8 @@ function de_script() {
     wp_dequeue_script( 'avada' );
     wp_deregister_script( 'avada' );
 	
-	wp_dequeue_script( 'script' );
-    wp_deregister_script( 'script' );
+	//wp_dequeue_script( 'script' );
+    //wp_deregister_script( 'script' );
 }
  
 add_action( 'wp_enqueue_scripts', 'de_script', 100 );
@@ -2452,7 +2452,7 @@ function avada_scripts() {
 <?php
 		// Add main javascript file
 		wp_deregister_script('script');
-		wp_register_script('script', get_bloginfo('template_directory') . '/js/script.js', array(), null, true);
+		wp_register_script('script', get_bloginfo('template_directory') . '/js/global.js', array(), null, true);
 		wp_enqueue_script('script');
 		
 		// add_action( 'after_wp_tiny_mce', 'custom_after_wp_tiny_mce' );

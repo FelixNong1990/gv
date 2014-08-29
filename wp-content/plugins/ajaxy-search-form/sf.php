@@ -1071,28 +1071,40 @@ class AjaxyLiveSearch {
 				,'rtl' => $this->get_style_setting('rtl_theme', 0)
 			)
 		);
+		
+		$ajaxy_params = array(
+            'sf_position'          => $this->get_style_setting('results_position', 0),
+            'sf_templates'         => json_encode($this->get_templates('more', 'more')),
+			'sf_input'             => trim($this->get_style_setting('input_id', '.sf_input')) == "" ? '.sf_input' : $this->get_style_setting('input_id', '.sf_input'),
+			'live_search_settings' => $live_search_settings
+	    );
+	   
+		wp_localize_script( 'authorjs', 'ajaxy', $ajaxy_params );
 		?>
 		<script type="text/javascript">
 			/* <![CDATA[ */
-				var sf_position = '<?php echo $this->get_style_setting('results_position', 0); ?>';
-				var sf_templates = <?php echo json_encode($this->get_templates('more', 'more')); ?>;
-				var sf_input = '<?php echo (trim($this->get_style_setting('input_id', '.sf_input')) == "" ? '.sf_input' : $this->get_style_setting('input_id', '.sf_input')); ?>';
-				jQuery(document).ready(function(){
-					jQuery(sf_input).ajaxyLiveSearch(<?php echo $live_search_settings; ?>);
-					jQuery(".sf_ajaxy-selective-input").keyup(function() {
-						var width = jQuery(this).val().length * 8;
-						if(width < 50) {
-							width = 50;
-						}
-						jQuery(this).width(width);
-					});
-					jQuery(".sf_ajaxy-selective-search").click(function() {
-						jQuery(this).find(".sf_ajaxy-selective-input").focus();
-					});
-					jQuery(".sf_ajaxy-selective-close").click(function() {
-						jQuery(this).parent().remove();
-					});
-				});
+
+				// var sf_position = '<?php echo $this->get_style_setting('results_position', 0); ?>';
+				// var sf_templates = <?php echo json_encode($this->get_templates('more', 'more')); ?>;
+				// var sf_input = '<?php echo (trim($this->get_style_setting('input_id', '.sf_input')) == "" ? '.sf_input' : $this->get_style_setting('input_id', '.sf_input')); ?>';
+				// console.log(sf_position + ' ' + sf_templates + ' ' + sf_input + ' ')
+				// jQuery(document).ready(function(){
+					// jQuery(sf_input).ajaxyLiveSearch(<?php echo $live_search_settings; ?>);
+					// jQuery(".sf_ajaxy-selective-input").keyup(function() {
+						// var width = jQuery(this).val().length * 8;
+						// if(width < 50) {
+							// width = 50;
+						// }
+						// jQuery(this).width(width);
+					// });
+					// jQuery(".sf_ajaxy-selective-search").click(function() {
+						// jQuery(this).find(".sf_ajaxy-selective-input").focus();
+					// });
+					// jQuery(".sf_ajaxy-selective-close").click(function() {
+						// jQuery(this).parent().remove();
+					// });
+				// });
+
 			/* ]]> */
 		</script>
 		<?php
@@ -1284,17 +1296,6 @@ class AjaxyLiveSearch {
 		}
 		return $form;
 	}	
-	function selective_input($settings)
-	{
-		$selective_input = '
-		<div id="'.$settings['id'].'" class="sf_ajaxy-selective-search" style="border:'.$settings['border'].';width:'.($settings['width']).'px;">
-			<input class="sf_ajaxy-selective-input" type="text" placeholder="'.$settings['label'].'" value=""/>
-		</div>';
-		if(isset($settings['credits']) && $settings['credits'] == 1) {
-			$selective_input = $selective_input.'<a style="display:none" href="http://www.ajaxy.org">Powered by Ajaxy</a>';
-		}
-		return $selective_input;
-	}
 	function form_shortcode($atts = array()) {
 		$m = uniqid();
 		$scat = (array)$this->get_setting('category');
@@ -1345,8 +1346,19 @@ class AjaxyLiveSearch {
 				});
 			/* ]]> */
 		</script>';
-		return $form.$script;
-	}	
+		
+		// $ajaxy_shortcode_params = array(
+            // 'm'                              => $m,
+            // 'show_category'                  => $settings['show_category'],
+		    // 'show_post_category'             => $settings['show_post_category'],
+			// 'post_types'           			 => $settings['post_types'],
+			// 'shortcode_live_search_settings' => json_encode($live_search_settings)
+	    // );
+	   
+		wp_localize_script( 'authorjs', 'ajaxy_shortcode', $ajaxy_shortcode_params );
+
+		return $form;
+	}
 	function selective_input_shortcode($atts = array()) {
 		$m = uniqid();
 		$scat = (array)$this->get_setting('category');
