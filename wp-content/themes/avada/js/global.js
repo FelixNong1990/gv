@@ -144,7 +144,6 @@ jQuery(document).ready(function($) {
 	
 	
 	//console.log(sf_position + ' ' + sf_templates + ' ' + sf_input + ' ')
-	console.log(live_search_settings);
 	jQuery(sf_input).ajaxyLiveSearch(live_search_settings);
 	jQuery(".sf_ajaxy-selective-input").keyup(function() {
 		var width = jQuery(this).val().length * 8;
@@ -170,4 +169,95 @@ jQuery(document).ready(function($) {
 	// jQuery(document).ready(function(){
 		// jQuery('#' + m + ' .sf_input').ajaxyLiveSearch(shortcode_live_search_settings);					
 	// });
+	// Tabs
+//(function(e){"use strict";function t(e,t){for(var n in t){if(t.hasOwnProperty(n)){e[n]=t[n]}}return e}function n(e,n){this.el=e;this.options=t({},this.options);t(this.options,n);this._init()}n.prototype.options={start:0};n.prototype._init=function(){this.tabs=[].slice.call(this.el.querySelectorAll("nav > ul > li"));this.items=[].slice.call(this.el.querySelectorAll(".content > section"));this.current=-1;this._show();this._initEvents()};n.prototype._initEvents=function(){var e=this;this.tabs.forEach(function(t,n){t.addEventListener("click",function(t){t.preventDefault();e._show(n)})})};n.prototype._show=function(e){if(this.current>=0){this.tabs[this.current].className="";this.items[this.current].className=""}this.current=e!=undefined?e:this.options.start>=0&&this.options.start<this.items.length?this.options.start:0;this.tabs[this.current].className="tab-current";this.items[this.current].className="content-current"};e.CBPFWTabs=n})(window);
+
+/**
+ * cbpFWTabs.js v1.0.0
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2014, Codrops
+ * http://www.codrops.com
+ */
+;( function( window ) {
+     
+    'use strict';
+ 
+    function extend( a, b ) {
+        for( var key in b ) { 
+            if( b.hasOwnProperty( key ) ) {
+                a[key] = b[key];
+            }
+        }
+        return a;
+    }
+ 
+    function CBPFWTabs( el, options ) {
+        this.el = el;
+        this.options = extend( {}, this.options );
+        extend( this.options, options );
+        this._init();
+    }
+ 
+    CBPFWTabs.prototype.options = {
+        start : 0
+    };
+ 
+    CBPFWTabs.prototype._init = function() {
+        // tabs elemes
+        this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
+        // content items
+        this.items = [].slice.call( this.el.querySelectorAll( '.content > section' ) );
+        // current index
+        this.current = -1;
+        // show current content item
+        this._show();
+        // init events
+        this._initEvents();
+    };
+ 
+    CBPFWTabs.prototype._initEvents = function() {
+        var self = this;
+        this.tabs.forEach( function( tab, idx ) {
+            tab.addEventListener( 'click', function( ev ) {
+                ev.preventDefault();
+                self._show( idx );
+                var gridwidth = (jQuery('.grid-layout-4').width() / 4) - 35;
+				jQuery('.grid-layout-4 .post').css('width', gridwidth);
+				jQuery('.grid-layout-4').isotope({
+					layoutMode: 'masonry',
+					itemSelector: '.post',
+					transformsEnabled: false,
+					masonry: {
+						columnWidth: gridwidth,
+						gutterWidth: 40
+					}
+				});
+                jQuery('#posts-container').isotope('reLayout');
+            } );
+        } );
+    };
+ 
+    CBPFWTabs.prototype._show = function( idx ) {
+        if( this.current >= 0 ) {
+            this.tabs[ this.current ].className = '';
+            this.items[ this.current ].className = '';
+        }
+        // change current
+        this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+        this.tabs[ this.current ].className = 'tab-current';
+        this.items[ this.current ].className = 'content-current';
+    };
+ 
+    // add to global namespace
+    window.CBPFWTabs = CBPFWTabs;
+ 
+})( window );
+
+new CBPFWTabs( document.getElementById( 'tabs' ) );
+
 });
+

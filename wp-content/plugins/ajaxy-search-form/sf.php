@@ -1079,7 +1079,7 @@ class AjaxyLiveSearch {
 			'live_search_settings' => $live_search_settings
 	    );
 	   
-		wp_localize_script( 'authorjs', 'ajaxy', $ajaxy_params );
+		wp_localize_script( 'script', 'ajaxy', $ajaxy_params );
 		?>
 		<script type="text/javascript">
 			/* <![CDATA[ */

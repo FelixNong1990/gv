@@ -46,98 +46,290 @@
 		<div id="tabs" class="tabs">
 			<nav>
 				<ul>
-					<li><a href="#section-1" class="icon-shop"><span>Shop</span></a></li>
-					<li><a href="#section-2" class="icon-cup"><span>Drinks</span></a></li>
-					<li><a href="#section-3" class="icon-food"><span>Food</span></a></li>
-					<li><a href="#section-4" class="icon-lab"><span>Lab</span></a></li>
-					<li><a href="#section-5" class="icon-truck"><span>Order</span></a></li>
+					<li><a href="#section-1" class="tabsIcon icon-user"><span>Profile</span></a></li>
+					<li><a href="#section-2" class="tabsIcon icon-camera"><span>Videos</span></a></li>
 				</ul>
 			</nav>
 			<div class="content">
 				<section id="section-1">
-					<div class="mediabox">
-						<img src="img/01.png" alt="img01" />
-						<h3>Sushi Gumbo Beetroot</h3>
-						<p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-					</div>
-					<div class="mediabox">
-						<img src="img/02.png" alt="img02" />
-						<h3>Pea Sprouts Fava Soup</h3>
-						<p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
-					</div>
-					<div class="mediabox">
-						<img src="img/03.png" alt="img03" />
-						<h3>Turnip Broccoli Sashimi</h3>
-						<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-					</div>
+					<?php echo do_shortcode('[userpro template=view]'); ?>
 				</section>
 				<section id="section-2">
-					<div class="mediabox">
-						<img src="img/04.png" alt="img04" />
-						<h3>Asparagus Cucumber Cake</h3>
-						<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+					<div id="posts-container" class="<?php echo $container_class; ?> clearfix">
+			<?php
+			$post_count = 1;
+
+			$prev_post_timestamp = null;
+			$prev_post_month = null;
+			$first_timeline_loop = false;
+
+			while(have_posts()): the_post();
+				$post_timestamp = strtotime($post->post_date);
+				$post_month = date('n', $post_timestamp);
+				$post_year = get_the_date('o');
+				$current_date = get_the_date('o-n');
+			?>
+			<?php if($smof_data['blog_archive_layout'] == 'Timeline'): ?>
+			<?php if($prev_post_month != $post_month): ?>
+				<div class="timeline-date"><h3 class="timeline-title"><?php echo get_the_date($smof_data['timeline_date_format']); ?></h3></div>
+			<?php endif; ?>
+			<?php endif; ?>
+			<div id="post-<?php the_ID(); ?>" <?php post_class($post_class.getClassAlign($post_count).' clearfix'); ?>>
+				<?php if($smof_data['blog_archive_layout'] == 'Medium Alternate'): ?>
+				<div class="date-and-formats">
+					<div class="date-box">
+						<span class="date"><?php the_time($smof_data['alternate_date_format_day']); ?></span>
+						<span class="month-year"><?php the_time($smof_data['alternate_date_format_month_year']); ?></span>
 					</div>
-					<div class="mediabox">
-						<img src="img/05.png" alt="img05" />
-						<h3>Magis Kohlrabi Gourd</h3>
-						<p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+					<div class="format-box">
+						<?php
+						switch(get_post_format()) {
+							case 'gallery':
+								$format_class = 'images';
+								break;
+							case 'link':
+								$format_class = 'link';
+								break;
+							case 'image':
+								$format_class = 'image';
+								break;
+							case 'quote':
+								$format_class = 'quotes-left';
+								break;
+							case 'video':
+								$format_class = 'film';
+								break;
+							case 'audio':
+								$format_class = 'headphones';
+								break;
+							case 'chat':
+								$format_class = 'bubbles';
+								break;
+							default:
+								$format_class = 'pen';
+								break;
+						}
+						?>
+						<i class="icon-<?php echo $format_class; ?>"></i>
 					</div>
-					<div class="mediabox">
-						<img src="img/06.png" alt="img06" />
-						<h3>Ricebean Rutabaga</h3>
-						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+				</div>
+				<?php endif; ?>
+				<?php
+				if($smof_data['featured_images']):
+				if($smof_data['legacy_posts_slideshow']) {
+					get_template_part('legacy-slideshow');
+				} else {
+					get_template_part('new-slideshow');
+				}
+				endif;
+				?>
+				<!--<div class="post-content-container">-->
+					<?php if($smof_data['blog_archive_layout'] == 'Timeline'): ?>
+					<div class="timeline-circle"></div>
+					<div class="timeline-arrow"></div>
+					<?php endif; ?>
+					<?php if($smof_data['blog_archive_layout'] != 'Large Alternate' && $smof_data['blog_archive_layout'] != 'Medium Alternate' && $smof_data['blog_archive_layout'] != 'Grid'  && $smof_data['blog_archive_layout'] != 'Timeline'): ?>
+					<h2 class=entry-title><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<?php endif; ?>
+					<?php if($smof_data['blog_archive_layout'] == 'Large Alternate'): ?>
+					<div class="date-and-formats">
+						<div class="date-box">
+							<span class="date"><?php the_time($smof_data['alternate_date_format_day']); ?></span>
+							<span class="month-year"><?php the_time($smof_data['alternate_date_format_month_year']); ?></span>
+						</div>
+						<div class="format-box">
+							<?php
+							switch(get_post_format()) {
+								case 'gallery':
+									$format_class = 'images';
+									break;
+								case 'link':
+									$format_class = 'link';
+									break;
+								case 'image':
+									$format_class = 'image';
+									break;
+								case 'quote':
+									$format_class = 'quotes-left';
+									break;
+								case 'video':
+									$format_class = 'film';
+									break;
+								case 'audio':
+									$format_class = 'headphones';
+									break;
+								case 'chat':
+									$format_class = 'bubbles';
+									break;
+								default:
+									$format_class = 'pen';
+									break;
+							}
+							?>
+							<i class="icon-<?php echo $format_class; ?>"></i>
+						</div>
 					</div>
-				</section>
-				<section id="section-3">
-					<div class="mediabox">
-						<img src="img/02.png" alt="img02" />
-						<h3>Noodle Curry</h3>
-						<p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
+					<?php endif; ?>
+					<div class="post-content">
+
+<?php
+	// Get video infos
+	$post_id = get_the_ID();
+	$views = getPostViews($post_id);
+	$url = get_post_meta($post_id, 'post_meta_embed_code', true); 
+	$video_info = getVideoInfo($url);
+	$video_id   = $video_info['video_id'];
+	$video_provider   = $video_info['video_provider'];
+	
+	// Check whether current video provider is youtube or vimeo then get the thumnail source and video duration
+	if($video_provider == 'youtube') {
+		$link = "https://gdata.youtube.com/feeds/api/videos/". $video_id;
+		$doc = new DOMDocument;
+		$doc->load($link);
+		$title = $doc->getElementsByTagName("title")->item(0)->nodeValue;
+		$duration = $doc->getElementsByTagName('duration')->item(0)->getAttribute('seconds');
+		$src = 'http://i1.ytimg.com/vi/' . $video_id . '/0.jpg';
+	} else if($video_provider == 'vimeo') {
+		$file_contents = file_get_contents("http://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/" . $video_id, true);
+		$vimeo_info    = json_decode($file_contents,true);
+		$duration      = $vimeo_info['duration'];
+		$hash = unserialize(file_get_contents("http://vimeo.com/api/v2/video/" . $video_id . ".php"));
+		$src = $hash[0]['thumbnail_medium'];  
+	}
+	
+	// Convert video duration from seconds to minutes or hours
+	if($duration >= 3600) {
+		$duration = gmdate("H:i:s", $duration);
+	} else {
+		$duration = gmdate("i:s", $duration);
+	}
+	
+	// Other vids info
+	$author_id=$post->post_author;
+	$author_url = get_author_posts_url($author_id);
+	
+	$post_like_count = getTotalLike($post_id) ?: 0;
+	$post_dislike_count = getTotalDislike($post_id) ?: 0;
+	$published_date = get_the_time('F j, Y', $post_id);
+?>
+
+<article class="loop-entry container">
+	<a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" class="loop-entry-img-link">
+	<div class="thumb">
+			<span class="clip">
+				<img src="<?php echo $src; ?>" /><span class="vertical-align"></span>
+			</span>
+			<span class="overlay"></span>
+		
+		<span class="duration"><?php echo $duration; ?></span>
+	</div>
+	</a>
+	<h2 class="loop-entry-title-margin">
+		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			<?php 
+			// if (strlen($post->post_title) > 35) {
+				// echo substr(the_title($before = '', $after = '', FALSE), 0, 35) . '...'; 
+			// } 
+			// else {
+				// the_title();
+			// } 
+			the_title();
+			?>
+		</a>
+	</h2>
+
+	<div class="entry-text">
+		<?php
+			$content = get_the_content();
+			if (strlen(trim($content)) > 15) {
+				$random = rand(15, 20);
+				echo limit_excerpt($content, $random);
+			} else {
+				echo $content;
+			}
+		?>
+		<hr class="showbiz-divider" />
+
+		<ul class="meta-left">
+			<li class="meta-author"><a href="<?php echo $author_url; ?>"><span class="fa fa-user"></span><?php the_author(); ?></a></li>
+		    <li class="meta-date"><span class="fa fa-calendar"></span><?php echo $published_date; ?></li>
+		    <li class="meta-view">
+		    	<span class="fa fa-eye"></span>
+		    	<?php 
+					if($views == 0) {
+						echo " No view";
+					} elseif($views == 1) {
+						echo " One view";
+					} else {
+						echo $views . " views";
+					}
+				?>
+		    </li>
+		</ul>
+
+		<ul class="meta-right">
+		    <li class="rating tn_like">
+			    <span class="fa fa-thumbs-o-up"></span>
+			    <?php 
+					echo $post_like_count;
+				?>
+		    </li>
+			<li class="rating tn_dislike">
+				<span class="fa fa-thumbs-o-down"></span>
+				<?php 
+					echo $post_dislike_count;
+				?>
+			</li>
+			<?php 
+				$commentsNum = get_comments_number();
+				if($commentsNum != 1) $commentsTitle = $commentsNum . ' Comments';
+				else $commentsTitle = $commentsNum . ' Comment';
+			?>
+			<li class="meta-comment"><a class="cmt-link" title="<?php echo $commentsTitle; ?>" href="<?php comments_link(); ?>"><span class="fa fa-comment"></span><?php echo get_comments_number(); ?></a></li>
+		</ul>
+
+		<!-- /loop-entry-meta -->
+	</div>
+	<!-- /entry-text -->
+</article>
+<!-- /loop-entry -->
+					
+		
 					</div>
-					<div class="mediabox">
-						<img src="img/06.png" alt="img06" />
-						<h3>Leek Wasabi</h3>
-						<p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+					<div style="clear:both;"></div>
+					<?php if(!$smof_data['post_meta']): ?>
+					<div class="meta-info">
+						<?php if($smof_data['blog_archive_layout'] == 'Grid' || $smof_data['blog_archive_layout'] == 'Timeline'): ?>
+						<?php if($smof_data['blog_archive_layout'] != 'Large Alternate' && $smof_data['blog_archive_layout'] != 'Medium Alternate'): ?>
+						<div class="alignleft">
+							<?php if(!$smof_data['post_meta_read']): ?><a href="<?php the_permalink(); ?>" class="read-more"><?php echo __('Read More', 'Avada'); ?></a><?php endif; ?>
+						</div>
+						<?php endif; ?>
+						<div class="alignright">
+							<?php if(!$smof_data['post_meta_comments']): ?><?php comments_popup_link('<i class="icon-bubbles"></i>&nbsp;'.__('0', 'Avada'), '<i class="icon-bubbles"></i>&nbsp;'.__('1', 'Avada'), '<i class="icon-bubbles"></i>&nbsp;'.'%'); ?><?php endif; ?>
+						</div>
+						<?php else: ?>
+						<?php if($smof_data['blog_archive_layout'] != 'Large Alternate' && $smof_data['blog_archive_layout'] != 'Medium Alternate'): ?>
+						<div class="alignleft vcard">
+							<?php if(!$smof_data['post_meta_author']): ?><?php echo __('By', 'Avada'); ?> <span class="fn"><?php the_author_posts_link(); ?></span><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_date']): ?><span class="updated" style="display:none;"><?php the_modified_time( 'c' ); ?></span><span class="published"><?php the_time($smof_data['date_format']); ?></span><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_cats']): ?><?php if(!$smof_data['post_meta_tags']){ echo __('Categories:', 'Avada') . ' '; } ?><?php the_category(', '); ?><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_tags']): ?><span class="meta-tags"><?php the_tags( ); ?></span><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_comments']): ?><?php comments_popup_link(__('0 Comments', 'Avada'), __('1 Comment', 'Avada'), '% '.__('Comments', 'Avada')); ?><?php endif; ?>
+						</div>
+						<?php endif; ?>
+						<div class="alignright">
+							<?php if(!$smof_data['post_meta_read']): ?><a href="<?php the_permalink(); ?>" class="read-more"><?php echo __('Read More', 'Avada'); ?></a><?php endif; ?>
+						</div>
+						<?php endif; ?>
 					</div>
-					<div class="mediabox">
-						<img src="img/01.png" alt="img01" />
-						<h3>Green Tofu Wrap</h3>
-						<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
-					</div>
-				</section>
-				<section id="section-4">
-					<div class="mediabox">
-						<img src="img/03.png" alt="img03" />
-						<h3>Tomato Cucumber Curd</h3>
-						<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
-					</div>
-					<div class="mediabox">
-						<img src="img/01.png" alt="img01" />
-						<h3>Mushroom Green</h3>
-						<p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-					</div>
-					<div class="mediabox">
-						<img src="img/04.png" alt="img04" />
-						<h3>Swiss Celery Chard</h3>
-						<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
-					</div>
-				</section>
-				<section id="section-5">
-					<div class="mediabox">
-						<img src="img/02.png" alt="img02" />
-						<h3>Radish Tomato</h3>
-						<p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
-					</div>
-					<div class="mediabox">
-						<img src="img/06.png" alt="img06" />
-						<h3>Fennel Wasabi</h3>
-						<p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p>
-					</div>
-					<div class="mediabox">
-						<img src="img/01.png" alt="img01" />
-						<h3>Red Tofu Wrap</h3>
-						<p>Green horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
-					</div>
+					<?php endif; ?>
+				<!--</div>-->
+			</div>
+			<?php
+			$prev_post_timestamp = $post_timestamp;
+			$prev_post_month = $post_month;
+			$post_count++;
+			endwhile;
+			?>
+		</div>
+		<?php themefusion_pagination($pages = '', $range = 2); ?>
 				</section>
 			</div><!-- /content -->
 		</div><!-- /tabs -->
