@@ -58,13 +58,14 @@ h3.ca-title {
 }
 .ca-ratings {
 	float:right;
-	margin-top:3px
+	margin-top:8px
 }
 .ca-excerpt {
 	border-bottom:1px solid #e6e6e6;
 	margin-bottom:10px;
 	word-wrap:break-word;
-	color:#999
+	color:#999;
+	padding-bottom: 10px;
 }
 .ca-bottom-details {
 	padding:0 10px 15px

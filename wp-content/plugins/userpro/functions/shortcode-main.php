@@ -547,8 +547,8 @@
 			wp_register_style('userpro_skin_min', userpro_sk_url . 'skins/'.$skin.'/style.css');
 			wp_enqueue_style('userpro_skin_min');
 		} else {
-			wp_register_style('userpro_skin_min', userpro_url . 'skins/'.$skin.'/style.css');
-			wp_enqueue_style('userpro_skin_min');
+			//wp_register_style('userpro_skin_min', userpro_url . 'skins/'.$skin.'/style.css');
+			//wp_enqueue_style('userpro_skin_min');
 		}
 		if (locate_template('userpro/skins/'.$skin.'/style.css') ) {
 			wp_register_style('userpro_skin_custom', get_template_directory_uri() . '/userpro/skins/'.$skin.'/style.css' );

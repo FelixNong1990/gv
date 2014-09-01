@@ -18,4 +18,8 @@ You have installed the WordPress Chat plugin. Please review the polling interval
 
 2. WPDatatables
 
-- Remove all enqueued scripts and styles inside wpdatatables.php and class.table.php(inside source folder) 
+- Remove all enqueued scripts and styles inside wpdatatables.php and class.table.php(inside source folder)
+
+3. Userpro
+
+- Remove enqueued style of elegant skin in shortcode-main.php line 550 

@@ -938,7 +938,7 @@ if( $smof_data['layout'] == 'Boxed' || get_post_meta($c_pageID, 'pyre_page_bg_la
 	// }
 	//add_action( 'wp_print_scripts', 'wpa54064_inspect_scripts' );
 	// echo('<pre>');
-	// print_r( $wp_scripts );
+	// print_r( $wp_styles );
 	// echo('</pre>');
   //var_dump( $wp_styles );
 	?>

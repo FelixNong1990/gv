@@ -36,9 +36,9 @@ foreach ($category as $key) {
 ?>
 
 		<?php
-			echo "<pre>";
-			print_r($_GET);
-			echo "</pre>";
+			// echo "<pre>";
+			// print_r($_GET);
+			// echo "</pre>";
 			
 			$id = get_the_ID();
 			$meta = get_post_meta($id);

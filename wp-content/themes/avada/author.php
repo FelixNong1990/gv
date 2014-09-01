@@ -41,6 +41,9 @@
 		$description  = __("This author has not yet filled in any details.",'Avada');
 		$description .= '</br>'.sprintf( __( 'So far %s has created %s entries.' ), $name, count_user_posts( $author_id ) );
 	}
+	
+	// Get current user's login name 
+	//$author_name = the_author_meta('user_login');
 	?>
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<div id="tabs" class="tabs">
@@ -52,7 +55,7 @@
 			</nav>
 			<div class="content">
 				<section id="section-1">
-					<?php echo do_shortcode('[userpro template=view]'); ?>
+					<?php echo do_shortcode('[userpro template=view user=author]'); ?>
 				</section>
 				<section id="section-2">
 					<div id="posts-container" class="<?php echo $container_class; ?> clearfix">
@@ -217,7 +220,7 @@
 	<a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" class="loop-entry-img-link">
 	<div class="thumb">
 			<span class="clip">
-				<img src="<?php echo $src; ?>" /><span class="vertical-align"></span>
+				<img class="lazy" data-original="<?php echo $src; ?>" src="<?php echo content_url(); ?>/images/blank.gif" /><span class="vertical-align"></span>
 			</span>
 			<span class="overlay"></span>
 		

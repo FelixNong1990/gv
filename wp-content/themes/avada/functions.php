@@ -11,7 +11,7 @@ function blix_breadcrumbs() {
 	$text['category'] = '%s'; // text for a category page
 	$text['search']   = 'Search results for : <span style="color: #bb3914">%s</span>'; // text for a search results page
 	$text['tag']      = 'Tag archive for : <span style="color: #bb3914">%s</span>'; // text for a tag page
-	$text['author']   = 'Videos posted by %s'; // text for an author page
+	$text['author']   = '%s\'s profile'; // text for an author page
 	$text['404']      = 'Error 404'; // text for the 404 page
 
 	$show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show

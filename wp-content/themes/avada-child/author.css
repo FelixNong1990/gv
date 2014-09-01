@@ -135,7 +135,7 @@ body.author a.tabsIcon:before, body.author a.tabsIcon:after {
  
 /* Content */
 .content section {
-    font-size: 1.25em;
+    font-size: 1.15em;
     padding: 3em 1em;
     display: none;
     max-width: 1230px;

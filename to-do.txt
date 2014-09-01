@@ -56,3 +56,5 @@
 - z-index of user menu when view editor of video submission in full screen mode
 - Change all CDATA data for required plugins
 - Convert all bloginfo() or other function that initialize query database by using full url gamveins
+- Prevent infinite scrolling getting triggered when scroll down to the end of profile tab inside author page
+- Change permalink to date time format
