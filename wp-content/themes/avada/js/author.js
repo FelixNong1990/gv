@@ -19,5 +19,6 @@ function onPlayerStateChange(e,t){return function(e){if(e.data==YT.PlayerState.P
 
 jQuery("img.lazy").lazyload({
 	effect : "fadeIn",
+	skip_invisible: false,
 	threshold: -80
 });
