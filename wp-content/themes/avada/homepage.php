@@ -150,7 +150,7 @@ get_header(); ?>
 		?>
 		<div class="cat-box">
 			<h2 class="light-title title">
-				<a class="title-link" href="<?php echo site_url() . '/category/' . $gameArr; ?>"><?php echo $val; ?></a>
+				<a title="View all videos related to <?php echo $val; ?>" class="title-link" href="<?php echo site_url() . '/category/' . $gameArr; ?>"><?php echo $val; ?></a>
 			</h2>
 			<div class="smart-control pull-right">
 				

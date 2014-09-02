@@ -926,8 +926,6 @@ body,.post .post-content,.post-content blockquote,#wrapper .tab-holder .news-lis
 
 <?php if($smof_data['link_color']): ?>
 body a,
-body a:before,
-body a:after,
 .single-navigation a[rel="prev"]:before,
 .single-navigation a[rel="next"]:after
 {color:<?php echo $smof_data['link_color']; ?>;}

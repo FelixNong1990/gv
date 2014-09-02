@@ -269,8 +269,154 @@
 				
             });
 			
-			var embedVal = $('#textarea').val();
-			if(embedVal.length < 10) {
+			
+			var regYoutube = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+			var regVimeo = /^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)/;
+			var regDailymotion = /^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/;
+			var regMetacafe = /^.*(metacafe\.com)(\/watch\/)(\d+)(.*)/i;
+			
+			function check_url(url) {
+				if(regYoutube.test(url)) {
+					return 'youtube';
+				}else if (regMetacafe.test(url)) {
+					return 'metacafe';
+				}else if(regDailymotion.test(url)){
+					return 'dailymotion';
+				}else if(regVimeo.test(url)) {
+					return 'vimeo';
+				}else{
+					return "invalid";
+				}
+			}
+
+			function youtube_parser(url){
+				var regExp = /(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=))([\w-]{10,12})/i,
+					id;
+					
+				if(regExp.test(url)) {
+					id = regExp.exec(url)[1];
+				}
+				
+				return id;
+			}
+			
+			function vimeo_parser(url){
+				var regExp = /^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)/i,
+					id;
+					
+				if(regExp.test(url)) {
+					id = regExp.exec(url)[5];
+				}
+				
+				return id;
+			}
+
+
+			(function($) {
+			$.fn.bootstrapValidator.validators.embedValidator = {
+					validate: function(validator, $field, options) {
+						var message,
+							url = $field.val(),
+							vidId,
+							vidPlatform = check_url(url);
+						if($.trim(url.length) > 0) { 
+							
+							if(vidPlatform.toLowerCase() != "invalid") {
+								if(vidPlatform.toLowerCase() == "youtube") {
+									vidId = youtube_parser(url);
+									if(vidId && vidId.length >= 11) {
+										message = vidId;
+										return true;
+									} else {
+										message = "Invalid Youtube embed code";
+										$('[data-bv-validator="embedValidator"]').text(message);
+										return false;
+									}
+								} else if(vidPlatform.toLowerCase() == "vimeo") {
+									vidId = vimeo_parser(url);
+									if(vidId && vidId.length >= 8) {
+										message = vidId;
+										return true;
+									} else {
+										
+										message = "Invalid Vimeo embed code";
+										$('[data-bv-validator="embedValidator"]').text(message);
+										return false;
+									}
+								} else {
+									message = "Sorry! We're not supported this platform."
+									$('[data-bv-validator="embedValidator"]').text(message);
+									return false;
+								}
+							} else {
+								message = "Invalid URL";
+								$('[data-bv-validator="embedValidator"]').text(message);
+								return false;
+							}
+						}
+						
+					}
+					
+				};
+			}(window.jQuery));
+			
+			$('#post_form').bootstrapValidator({
+				//excluded: [':disabled', ':hidden', ':not(:visible)'],
+				live: 'submitted',
+				message: 'This value is not valid',
+				feedbackIcons: {
+					valid: 'glyphicon glyphicon-ok',
+					invalid: 'glyphicon glyphicon-remove',
+					validating: 'glyphicon glyphicon-refresh'
+				},
+				fields: {
+					post_title: {
+						validators: {
+							notEmpty: {
+								message: "You can't leave this empty."
+							},
+							stringLength: {
+								max: 100,
+								min: 6,	
+								message: 'The title must be more than 5 and less than 100 characters'
+							}
+						}
+					},
+					'category[]': {
+						validators: {
+							notEmpty: {
+								message: "You can't leave this empty."
+							}
+						}
+					},
+					'tags': {
+						validators: {
+							notEmpty: {
+								message: "You can't leave this empty."
+							}
+						}
+					},
+					'post_field_embed_code': {
+						validators: {
+							notEmpty: {
+								message: "You can't leave this empty."
+							},
+							embedValidator: {
+								message: "The embed code is invalid."
+							}
+						}
+					}
+				},
+				submitHandler: function(validator, form, submitButton) {
+					//validator.defaultSubmit();
+				}
+			});
+			
+			console.log(isValidField('post_title'));
+			
+			var embedVal = $('#textarea').val(),
+				title    = $('#post_title').val();
+			if(embedVal.length < 10 || title.length < 5 || title.length > 100) {
 				error = true;
 				//WP_User_Frontend.markError($('#textarea'));
 			}

@@ -91,7 +91,7 @@ foreach ($category as $key) {
 		<li>
 			<div class="full-video">
 				<?php
-				if($video_provider == 'youtube') {
+				if(!$video_provider == 'youtube') {
 				?>
 					<iframe width="854" height="480" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				<?php 

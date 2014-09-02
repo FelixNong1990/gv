@@ -679,7 +679,7 @@ class WPUF_Render_Form {
 						$term_id = $val['term_id'];
 						$tag_name = get_tag($term_id)->name;
 					?>
-						source.push('<?php echo $tag_name; ?>');
+						//source.push('<?php echo $tag_name; ?>');
 					<?php
 					}
 					?>

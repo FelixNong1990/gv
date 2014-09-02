@@ -9,6 +9,13 @@ You have installed the WordPress Chat plugin. Please review the polling interval
  });`
 
 
+================= THEME UPDATE MANUALLY ===========================
+
+1. Remove body a:before, body a:after color of dynamic_css.php inside framework folder
+
+ 
+
+
 ================= PLUGINS UPDATE MANUALLY ===========================
 
 1. Disqus Conditional Load:
@@ -23,3 +30,5 @@ You have installed the WordPress Chat plugin. Please review the polling interval
 3. Userpro
 
 - Remove enqueued style of elegant skin in shortcode-main.php line 550 
+
+

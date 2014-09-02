@@ -16,7 +16,8 @@ if( ( ($smof_data['header_transparent'] && get_post_meta($c_pageID, 'pyre_transp
 	<div class="avada-row">
 		<div class="logo">
 			<a href="<?php bloginfo('url'); ?>">
-				<img src="<?php echo $smof_data['logo']; ?>" alt="<?php bloginfo('name'); ?>" data-max-width="<?php echo $smof_data["header_sticky_logo_max_width"]; ?>" class="normal_logo" />
+				<img alt="Game Veins" src="<?php echo content_url(); ?>/images/logo_40.png" width="40" height="40" class="normal_logo" />
+				<!--<img src="<?php echo $smof_data['logo']; ?>" alt="<?php bloginfo('name'); ?>" data-max-width="<?php echo $smof_data["header_sticky_logo_max_width"]; ?>" class="normal_logo" />-->
 				<?php if($smof_data['logo_retina'] && $smof_data['retina_logo_width'] && $smof_data['retina_logo_height']): ?>
 				<?php
 				$pixels ="";

@@ -11,14 +11,15 @@
 		<div class="avada-row">
 			<div class="alignleft">
 				<?php
-				if($smof_data['header_left_content'] == 'Contact Info') {
-					get_template_part('framework/headers/header-info');
-				} elseif($smof_data['header_left_content'] == 'Social Links') {
-					get_template_part('framework/headers/header-social');
-				} elseif($smof_data['header_left_content'] == 'Navigation') {
-					get_template_part('framework/headers/header-menu');
-				}
+				// if($smof_data['header_left_content'] == 'Contact Info') {
+					// get_template_part('framework/headers/header-info');
+				// } elseif($smof_data['header_left_content'] == 'Social Links') {
+					// get_template_part('framework/headers/header-social');
+				// } elseif($smof_data['header_left_content'] == 'Navigation') {
+					// get_template_part('framework/headers/header-menu');
+				// }
 				?>
+				<img src="<?php echo content_url(); ?>/images/logo_40.png" width="40" height="40" />
 			</div>
 			<div class="middle-search">
 				<?php echo do_shortcode('[ajaxy-live-search show_category="1" show_post_category="1" post_types="post" label="Search" iwidth="180" delay="500" width="315" url="http://localhost/gv/?s=%s" credits="1" border="1px solid #eee"]'); ?>
