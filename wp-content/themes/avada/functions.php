@@ -95,14 +95,15 @@ function blix_breadcrumbs() {
 						$ancestorId = $parentId->parent;
 						if($ancestorId > 0) {
 							walk_branch($ancestorId);
-						} else {
-							$cat_parent_name = get_cat_name($parentId);
-							$result .=
-							'<span typeof="v:Breadcrumb">
-								<a rel="v:url" property="v:title" href="' . get_category_link($category->parent) . '" title="View all posts in ' . $cat_parent_name . '">' . $cat_parent_name . '</a>
-							</span> | ';
-						}
+						} 
+						$cat_parent_name = get_cat_name($parentId);
+						$result .=
+						'<span typeof="v:Breadcrumb">
+							<a rel="v:url" property="v:title" href="' . get_category_link($category->parent) . '" title="View all posts in ' . $cat_parent_name . '">' . $cat_parent_name . '</a>
+						</span> | ';
 					}
+					
+					return $result;
 				}
 				
 				
@@ -117,7 +118,7 @@ function blix_breadcrumbs() {
 								$count++;
 								$parents[] = $parentId;
 								//if(count($parentId) > 0) {
-								walk_branch($parentId);
+								$result .= walk_branch($parentId);
 								//}
 								if ($count == 1 && count( $categories ) > 1) {
 									$result .=
