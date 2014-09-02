@@ -90,20 +90,29 @@ function blix_breadcrumbs() {
 				
 				
 				
-				function walk_branch($parentId) {
-					if($parentId > 0) {
-						$ancestorId = $parentId->parent;
-						if($ancestorId > 0) {
-							walk_branch($ancestorId);
-						} 
-						$cat_parent_name = get_cat_name($parentId);
-						$result .=
+				$branch = '';
+				
+
+				function walk_branch($category) {
+					$countBranch = 0;
+					$parentId = $category->category_parent;
+					$cat_parent_name = get_cat_name($parentId);
+					if($countBranch > 0) {
+						$branch .=
+						'<span class="breadcrumb-cat-last" typeof="v:Breadcrumb">
+							<a rel="v:url" property="v:title" href="' . get_category_link($category->parent) . '" title="View all posts in ' . $cat_parent_name . '">' . $cat_parent_name . '</a>
+						</span>';
+					} else {
+						$branch .=
 						'<span typeof="v:Breadcrumb">
 							<a rel="v:url" property="v:title" href="' . get_category_link($category->parent) . '" title="View all posts in ' . $cat_parent_name . '">' . $cat_parent_name . '</a>
 						</span> | ';
 					}
-					
-					return $result;
+					if($parentId > 0) {
+						$countBranch++;
+						walk_branch($ancestorId);
+					}
+					return $branch;
 				}
 				
 				
@@ -118,26 +127,26 @@ function blix_breadcrumbs() {
 								$count++;
 								$parents[] = $parentId;
 								//if(count($parentId) > 0) {
-								$result .= walk_branch($parentId);
+								$result .= walk_branch($category);
 								//}
-								if ($count == 1 && count( $categories ) > 1) {
-									$result .=
-									'<span typeof="v:Breadcrumb">
-										<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
-										<span class="delimeter-holder"></span>
-									</span>';
-								} else if(count( $categories ) == $count) {
-									$result .=
-									'<span class="breadcrumb-cat-last" typeof="v:Breadcrumb">
-										<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
-									</span>';
-								} else {
-									$result .=
-									'<span typeof="v:Breadcrumb">
-										<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
-										<span class="delimeter-holder"></span>
-									</span>';						
-								}
+								// if ($count == 1 && count( $categories ) > 1) {
+								// 	$result .=
+								// 	'<span typeof="v:Breadcrumb">
+								// 		<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
+								// 		<span class="delimeter-holder"></span>
+								// 	</span>';
+								// } else if(count( $categories ) == $count) {
+								// 	$result .=
+								// 	'<span class="breadcrumb-cat-last" typeof="v:Breadcrumb">
+								// 		<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
+								// 	</span>';
+								// } else {
+								// 	$result .=
+								// 	'<span typeof="v:Breadcrumb">
+								// 		<a rel="v:url" property="v:title" href="' . get_category_link($category->cat_ID) . '" title="View all posts in ' . $category->name . '">' . $category->name . '</a>
+								// 		<span class="delimeter-holder"></span>
+								// 	</span>';						
+								// }
 							}
 						}
 					}
