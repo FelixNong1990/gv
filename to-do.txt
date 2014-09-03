@@ -59,3 +59,5 @@
 - Prevent infinite scrolling getting triggered when scroll down to the end of profile tab inside author page
 - Change permalink to date time format
 - Lazy load images inside single page
+- Add specific stylesheet and js files to following and followers(other missing pages such as 404 as well) 
+instead of default.js and default.css
