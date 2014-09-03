@@ -235,7 +235,7 @@ div.userpro-overlay {
 	top: 5px;
 }*/
 
-.breadcrumbs span.breadcrumb-cat:after,.breadcrumbs span.breadcrumb-cat-last:after,.inner-breadcrumbs > a:after {
+.breadcrumbs span.breadcrumb-cat:after,.breadcrumbs span.breadcrumb-cat-arrow:after,.inner-breadcrumbs > a:after {
 	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaUlEQVR42r3TsQ2AMAxEUTYhm7CNh4GlGAJq2MQ4pzTWicKHRPGlFNwLTSZ3T5lZb40azlz6/g04owuICDQAAxEARgSAEQFgRADQEnm0K8A8br+FP+BxAeBxAeBxFTjSWAC2r28B/QnoPcZMIf3wsKR/AAAAAElFTkSuQmCC);
 	display: inline-block;
 	position: relative;

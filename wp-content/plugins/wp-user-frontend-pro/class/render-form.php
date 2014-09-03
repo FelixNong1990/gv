@@ -677,9 +677,9 @@ class WPUF_Render_Form {
 					<?php
 					foreach ($results as $key=>$val) {
 						$term_id = $val['term_id'];
-						$tag_name = get_tag($term_id)->name;
+						$tag_name = addslashes(get_tag($term_id)->name);
 					?>
-						//source.push('<?php echo $tag_name; ?>');
+						source.push('<?php echo $tag_name; ?>');
 					<?php
 					}
 					?>

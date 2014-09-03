@@ -144,6 +144,8 @@ jQuery(document).ready(function($) {
 	
 	$('#responsive-menu #menu-visitor > li:first-child > a i').after('<span class="mobile-nav-home">Home</span>');
 	
+	$('.inner-breadcrumbs .current').prev().addClass('breadcrumb-cat-arrow').find('span.delimeter-holder').remove();
+	
 	// window['sf_custom_data_' + m] = function(data) {
 		// data.show_category = show_category;
 		// data.show_post_category = show_post_category;

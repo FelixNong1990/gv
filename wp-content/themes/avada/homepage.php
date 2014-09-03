@@ -143,7 +143,7 @@ get_header(); ?>
 		<div class="utf-content">
 		<?php
 		    // Create array of all categories
-			$gameArr = array('dota'=>"DOTA",'lol'=>"LEAGUE of LEGENDS",'smite'=>"SMITE",'starcraft'=>"StarCraft II",'cod'=>"Call of Duty",'yolo'=>"YOLO");
+			$gameArr = array('dota'=>"DOTA",'lol'=>"LEAGUE of LEGENDS",'smite'=>"SMITE",'starcraft'=>"STARCRAFT II",'cod'=>"CALL of DUTY",'yolo'=>"YOLO");
 			$i = 0;
 			foreach($gameArr as $gameArr=>$val) {
 				$i++;

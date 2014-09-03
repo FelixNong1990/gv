@@ -1285,7 +1285,7 @@ class AjaxyLiveSearch {
 				<div>
 					<label class="screen-reader-text" for="s">' . __('Search for:') . '</label>
 					<div class="sf_search">
-						<input id="txtSearch" maxlength="45" name="s" type="text" class="sf_input i-search" value="' . (get_search_query() == '' ? $settings['label'] : get_search_query()). '" name="s" rel="Tìm bài hát, video, playlist, ca sĩ" autocomplete="off" autofocus="" />
+						<input id="txtSearch" maxlength="45" name="s" type="text" class="sf_input i-search" value="' . (get_search_query() == '' ? $settings['label'] : get_search_query()). '" name="s" rel="Tìm bài hát, video, playlist, ca sĩ" autocomplete="off" />
 						<input id="btnSearch" type="submit" class="sf_button searchsubmit b-search" value="  " />
 					</div>
 				</div>

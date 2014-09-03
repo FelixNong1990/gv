@@ -69,8 +69,8 @@
 				global $userpro;
 				$link = preg_replace("/(?<=href=(\"|'))[^\"']+(?=(\"|'))/", $userpro->permalink(  bbp_get_topic_author_id( bbp_get_forum_last_active_id() ) ), bbp_get_author_link( array( 'post_id' => bbp_get_forum_last_active_id(), 'size' => 30 ) ) );
 			?>
+			<!--<span class="bbp-topic-freshness-author"><?php //echo $link; ?></span>-->
 			<span class="bbp-topic-freshness-author"><?php echo $link; ?></span>
-
 			<?php do_action( 'bbp_theme_after_topic_author' ); ?>
 
 		</p>

@@ -31,4 +31,8 @@ You have installed the WordPress Chat plugin. Please review the polling interval
 
 - Remove enqueued style of elegant skin in shortcode-main.php line 550 
 
+4. WP User Frontend Pro
+
+- Change $userdata->user_login to $userdata->display_name inside frontend-dashboard.php
+
 

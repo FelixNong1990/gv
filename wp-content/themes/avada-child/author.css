@@ -120,6 +120,12 @@ body.author a.tabsIcon:before, body.author a.tabsIcon:after {
     -webkit-font-smoothing: antialiased;
     margin: -0.7em 0.4em 0 0;
 }
+
+@-moz-document url-prefix() {
+    .tabs nav a:before {
+        margin: -5px 0.4em 0 0;
+    }
+}
  
  .tabs nav li.tab-current a:before {
 	color: #47a3da;
