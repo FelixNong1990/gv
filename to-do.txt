@@ -61,3 +61,9 @@
 - Lazy load images inside single page
 - Add specific stylesheet and js files to following and followers(other missing pages such as 404 as well) 
 instead of default.js and default.css
+- Change background color of body of some pages to the same as homepage
+- Change some text font family to museosans
+- Increase font-size
+- Remove some fields from forums edit profile tab
+- Add breadcrumbs to forums profile page
+- Adjust view member photo lightview

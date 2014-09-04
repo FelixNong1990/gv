@@ -1,4 +1,13 @@
 <?php
+// function alter_query_so_15250127($qry) {
+   // if ( $qry->is_main_query() && is_page('profile') ) {
+     // //$qry->set('post_type','page');
+     // //$qry->set('post_parent',41);
+	 // $qry->set('author_name','admin');
+   // }
+// }
+// add_action('pre_get_posts','alter_query_so_15250127');
+
 /* 
  * Display Breadcrumbs in wordpress without a plugin
  * More information

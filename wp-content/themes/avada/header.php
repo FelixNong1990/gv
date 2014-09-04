@@ -44,8 +44,14 @@
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/edit-video.css" />';
 	  	} else if(is_category()) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/category.css" />';
-	  	} else if(is_author()) {
+	  	} else if(is_author() || is_page('profile')) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/author.css" />';
+	  	} else if(is_page('following')) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/following.css" />';
+	  	} else if(is_page('followers')) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/followers.css" />';
+	  	} else if(is_search()) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/search.css" />';
 	  	} else {
 			echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/default.css" />';
 		}
@@ -79,9 +85,18 @@
 	  	} else if(is_category()) {
 	    	wp_register_script('categoryjs', get_bloginfo('template_directory') . '/js/category.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('categoryjs');
-	  	} else if(is_author()) {
+	  	} else if(is_author() || is_page('profile')) {
 	    	wp_register_script('authorjs', get_bloginfo('template_directory') . '/js/author.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('authorjs');
+	  	} else if(is_page('following')) {
+	    	wp_register_script('followingjs', get_bloginfo('template_directory') . '/js/following.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('followingjs');
+	  	} else if(is_page('followers')) {
+	    	wp_register_script('followersjs', get_bloginfo('template_directory') . '/js/followers.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('followersjs');
+	  	} else if(is_search()) {
+	    	wp_register_script('searchjs', get_bloginfo('template_directory') . '/js/search.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('searchjs');
 	  	} else {
 			wp_register_script('defaultjs', get_bloginfo('template_directory') . '/js/default.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('defaultjs');

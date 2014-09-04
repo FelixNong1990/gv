@@ -1,3 +1,7 @@
+<?php
+// Template Name: Profile
+?>
+
 <?php get_header(); ?>
 	<?php
 	$sidebar_exists = true;
@@ -32,7 +36,7 @@
 		}
 	}
 
-	$author_id    = get_the_author_meta('ID');
+	$author_id    = 5;
 	$name         = get_the_author_meta('display_name', $author_id);
 	$avatar       = get_avatar( get_the_author_meta('email', $author_id), '82' );
 	$description  = get_the_author_meta('description', $author_id);
@@ -45,7 +49,7 @@
 	// Get current user's login name 
 	//$author_name = the_author_meta('user_login');
 	?>
-	<div id="content" class="full-width">
+	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<div id="tabs" class="tabs">
 			<nav>
 				<ul>
@@ -55,7 +59,7 @@
 			</nav>
 			<div class="content">
 				<section id="section-1">
-					<?php echo do_shortcode('[userpro template=view user=author]'); ?>
+					<?php echo do_shortcode('[userpro template=view user=admin]'); ?>
 				</section>
 				<section id="section-2">
 					<div id="posts-container" class="<?php echo $container_class; ?> clearfix">
@@ -65,8 +69,18 @@
 			$prev_post_timestamp = null;
 			$prev_post_month = null;
 			$first_timeline_loop = false;
-
-			while(have_posts()): the_post();
+			// Build the query arguments
+			$args = array(
+				'post_type' => 'post',
+				'posts_per_page' => 10,
+				'post_status' => 'publish',
+				'author_name' => 'resolution'
+			);
+			$author_query = new WP_Query( $args );
+			 
+			if ( $author_query->have_posts() ) :
+				while ( $author_query->have_posts() ) : $author_query->the_post();
+			//while(have_posts()): the_post();
 				$post_timestamp = strtotime($post->post_date);
 				$post_month = date('n', $post_timestamp);
 				$post_year = get_the_date('o');
@@ -330,6 +344,7 @@
 			$prev_post_month = $post_month;
 			$post_count++;
 			endwhile;
+			endif;
 			?>
 		</div>
 		<?php themefusion_pagination($pages = '', $range = 2); ?>

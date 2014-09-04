@@ -209,7 +209,6 @@
 						<div class="timeline-arrow"></div>
 						<?php endif; ?>
 						<?php if($smof_data['search_layout'] != 'Large Alternate' && $smof_data['search_layout'] != 'Medium Alternate' && $smof_data['search_layout'] != 'Grid'  && $smof_data['search_layout'] != 'Timeline'): ?>
-						<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<?php endif; ?>
 						<?php if($smof_data['search_layout'] == 'Large Alternate'): ?>
 						<div class="date-and-formats">
@@ -324,9 +323,7 @@
 											<span class="straight-sep">|</span>
 										</div>
 										<div class="vid_categories">
-											<span class="vid_cat_icon">
-												<i class="fa fa-folder-open-o"></i>
-											</span>
+											<i class="fa fa-folder-open-o"></i>
 											<div class="vid_cat_btn">
 											<?php
 												$categories = get_the_category($id);
