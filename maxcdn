@@ -1,0 +1,36 @@
+→Hello
+Jeniffer Rosellon: hi
+Jeniffer Rosellon: incase our chat get disconnected, can I have your name and email please?
+→I'm completely new in this field. I want to set up a small blog so in case if I use MaxCDN , do I need to have any hosting provider to host my website? I'm using wordpress
+→My name is Felix and my email is kuarama1990@gmail.com
+Jeniffer Rosellon: yes, you will need to have a hosting provider to use our service
+→Sorry for long delay, i thought maxcdn will host all my files so why do I need hosting provider here?
+Jeniffer Rosellon: you would still require your site to be on your host, all of your files as well
+Marko Markovic: Hello.
+Marko Markovic: We don't generally support full website caches
+Marko Markovic: As we cache only the static files from your websites.
+Marko Markovic: May I know what is the expected bandwidth for your website?
+→I'm not sure maybe 100GB?
+Marko Markovic: For that specific package we would not support full website cache.
+→but if I'm not wrong I need to point my nameserver to your host then how can my hosting provider host my file anymore. Sorry I'm just new to this field so I'm quite confused here
+Marko Markovic: Yes, but that is how some other CDN providers work
+Marko Markovic: We function by link rewrites
+Marko Markovic: So when you request the files trough the URL we provide (which can also be masked by a CNAME domain)
+Marko Markovic: You'd actually receive the files from our network rather than from your web server.
+→but you also host static files then all the server side files from Wordpress will be get from my hosting provider?
+Marko Markovic: Yes, and after few requests for those files we would cache them
+Marko Markovic: making an exact replica of the file which you have locally
+→So if I submit a form on my site, then how does the data getting processed here? How can the data know to go through my hosting provider when I've already pointed my nameserver to maxcdn?
+Marko Markovic: You shouldn't point your DNS to maxcdn servers, as mentioned previously we don't work that way.
+Marko Markovic: We'd only require you to rewrite the links to your static files
+Marko Markovic: Here's an example on a custom made website:
+Marko Markovic: http://support.maxcdn.com/pullzone/custom-integration/
+Marko Markovic: So all of the requests, and server side scripts would be normally ran on your server
+Marko Markovic: while the static files would be requested from our network, and if the files are cached they'd be directly served from our data centers
+Marko Markovic: you also have access to the feature which will allow us to serve the file which is no longer present on your origin server
+Marko Markovic: Until it's purged/expired from our cache.
+
+
+I'm quite new to this so please bear with me if this is an ignorant question. So if I'm not wrong when I use maxcdn then I need to point my nameservers to your server, but maxcdn only support static files like html, css, js and images then my question is how about other php server files (I'm using Wordpress), how does the data know to go through my server to get the data when I'm already pointed my nameservers to your server?
+
+As per your concern, CDN works by altering your urls for your static content, We basically cache your website's static contents like css, js, images on our servers world wide and deliver it to your visitors from servers geographically closest to them, hence reducing site's load time. Unfortunately we do not cached php files, you may check this page please so that you'll be able to see the non-cache-able and cache-able file types <http://support.maxcdn.com/pullzone/contents-caching/>;. Also, you don't need to cahn ge anything from your server, you just need to create Pull Zone and install and configure a plugin on your wordpress. Here's also a list of the plugins that we support on wordpress <http://support.maxcdn.com/pullzone/wordpress-cdn/>;. You may just choose only one among the listed plugins

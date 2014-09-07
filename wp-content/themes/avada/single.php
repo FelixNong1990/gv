@@ -91,7 +91,7 @@ foreach ($category as $key) {
 		<li>
 			<div class="full-video">
 				<?php
-				if(!$video_provider == 'youtube') {
+				if($video_provider == 'youtube') {
 				?>
 					<iframe width="854" height="480" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				<?php 
@@ -276,17 +276,22 @@ foreach ($category as $key) {
 
 <div class="details">
 	<div class="user">
-		<?php echo get_avatar( get_the_author_email(), '52' ); ?>
+		<?php
+			// Get author id
+			$author_id=$post->post_author; 
+			$protocol = is_localhost();
+			$author_login_name = get_the_author_meta('user_login', $author_id);
+			$author_display_name = get_the_author_meta('display_name', $author_id);
+			$author_url = $protocol . '/profile/' . $author_login_name;
+		?>
+		<a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo get_avatar( get_the_author_email(), '52' ); ?></a>
 		<div class="user-data">
 			<h4>
-			<?php the_author_posts_link(); ?>
+			<a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo $author_display_name; ?></a>
 			</h4>
 			<p>
 				<i class="fa fa-video-camera"></i>
-				<?php 
-					// Get author id
-					$author_id=$post->post_author; 
-
+				<?php
 					// Get total number of post by author id
 				 	echo $user_post_count = count_user_posts( $author_id );
 				?>
@@ -357,7 +362,10 @@ foreach ($category as $key) {
 
 		
 		<div class="clr"></div>
-		<p class="vid_description">Posted on <?php the_date(); ?></p>
+		<?php
+			$published_date = get_the_time('F jS, Y', $id);
+		?>
+		<p class="vid_description">Posted on <?php echo $published_date; ?></p>
 		<article class="description-wrapper">
 	        <div class="video-description">
 	        	<?php the_content();?>
@@ -421,7 +429,7 @@ foreach ($category as $key) {
 			<?php 
 				$id       		  = get_the_ID();
 				setPostViews($id);
-				$published_date = get_the_time('F j, Y', $id);
+				$published_date = get_the_time('F jS, Y', $id);
 				// Get the ID of a given category
 			    //$category_id = get_cat_ID( 'Dota' );
 

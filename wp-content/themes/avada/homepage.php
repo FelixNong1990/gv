@@ -71,10 +71,14 @@ get_header(); ?>
 					$ratings = get_post_meta( $post_id, '_kksr_avg' , true );
 					$per = ($ratings/5)*100;
 					$views = getPostViews($post_id);
-					$author_id=$post->post_author;
-					$author_url = get_author_posts_url($author_id);
-					$published_date = get_the_time('F j, Y', $post_id);
-					
+					$author_id =$post->post_author;
+					//$author_url = get_author_posts_url($author_id);
+					$protocol = is_localhost();
+					$author_login_name = get_the_author_meta('user_login', $author_id);
+					$author_display_name = get_the_author_meta('display_name', $author_id);
+					$author_url = $protocol . '/profile/' . $author_login_name;
+					$published_date = get_the_time('F jS, Y', $post_id);
+					//$published_date = get_the_time('d/m/Y', $post_id);
 					$url = get_post_meta($post_id, 'post_meta_embed_code', true); 
 					$video_info = getVideoInfo($url);
 					$video_id   = $video_info['video_id'];
@@ -114,7 +118,7 @@ get_header(); ?>
 							</div>
 							<div class="post-details-slider">
 								<i class="fa fa-user fa-lg"> </i>
-								<span>Posted by <a class="post-details-author" title="Posts by <?php the_author(); ?>" href="<?php echo $author_url; ?>"><?php the_author(); ?></a></span>
+								<span>Videos posted by <a class="post-details-author" title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo $author_display_name; ?></a></span>
 							</div>
 							<div class="post-details-slider">
 								<i class="fa fa-calendar fa-lg"> </i>
@@ -182,10 +186,15 @@ get_header(); ?>
 				$rating = get_post_meta( $post_id, '_kksr_avg' , true );
 				$percentage = ($rating/5)*100;
 				$author_id=$post->post_author;
-				$author_url = get_author_posts_url($author_id);
+				//$author_url = get_author_posts_url($author_id);
+				$protocol = is_localhost();
+				$author_login_name = get_the_author_meta('user_login', $author_id);
+				$author_display_name = get_the_author_meta('display_name', $author_id);
+				$author_url = $protocol . '/profile/' . $author_login_name;
 				$post_like_count = getTotalLike($post_id) ?: 0;
 				$post_dislike_count = getTotalDislike($post_id) ?: 0;
-				$published_date = get_the_time('F j, Y', $post_id);
+				//$published_date = get_the_time('F j, Y', $post_id);
+				$published_date = get_the_time('d/m/Y', $post_id);
 				$embed = get_post_meta($post_id, 'post_meta_embed_code', true);
 				$vid_info = getVideoInfo($embed);
 				$vidId = $vid_info['video_id'];
@@ -208,7 +217,7 @@ get_header(); ?>
 						<a class="ca-title-link" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><h3 class="ca-title"><?php the_title(); ?></h3></a>
 						<div class="ca-author">
 							<span>by</span>
-							<span><a class="ca-author-link" title="View all videos of <?php the_author(); ?>" href="<?php echo $author_url; ?>"><?php the_author(); ?></a> on <?php echo $published_date; ?></span>
+							<span><a class="ca-author-link" title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo $author_display_name; ?></a> on <?php echo $published_date; ?></span>
 						</div>
 						<div class="ca-excerpt">
 							<p>

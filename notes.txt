@@ -8,6 +8,8 @@ You have installed the WordPress Chat plugin. Please review the polling interval
         opentab('add');
  });`
 
+Callback URL twitter for localhost: http://127.0.0.1:8080
+
 
 ================= THEME UPDATE MANUALLY ===========================
 
@@ -35,4 +37,6 @@ You have installed the WordPress Chat plugin. Please review the polling interval
 
 - Change $userdata->user_login to $userdata->display_name inside frontend-dashboard.php
 
+5. Ajaxy Live Search
 
+- Comment out $selective_input = $this->selective_input((array)$settings); at line 1385 of sf.php to prevent fatal error

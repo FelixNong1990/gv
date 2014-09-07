@@ -1382,7 +1382,7 @@ class AjaxyLiveSearch {
 
 		$settings = shortcode_atts( $settings, $atts, 'ajaxy-selective-search-layout' ) ;
 
-		$selective_input = $this->selective_input((array)$settings);
+		//$selective_input = $this->selective_input((array)$settings);
 
 		$live_search_settings = array(
 			'expand' => $settings['expand']

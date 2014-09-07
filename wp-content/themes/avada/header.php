@@ -45,7 +45,7 @@
 	  	} else if(is_category()) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/category.css" />';
 	  	} else if(is_author() || is_page('profile')) {
-	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/author.css" />';
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/profile.css" />';
 	  	} else if(is_page('following')) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/following.css" />';
 	  	} else if(is_page('followers')) {
@@ -86,8 +86,8 @@
 	    	wp_register_script('categoryjs', get_bloginfo('template_directory') . '/js/category.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('categoryjs');
 	  	} else if(is_author() || is_page('profile')) {
-	    	wp_register_script('authorjs', get_bloginfo('template_directory') . '/js/author.js', array('bootstrap-js','jquery-ui'), null, true);
-			wp_enqueue_script('authorjs');
+	    	wp_register_script('profilejs', get_bloginfo('template_directory') . '/js/profile.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('profilejs');
 	  	} else if(is_page('following')) {
 	    	wp_register_script('followingjs', get_bloginfo('template_directory') . '/js/following.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('followingjs');

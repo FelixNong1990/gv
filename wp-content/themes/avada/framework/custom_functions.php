@@ -100,40 +100,40 @@ function themefusion_pagination($pages = '', $range = 2, $current_query = '')
 	if( $pages == '' ) {
 		if( $current_query == '' ) {
 			global $wp_query;
-			echo "<pre>";
-			print_r($wp_query);
-			echo "</pre>";
-			echo $pages = $wp_query->max_num_pages;
+			$pages = $wp_query->max_num_pages;
 			if(!$pages) {
 				 $pages = 1;
 			}
 		} else {
 			$pages = $current_query->max_num_pages;
+            // echo "<pre>";
+            // print_r($current_query);
+            // echo "</pre>";
 		}
 	}
 
-     // if(1 != $pages)
-     // {
-     	// if ( ( $smof_data['blog_pagination_type'] == 'Infinite Scroll' && is_home() ) || ( $smof_data['grid_pagination_type'] == 'Infinite Scroll' && is_page_template('portfolio-grid.php') ) ) {
-        	// echo "<div class='pagination infinite-scroll clearfix'>";
-        // } else {
-        	// echo "<div class='pagination clearfix'>";
-        // }
-         // //if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'><span class='arrows'>&laquo;</span> First</a>";
-         // if($paged > 1) echo "<a class='pagination-prev' href='".get_pagenum_link($paged - 1)."'><span class='page-prev'></span>".__('Previous', 'Avada')."</a>";
+     if(1 != $pages)
+     {
+     	if ( ( $smof_data['blog_pagination_type'] == 'Infinite Scroll' && is_home() ) || ( $smof_data['grid_pagination_type'] == 'Infinite Scroll' && is_page_template('portfolio-grid.php') ) ) {
+        	echo "<div class='pagination infinite-scroll clearfix'>";
+        } else {
+        	echo "<div class='pagination clearfix'>";
+        }
+         //if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'><span class='arrows'>&laquo;</span> First</a>";
+         if($paged > 1) echo "<a class='pagination-prev' href='".get_pagenum_link($paged - 1)."'><span class='page-prev'></span>".__('Previous', 'Avada')."</a>";
 
-         // for ($i=1; $i <= $pages; $i++)
-         // {
-             // if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             // {
-                 // echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-             // }
-         // }
+         for ($i=1; $i <= $pages; $i++)
+         {
+             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+             {
+                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
+             }
+         }
 
-         // if ($paged < $pages) echo "<a class='pagination-next' href='".get_pagenum_link($paged + 1)."'>".__('Next', 'Avada')."<span class='page-next'></span></a>";
-         // //if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last <span class='arrows'>&raquo;</span></a>";
-         // echo "</div>\n";
-     // }
+         if ($paged < $pages) echo "<a class='pagination-next' href='".get_pagenum_link($paged + 1)."'>".__('Next', 'Avada')."<span class='page-next'></span></a>";
+         //if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last <span class='arrows'>&raquo;</span></a>";
+         echo "</div>\n";
+     }
 }
 endif;
 

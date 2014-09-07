@@ -195,11 +195,15 @@
 	
 	// Other vids info
 	$author_id=$post->post_author;
-	$author_url = get_author_posts_url($author_id);
-	
+	//$author_url = get_author_posts_url($author_id);
+	$protocol = is_localhost();
+	$author_login_name = get_the_author_meta('user_login', $author_id);
+	$author_display_name = get_the_author_meta('display_name', $author_id);
+	$author_url = $protocol . '/profile/' . $author_login_name;
 	$post_like_count = getTotalLike($post_id) ?: 0;
 	$post_dislike_count = getTotalDislike($post_id) ?: 0;
-	$published_date = get_the_time('F j, Y', $post_id);
+	//$published_date = get_the_time('F j, Y', $post_id);
+	$published_date = get_the_time('d/m/Y', $post_id);
 ?>
 
 <article class="loop-entry container">
@@ -240,7 +244,7 @@
 		<hr class="showbiz-divider" />
 
 		<ul class="meta-left">
-			<li class="meta-author"><a href="<?php echo $author_url; ?>"><span class="fa fa-user"></span><?php the_author(); ?></a></li>
+			<li class="meta-author"><a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><span class="fa fa-user"></span><?php echo $author_display_name; ?></a></li>
 		    <li class="meta-date"><span class="fa fa-calendar"></span><?php echo $published_date; ?></li>
 		    <li class="meta-view">
 		    	<span class="fa fa-eye"></span>

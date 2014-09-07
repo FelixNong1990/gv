@@ -36,7 +36,14 @@
 		}
 	}
 
-	$author_id    = 5;
+	global $wp_query;
+	$author_name = $wp_query->query_vars['up_username'];
+
+	if(empty($author_name)) {
+		$author_name = get_the_author_meta('user_login', get_current_user_id());
+	}
+
+	$author_id    = get_the_author_meta('ID');
 	$name         = get_the_author_meta('display_name', $author_id);
 	$avatar       = get_avatar( get_the_author_meta('email', $author_id), '82' );
 	$description  = get_the_author_meta('description', $author_id);
@@ -59,7 +66,7 @@
 			</nav>
 			<div class="content">
 				<section id="section-1">
-					<?php echo do_shortcode('[userpro template=view user=admin]'); ?>
+					<?php echo do_shortcode('[userpro template=view user=' . $author_name . ']'); ?>
 				</section>
 				<section id="section-2">
 					<div id="posts-container" class="<?php echo $container_class; ?> clearfix">
@@ -69,12 +76,16 @@
 			$prev_post_timestamp = null;
 			$prev_post_month = null;
 			$first_timeline_loop = false;
+
+			$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 			// Build the query arguments
 			$args = array(
 				'post_type' => 'post',
 				'posts_per_page' => 10,
 				'post_status' => 'publish',
-				'author_name' => 'resolution'
+				'author_name' => $author_name,
+				'ignore_sticky_posts' => 1,
+      			'paged' => $paged
 			);
 			$author_query = new WP_Query( $args );
 			 
@@ -85,6 +96,12 @@
 				$post_month = date('n', $post_timestamp);
 				$post_year = get_the_date('o');
 				$current_date = get_the_date('o-n');
+
+				$author_id=$post->post_author;
+				$protocol = is_localhost();
+				$author_login_name = get_the_author_meta('user_login', $author_id);
+				$author_display_name = get_the_author_meta('display_name', $author_id);
+				$author_url = $protocol . '/profile/' . $author_login_name;
 			?>
 			<?php if($smof_data['blog_archive_layout'] == 'Timeline'): ?>
 			<?php if($prev_post_month != $post_month): ?>
@@ -223,11 +240,14 @@
 	
 	// Other vids info
 	$author_id=$post->post_author;
-	$author_url = get_author_posts_url($author_id);
-	
+	//$author_url = get_author_posts_url($author_id);
+	$protocol = is_localhost();
+	$author_url = $protocol . '/profile/' . get_the_author_meta('user_login', $author_id);
+
 	$post_like_count = getTotalLike($post_id) ?: 0;
 	$post_dislike_count = getTotalDislike($post_id) ?: 0;
-	$published_date = get_the_time('F j, Y', $post_id);
+	//$published_date = get_the_time('F j, Y', $post_id);
+	$published_date = get_the_time('d/m/Y', $post_id);
 ?>
 
 <article class="loop-entry container">
@@ -266,9 +286,11 @@
 			}
 		?>
 		<hr class="showbiz-divider" />
+		<?php
 
+		?>
 		<ul class="meta-left">
-			<li class="meta-author"><a href="<?php echo $author_url; ?>"><span class="fa fa-user"></span><?php the_author(); ?></a></li>
+			<li class="meta-author"><a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><span class="fa fa-user"></span><?php echo $author_display_name; ?></a></li>
 		    <li class="meta-date"><span class="fa fa-calendar"></span><?php echo $published_date; ?></li>
 		    <li class="meta-view">
 		    	<span class="fa fa-eye"></span>
@@ -347,7 +369,7 @@
 			endif;
 			?>
 		</div>
-		<?php themefusion_pagination($pages = '', $range = 2); ?>
+		<?php themefusion_pagination($pages = '', $range = 2, $author_query); ?>
 				</section>
 			</div><!-- /content -->
 		</div><!-- /tabs -->

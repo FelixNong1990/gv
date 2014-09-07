@@ -1,4 +1,32 @@
 <?php
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+global $post;
+if ( isset( $post ) ) {
+$classes[] = $post->post_type . '-' . $post->post_name;
+}
+return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
+
+
+// Check whether current url is localhost or live SERVER_PROTOCOL
+function is_localhost() {
+	$whitelist = array(
+		'127.0.0.1',
+		'::1'
+	);
+
+	if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+		$protocol = 'http://www.gameveins.com';
+	} else {
+		$protocol = 'http://localhost/gv';
+	}
+
+	return $protocol;
+}
+
 // function alter_query_so_15250127($qry) {
    // if ( $qry->is_main_query() && is_page('profile') ) {
      // //$qry->set('post_type','page');

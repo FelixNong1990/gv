@@ -209,7 +209,9 @@
 	
 	// Other vids info
 	$author_id=$post->post_author;
-	$author_url = get_author_posts_url($author_id);
+	//$author_url = get_author_posts_url($author_id);
+	$protocol = is_localhost();
+	$author_url = $protocol . '/profile/' . get_the_author_meta('user_login', $author_id);
 	
 	$post_like_count = getTotalLike($post_id) ?: 0;
 	$post_dislike_count = getTotalDislike($post_id) ?: 0;
