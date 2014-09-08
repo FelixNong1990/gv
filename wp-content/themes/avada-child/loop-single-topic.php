@@ -60,8 +60,10 @@
 			<?php
 			/* Integrating UserPro */
 			global $userpro;
-			$link = preg_replace("/(?<=href=(\"|'))[^\"']+(?=(\"|'))/", $userpro->permalink( bbp_get_topic_author_id() ), 
-			bbp_get_topic_author_link( array( 'size' => 30 ) ) );
+			//$link = preg_replace("/(?<=href=(\"|'))[^\"']+(?=(\"|'))/", $userpro->permalink( bbp_get_topic_author_id() ), 
+			//bbp_get_topic_author_link( array( 'size' => 30 ) ) );
+			
+			$link = bbp_get_topic_author_link( array( 'size' => 30 ) );
 			?>
 		
 			<span class="bbp-topic-started-by"><?php printf( __( 'Started by: %1$s', 'bbpress' ), $link ); ?></span>

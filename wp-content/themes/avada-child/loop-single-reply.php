@@ -47,8 +47,9 @@
 		<?php
 		/* Integrating UserPro */
 		global $userpro;
-		$link = preg_replace("/(?<=href=(\"|'))[^\"']+(?=(\"|'))/", $userpro->permalink( bbp_get_reply_author_id() ), 
-		bbp_get_reply_author_link( array( 'sep' => '<br />', 'show_role' => false ) ) );
+		//$link = preg_replace("/(?<=href=(\"|'))[^\"']+(?=(\"|'))/", $userpro->permalink( bbp_get_reply_author_id() ), 
+		//bbp_get_reply_author_link( array( 'sep' => '<br />', 'show_role' => false ) ) );
+		$link = bbp_get_reply_author_link( array( 'sep' => '<br />', 'show_role' => false ) );
 		echo $link . userpro_show_badges( bbp_get_reply_author_id() );
 		?>
 

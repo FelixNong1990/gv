@@ -42,15 +42,23 @@ function is_localhost() {
  * @ http://smallseotips.com/2014/01/wordpress-seo-display-breadcrumbs-without-a-plugin/
  */
 function blix_breadcrumbs() {
-
 	/* === OPTIONS === */
 	$text['home']     = '<i class="fa fa-home fa-lg"> </i>'; // text for the 'Home' link
 	$text['category'] = '%s'; // text for a category page
 	$text['search']   = 'Search results for : <span style="color: #bb3914">%s</span>'; // text for a search results page
 	$text['tag']      = 'Tag archive for : <span style="color: #bb3914">%s</span>'; // text for a tag page
-	$text['author']   = '%s\'s profile'; // text for an author page
+	
+	global $wp_query;
+	$current_user = wp_get_current_user();
+	$username = $current_user->user_login;
+	
+	if(!isset($wp_query->query_vars['up_username'])) {
+		$text['author']   = 'My profile';
+	} else {
+		$text['author']   = '%s\'s profile'; // text for an author page
+	}
+	
 	$text['404']      = 'Error 404'; // text for the 404 page
-
 	$show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show
 	$show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
 	$show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
@@ -75,6 +83,26 @@ function blix_breadcrumbs() {
 		if ($show_on_home == 1) echo '<div class="breadcrumbs"><a href="' . $home_link . '">' . $text['home'] . '</a></div>';
 
 	} else {
+		// Get current page slug name
+		$url = explode('?', 'http://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+		$pageId = url_to_postid($url[0]);
+		$page = get_post($pageId);
+		$page_name = $page->post_name;
+		
+		// Get current user profile name
+		// global $wp_query;
+		// $current_user = wp_get_current_user();
+		// $username = $current_user->user_login;
+			
+		// if(isset($wp_query->query_vars['up_username'])) {
+			// $username = $wp_query->query_vars['up_username'];
+		// } else {
+			// $current_user = wp_get_current_user();
+			// $username = $current_user->user_login;
+		// }
+		// echo "<pre>";
+		// print_r($wp_query);
+		// echo "</pre>";
 
 		echo '<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><div class="inner-breadcrumbs">';
 		if ($show_home_link == 1) {
@@ -144,7 +172,6 @@ function blix_breadcrumbs() {
 				
 				// }
 				
-
 				function walk_branch($category,$countBranch = 0) {
 					$parentId = $category->category_parent;
 					$cat_parent_name = get_cat_name($parentId);
@@ -256,6 +283,12 @@ function blix_breadcrumbs() {
 				if ($show_current == 1) echo $before . get_the_title() . $after;
 			}
 
+		} elseif ( is_page('profile') ) {
+	 		//global $author;
+			//$userdata = get_userdata($author);
+			//echo $before . sprintf($text['author'], $userdata->display_name) . $after;
+			echo $before . sprintf($text['author'], $username) . $after;
+			
 		} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
 			$post_type = get_post_type_object(get_post_type());
 			echo $before . $post_type->labels->singular_name . $after;
@@ -2806,7 +2839,7 @@ function fusion_insert_og_meta() {
         echo sprintf( '<meta property="og:image" content="%s"/>', esc_attr( $thumbnail_src[0] ) );
     }
 }
-add_action( 'wp_head', 'fusion_insert_og_meta', 5 );
+//add_action( 'wp_head', 'fusion_insert_og_meta', 5 );
 
 
 function modify_contact_methods($profile_fields) {
