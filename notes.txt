@@ -15,6 +15,8 @@ Callback URL twitter for localhost: http://127.0.0.1:8080
 
 1. Remove body a:before, body a:after color of dynamic_css.php inside framework folder
 
+2. Comment out add_action( 'wp_head', 'fusion_insert_og_meta', 5 ); at line 2809 in functions.php
+
  
 
 

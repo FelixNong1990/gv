@@ -21,6 +21,9 @@ global $wpdb;
 
 	<?php endif; ?>
 	<?php 
+		bbp_breadcrumb(); 
+	?>
+	<?php 
 		$displayed_user_id = bbp_get_displayed_user_field( 'id', 'raw' );
 		$registered_date = bbp_get_displayed_user_field( 'user_registered', 'raw' );
 		$user_location = get_user_meta($displayed_user_id, 'user_location', true);

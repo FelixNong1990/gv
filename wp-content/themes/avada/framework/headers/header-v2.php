@@ -54,11 +54,15 @@
 											 ?>
 										</button>
 									</div>
-									
+									<?php
+										$userId = get_current_user_id();
+										$user_login_name = get_the_author_meta('user_login', $userId);
+									?>
 									<ul>
 										<li><a href="<?php echo get_site_url();?>/video-submission/">Post new Video</a></li>
 										<li><a href="<?php echo get_site_url();?>/video-manager/">Video Manager</a></li>
-										<li><a href="<?php echo get_site_url();?>/profile/edit">Edit Profile</a></li>
+										<li><a href="<?php echo get_site_url();?>/profile/">Main Profile</a></li>
+										<li><a href="<?php echo get_site_url();?>/forums/profile/<?php echo $user_login_name; ?>/">Forum Profile</a></li>
 										<li><a href="<?php echo wp_logout_url(); ?>">Log Out</a></li>
 									</ul>
 								</li>

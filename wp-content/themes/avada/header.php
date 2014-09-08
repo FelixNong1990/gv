@@ -9,6 +9,8 @@
 		};
 		$title = get_the_title($id);
 		$content = get_the_content_by_id($id);
+		$cleaned_content = trim(preg_replace('/ +/', ' ', preg_replace('/[^A-Za-z0-9. ]/', ' ', urldecode(html_entity_decode(strip_tags($content))))));
+		$img = 'http://i1.ytimg.com/vi/' . $video_id . '/mqdefault.jpg';
 	?>
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -19,12 +21,13 @@
 	<meta property="og:type" content="Video" />
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
 	<meta property='og:site_name' content='GameVeins' />
-	<meta property="og:image" content="<?php echo get_the_ID(); ?>" />
+	<meta property="og:image" content="<?php echo $img; ?>" />
+	<meta property="og:description" content="<?php echo $cleaned_content; ?>" />
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-	<link href="http://localhost/gv/wp-content/themes/avada-child/global.css" rel="stylesheet" />
+	<link href="<?php echo get_stylesheet_directory_uri(); ?>/global.css" rel="stylesheet" />
 	<?php
 		if(is_front_page()){
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/home.css" />';

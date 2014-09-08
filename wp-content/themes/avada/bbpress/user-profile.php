@@ -8,7 +8,17 @@
  */
 
 $displayed_author_id = bbp_get_displayed_user_field( 'id', 'raw' );
-$author_url = get_author_posts_url($displayed_author_id); 
+//$author_url = get_author_posts_url($displayed_author_id);
+$protocol = is_localhost();
+$author_login_name = get_the_author_meta('user_login', $displayed_author_id);
+
+$current_user_id = get_current_user_id();
+
+if($displayed_author_id === $current_user_id) {
+	$author_url = $protocol . '/profile/';
+} else {
+	$author_url = $protocol . '/profile/' . $author_login_name;
+}
 ?>
 
 	<?php do_action( 'bbp_template_before_user_profile' ); ?>
