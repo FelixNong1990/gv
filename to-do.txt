@@ -67,3 +67,4 @@ instead of default.js and default.css
 - Remove some fields from forums edit profile tab
 - Add breadcrumbs to forums profile page
 - Adjust view member photo lightview
+- Uppercase all username using php ucwords() function

@@ -7,6 +7,8 @@
  * @subpackage Theme
  */
 global $wpdb;
+$displayed_author_id = bbp_get_displayed_user_field( 'id', 'raw' );
+$author_display_name = ucwords(get_the_author_meta('display_name', $displayed_author_id));
 ?>
 
 	<?php do_action( 'bbp_template_before_user_details' ); ?>
@@ -20,9 +22,16 @@ global $wpdb;
 		</div>
 
 	<?php endif; ?>
-	<?php 
-		bbp_breadcrumb(); 
-	?>
+	<div class="bbp-breadcrumb">
+		<p>
+			<a href="http://www.gameveins.com/" class="bbp-breadcrumb-home">Homepage </a>
+			<span class="bbp-breadcrumb-sep"> › </span>
+			<a href="http://www.gameveins.com/forums/" class="bbp-breadcrumb-root">Forums </a>
+			<span class="bbp-breadcrumb-sep"> › </span>
+			<span class="bbp-breadcrumb-current"><?php echo $author_display_name; ?>'s profile</span>
+		</p>
+	</div>
+	<br style="clear: both" />
 	<?php 
 		$displayed_user_id = bbp_get_displayed_user_field( 'id', 'raw' );
 		$registered_date = bbp_get_displayed_user_field( 'user_registered', 'raw' );

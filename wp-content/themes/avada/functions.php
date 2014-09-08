@@ -50,12 +50,13 @@ function blix_breadcrumbs() {
 	
 	global $wp_query;
 	$current_user = wp_get_current_user();
-	$username = $current_user->user_login;
+	$username = $current_user->display_name;
 	
 	if(!isset($wp_query->query_vars['up_username'])) {
 		$text['author']   = 'My profile';
 	} else {
 		$text['author']   = '%s\'s profile'; // text for an author page
+		$username = ucwords($wp_query->query_vars['up_username']);
 	}
 	
 	$text['404']      = 'Error 404'; // text for the 404 page
@@ -283,7 +284,7 @@ function blix_breadcrumbs() {
 				if ($show_current == 1) echo $before . get_the_title() . $after;
 			}
 
-		} elseif ( is_page('profile') ) {
+		} elseif ( is_page('profile')) {
 	 		//global $author;
 			//$userdata = get_userdata($author);
 			//echo $before . sprintf($text['author'], $userdata->display_name) . $after;
