@@ -14,9 +14,11 @@
 	?>
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="alexaVerifyID" content="x2TX5DB__aRSOjQwGXeAAfHjjDA"/>
+	<meta name="msvalidate.01" content="BA526F0F363C43EAA109171B9E27C9A0" />
+	<meta name="p:domain_verify" content="b4526b11b1eca030af379a22e9082779"/>
 	<meta property="og:title" content="<?php echo htmlspecialchars($title); ?>" />
 	<meta property="og:type" content="Video" />
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
@@ -806,6 +808,16 @@ if( $smof_data['layout'] == 'Boxed' || get_post_meta($c_pageID, 'pyre_page_bg_la
 }
 ?>
 <body <?php body_class( $body_classes ); ?> data-spy="scroll">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54596845-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 	<div id="wrapper" class="<?php echo $wrapper_class; ?>">
 	<?php if( $smof_data['slidingbar_widgets'] && ! is_page_template( 'blank.php' ) ): ?>
 	<?php get_template_part( 'slidingbar' ); ?>
