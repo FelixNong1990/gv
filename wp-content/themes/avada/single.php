@@ -40,9 +40,85 @@ foreach ($category as $key) {
 			// print_r($_GET);
 			// echo "</pre>";
 			
-			$id = get_the_ID();
-			//$meta = get_post_meta($id);
-			$meta = get_post();
+			// Get the longest match between title and content and add it as the focus keyword for yoast seo
+			// global $wpdb;
+			// $results = $wpdb->get_results("SELECT * FROM gv_posts where post_status='publish' and post_type='post'",ARRAY_A);
+			// foreach ($results as $key=>$val) {
+				// $postID = $val['ID'];
+				// //$postID = get_the_ID();
+				// $title = get_the_title($postID);
+				// $content = apply_filters('the_content', get_post_field('post_content', $postID));
+				// $strip_title = html_entity_decode(strip_tags($title),ENT_QUOTES,'UTF-8');
+				// $strip_content = html_entity_decode(strip_tags($content),ENT_QUOTES,'UTF-8');
+				// //$clean_title = clean($strip_title) . '<br />';
+				// //$clean_content = clean($strip_content) . '<br />';
+				// $focuskw = get_longest_common_subsequence($strip_title,$strip_content);
+				// if(str_word_count($focuskw) < 2) {
+					// $focuskw = html_entity_decode($title,ENT_QUOTES,'UTF-8');
+					// if(strlen($focuskw) > 55) {
+						// $focuskw = wp_trim_words($focuskw,5,'');
+					// }
+				// }
+				// $metadesc = $title . ' - ' . $strip_content;
+				// if(strlen($metadesc) > 170) {
+					// $metadesc = substr($metadesc,0,170);
+				// }
+				// update_post_meta( $postID, '_yoast_wpseo_focuskw', $focuskw);
+				// update_post_meta( $postID, '_yoast_wpseo_title', $title);
+				// update_post_meta( $postID, '_yoast_wpseo_metadesc', $metadesc);
+			// }
+			
+			
+			$postID = get_the_ID();
+			$title = get_the_title($postID);
+			$content = apply_filters('the_content', get_post_field('post_content', $postID));
+			$strip_title = html_entity_decode(strip_tags($title),ENT_QUOTES,'UTF-8');
+			$strip_content = html_entity_decode(strip_tags($content),ENT_QUOTES,'UTF-8');
+			$clean_title = clean($strip_title) . '<br />';
+			$clean_content = clean($strip_content) . '<br />';
+			$focuskw = get_longest_common_subsequence($clean_title,$clean_content);
+			if(str_word_count($focuskw) < 2) {
+				$focuskw = html_entity_decode($title,ENT_QUOTES,'UTF-8');
+				if(strlen($focuskw) > 55) {
+					$focuskw = wp_trim_words($focuskw,3,'');
+				}
+			}
+			$metadesc = $clean_title . ' - ' . $clean_content;
+			if(strlen($metadesc) > 170) {
+				$metadesc = substr($metadesc,0,170);
+			}
+			update_post_meta( $postID, '_yoast_wpseo_focuskw', $focuskw);
+			update_post_meta( $postID, '_yoast_wpseo_title', $title);
+			update_post_meta( $postID, '_yoast_wpseo_metadesc', $metadesc);
+			
+			$result = str_split($focuskw);
+			echo "<pre>";
+			print_r($result);
+			echo "</pre>";
+			
+			// echo "<pre>";
+			// print_r($longest_match);
+			// echo "</pre>";
+			
+			//echo $focuskw = get_the_title();
+			// $focuskw = html_entity_decode($title,ENT_QUOTES,'UTF-8');
+			// if(strlen($focuskw) > 55) {
+				// $focuskw = wp_trim_words($focuskw,3,'');
+				// //$focuskw = substr( $focuskw,0,55);
+				// //$focuskw = ShortenText($focuskw,30);
+			// }
+			
+			
+			
+			// Split tring into array of characters
+			// $result = str_split($focuskw);
+			// echo "<pre>";
+			// print_r($result);
+			// echo "</pre>";
+
+			
+
+			//$meta = get_post();
 			
 			// wp_update_post(
             // array (
@@ -50,10 +126,10 @@ foreach ($category as $key) {
 					// 'post_name' => uniqid()
 				// )
 			// );
-			
-			// echo "<pre>";
-			// print_r($meta);
-			// echo "</pre>";
+			$meta = get_post_meta(get_the_ID());
+			echo "<pre>";
+			print_r($meta);
+			echo "</pre>";
 			//echo $id;
 			
 			//echo do_shortcode('[ajaxy-live-search show_category="1" show_post_category="1" post_types="post" label="Search" iwidth="180" delay="500" width="315" url="http://localhost/gv/?s=%s" border="1px solid #eee"]');
@@ -100,7 +176,7 @@ foreach ($category as $key) {
 		<li>
 			<div class="full-video">
 				<?php
-				if($video_provider == 'youtube') {
+				if(!$video_provider == 'youtube') {
 				?>
 					<iframe width="854" height="480" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?rel=0&autoplay=1&wmode=opaque" frameborder="0" allowfullscreen></iframe>
 				<?php 

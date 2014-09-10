@@ -14,7 +14,6 @@
 	?>
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="alexaVerifyID" content="x2TX5DB__aRSOjQwGXeAAfHjjDA"/>
 	<meta name="msvalidate.01" content="BA526F0F363C43EAA109171B9E27C9A0" />

@@ -68,3 +68,4 @@ instead of default.js and default.css
 - Add breadcrumbs to forums profile page
 - Adjust view member photo lightview
 - Uppercase all username using php ucwords() function
+- Fix the delete popup in edit video page because sicky header cover the header of the popup
