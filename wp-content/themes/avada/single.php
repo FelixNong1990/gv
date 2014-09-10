@@ -91,7 +91,8 @@ foreach ($category as $key) {
 			update_post_meta( $postID, '_yoast_wpseo_title', $title);
 			update_post_meta( $postID, '_yoast_wpseo_metadesc', $metadesc);
 			
-			$result = str_split($focuskw);
+			echo strip_tags($title);
+			$result = str_split(strip_tags($title));
 			echo "<pre>";
 			print_r($result);
 			echo "</pre>";
