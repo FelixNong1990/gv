@@ -1043,15 +1043,28 @@ function limit_excerpt_by_letter($string, $word_limit) {
 	return $string = (strlen($string) > $word_limit) ? substr($string,0,$word_limit).'...' : $string;
 }
 
-function clean($string) {
+function cleanTagsBySpace($string) {
    //return preg_replace('/[^A-Za-z0-9 ]/', '', $string); // Removes special chars.
-   return trim(preg_replace('/\s\s+/', ' ', $string));
+   //return trim(preg_replace('/\s\s+/', ' ', $string));
+   return preg_replace('#<[^>]+>#', ' ', $string);
+}
+
+function str_split_unicode($str, $l = 0) {
+    if ($l > 0) {
+        $ret = array();
+        $len = mb_strlen($str, "UTF-8");
+        for ($i = 0; $i < $len; $i += $l) {
+            $ret[] = mb_substr($str, $i, $l, "UTF-8");
+        }
+        return $ret;
+    }
+    return preg_split("//u", $str, -1, PREG_SPLIT_NO_EMPTY);
 }
 
 function get_longest_common_subsequence($string_1, $string_2)
 {
-	$string_1_length = strlen($string_1);
-	$string_2_length = strlen($string_2);
+	$string_1_length = mb_strlen($string_1 , 'UTF-8');
+	$string_2_length = mb_strlen($string_2 , 'UTF-8');
 	$return          = '';
  
 	if ($string_1_length === 0 || $string_2_length === 0)
