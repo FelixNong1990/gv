@@ -41,74 +41,74 @@ foreach ($category as $key) {
 			// echo "</pre>";
 			
 			// Get the longest match between title and content and add it as the focus keyword for yoast seo
-			global $wpdb;
-			$results = $wpdb->get_results("SELECT * FROM gv_posts where post_status='publish' and post_type='post'",ARRAY_A);
-			foreach ($results as $key=>$val) {
-				$postID = $val['ID'];
-				//$postID = get_the_ID();
-				$title = get_the_title($postID);
-				$content = apply_filters('the_content', get_post_field('post_content', $postID));
-				$strip_title = strip_tags($title);
-				$strip_content = strip_tags($content);
+			// global $wpdb;
+			// $results = $wpdb->get_results("SELECT * FROM gv_posts where post_status='publish' and post_type='post'",ARRAY_A);
+			// foreach ($results as $key=>$val) {
+			// 	$postID = $val['ID'];
+			// 	//$postID = get_the_ID();
+			// 	$title = get_the_title($postID);
+			// 	$content = apply_filters('the_content', get_post_field('post_content', $postID));
+			// 	$strip_title = strip_tags($title);
+			// 	$strip_content = strip_tags($content);
 				
-				// Clean tags by replacing them with spaces
-				$clean_title = cleanTagsBySpace($title);
-				$clean_content = cleanTagsBySpace($content);
+			// 	// Clean tags by replacing them with spaces
+			// 	$clean_title = cleanTagsBySpace($title);
+			// 	$clean_content = cleanTagsBySpace($content);
 				
-				$final_title = html_entity_decode($clean_title,ENT_QUOTES,'UTF-8');
-				$final_content = html_entity_decode($clean_content,ENT_QUOTES,'UTF-8');
+			// 	$final_title = html_entity_decode($clean_title,ENT_QUOTES,'UTF-8');
+			// 	$final_content = html_entity_decode($clean_content,ENT_QUOTES,'UTF-8');
 				
-				$focuskw = get_longest_common_subsequence($final_title,$final_content);
-				if(str_word_count($focuskw) < 2) {
-					$focuskw = $final_title;
-					if(mb_strlen($focuskw , 'UTF-8') > 55) {
-						$focuskw = wp_trim_words($focuskw,3,'');
-					}
+			// 	$focuskw = get_longest_common_subsequence($final_title,$final_content);
+			// 	if(str_word_count($focuskw) < 2) {
+			// 		$focuskw = $final_title;
+			// 		if(mb_strlen($focuskw , 'UTF-8') > 55) {
+			// 			$focuskw = wp_trim_words($focuskw,3,'');
+			// 		}
+			// 	}
+			// 	$metadesc = $final_title . ' - ' . $final_content;
+			// 	if(mb_strlen($metadesc , 'UTF-8') > 157) {
+			// 		$metadesc = mb_substr($metadesc,0,157,"utf-8");
+			// 		//$metadesc = str_replace(array('[',']'),'',$metadesc);
+			// 	}
+				
+			// 	$focuskw = implode(' ', array_slice(explode(' ', $final_title), 0, 10));
+				
+			// 	update_post_meta( $postID, '_yoast_wpseo_focuskw', $focuskw);
+			// 	update_post_meta( $postID, '_yoast_wpseo_title', $title);
+			// 	update_post_meta( $postID, '_yoast_wpseo_metadesc', $metadesc);
+			// }
+			
+			$postID = get_the_ID();
+			$title = get_the_title($postID);
+			$content = apply_filters('the_content', get_post_field('post_content', $postID));
+			$strip_title = strip_tags($title);
+			$strip_content = strip_tags($content);
+			
+			// Clean tags by replacing them with spaces
+			$clean_title = cleanTagsBySpace($title);
+			$clean_content = cleanTagsBySpace($content);
+			
+			$final_title = html_entity_decode($clean_title,ENT_QUOTES,'UTF-8');
+			$final_content = html_entity_decode($clean_content,ENT_QUOTES,'UTF-8');
+			
+			$focuskw = get_longest_common_subsequence($final_title,$final_content);
+			if(str_word_count($focuskw) < 2) {
+				$focuskw = $final_title;
+				if(mb_strlen($focuskw , 'UTF-8') > 55) {
+					$focuskw = wp_trim_words($focuskw,3,'');
 				}
-				$metadesc = $final_title . ' - ' . $final_content;
-				if(mb_strlen($metadesc , 'UTF-8') > 157) {
-					$metadesc = mb_substr($metadesc,0,157,"utf-8");
-					//$metadesc = str_replace(array('[',']'),'',$metadesc);
-				}
-				
-				$focuskw = implode(' ', array_slice(explode(' ', $final_title), 0, 10));
-				
-				update_post_meta( $postID, '_yoast_wpseo_focuskw', $focuskw);
-				update_post_meta( $postID, '_yoast_wpseo_title', $title);
-				update_post_meta( $postID, '_yoast_wpseo_metadesc', $metadesc);
+			}
+			$metadesc = $final_title . ' - ' . $final_content;
+			if(mb_strlen($metadesc , 'UTF-8') > 157) {
+				$metadesc = mb_substr($metadesc,0,157,"utf-8");
+				//$metadesc = str_replace(array('[',']'),'',$metadesc);
 			}
 			
-			// $postID = get_the_ID();
-			// $title = get_the_title($postID);
-			// $content = apply_filters('the_content', get_post_field('post_content', $postID));
-			// $strip_title = strip_tags($title);
-			// $strip_content = strip_tags($content);
+			$focuskw = implode(' ', array_slice(explode(' ', $final_title), 0, 10));
 			
-			// // Clean tags by replacing them with spaces
-			// $clean_title = cleanTagsBySpace($title);
-			// $clean_content = cleanTagsBySpace($content);
-			
-			// $final_title = html_entity_decode($clean_title,ENT_QUOTES,'UTF-8');
-			// $final_content = html_entity_decode($clean_content,ENT_QUOTES,'UTF-8');
-			
-			// $focuskw = get_longest_common_subsequence($final_title,$final_content);
-			// if(str_word_count($focuskw) < 2) {
-				// $focuskw = $final_title;
-				// if(mb_strlen($focuskw , 'UTF-8') > 55) {
-					// $focuskw = wp_trim_words($focuskw,3,'');
-				// }
-			// }
-			// $metadesc = $final_title . ' - ' . $final_content;
-			// if(mb_strlen($metadesc , 'UTF-8') > 157) {
-				// $metadesc = mb_substr($metadesc,0,157,"utf-8");
-				// //$metadesc = str_replace(array('[',']'),'',$metadesc);
-			// }
-			
-			// $focuskw = implode(' ', array_slice(explode(' ', $final_title), 0, 10));
-			
-			// update_post_meta( $postID, '_yoast_wpseo_focuskw', $focuskw);
-			// update_post_meta( $postID, '_yoast_wpseo_title', $title);
-			// update_post_meta( $postID, '_yoast_wpseo_metadesc', $metadesc);
+			update_post_meta( $postID, '_yoast_wpseo_focuskw', $focuskw);
+			update_post_meta( $postID, '_yoast_wpseo_title', $title);
+			update_post_meta( $postID, '_yoast_wpseo_metadesc', $metadesc);
 			
 			// $result = str_split_unicode($metadesc);
 			// echo "<pre>";
