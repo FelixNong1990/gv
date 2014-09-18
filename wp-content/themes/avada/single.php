@@ -469,7 +469,7 @@ foreach ($category as $key) {
 		<?php
 			$published_date = get_the_time('F jS, Y', $id);
 		?>
-		<p class="vid_description">Posted on <?php echo $published_date; ?></p>
+		<h6 class="vid_description">Posted on <?php echo $published_date; ?></h6>
 		<article class="description-wrapper">
 	        <div class="video-description">
 	        	<?php the_content();?>

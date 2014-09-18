@@ -14,10 +14,6 @@ ul#dsq-tabs li {
 	text-align: right;
 }
 
-.nav-tab{
-cursor:pointer;
-}
-
 ul#dsq-tabs {
 	display: block;
 	height: 20px;

@@ -1,10 +1,10 @@
 === Disqus Conditional Load ===
 Contributors: joelcj91
 Tags: disqus, disqus conditional load, comment hide, hide disqus, disqus comments, disqus on click, disqus auto load, disqus lazy load, lazy load comments, comments
-Donate link: http://www.joelsays.com/donation/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XUVWY8HUBUXY4
 Requires at least: 3.0.1
-Tested up to: 4.0
-Stable tag: 8.0.9
+Tested up to: 3.9.2
+Stable tag: 8.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Replace Disqus Comment System with advanced features including lazy load. Commen
 
 == Description ==
 
-Advanced version of Disqus Comment System. Use Disqus comment system in your website with more advanced features like lazy loading and SHORTCODE.
+Advanced version of Disqus Comment System (non official). Use Disqus comment system in your website with more advanced features like lazy loading and SHORTCODE.
 
 You can decide how, when, where to load comments. This plugin prevents unwanted script loading and make your website super fast.
 
@@ -32,7 +32,6 @@ The Disqus Conditional Load for WordPress seamlessly integrates using the Disqus
 * Prevent auto load of Disqus Comments.
 * Choose how to load Disqus comments ( On scroll or on click ).
 * Hide button after comment loads.
-* Show custom message on before loading Disqus
 * Customize button label.
 * Auto-sync (backup) of comments with Disqus and WordPress database
 * Quick <a href="http://www.joelsays.com/members-area/support/plugin-support-disqus-conditional-load/">Direct Support</a>.
@@ -53,10 +52,8 @@ The Disqus Conditional Load for WordPress seamlessly integrates using the Disqus
 * Connected with a large discussion community
 * Increased exposure and readership
 
-* WoCommerce Support (Coming soon!!)
-
 Please contact Joel James (developer) using <a href="http://www.joelsays.com/contact-me/" target="_blank">this form </a>if you have any issues.
-Visit - <a href="http://www.joelsays.com/members-area/support/plugin-support-disqus-conditional-load/" target="_blank">Plugin Support Forum</a>
+Visit Plugin Support Forum - <a href="http://www.joelsays.com/members-area/support/plugin-support-disqus-conditional-load/" target="_blank">Joel Says</a>
 
 == Installation ==
 
@@ -109,52 +106,16 @@ Yes. You can.
 
 == Screenshots ==
 
-1. Moderation Dashboard
-2. Disqus Comments UI
-3. Conditional Load Settings.
-4. Disqus Comment Settings.
+1. Disqus Comments UI
+2. Conditional Load Settings.
+3. Disqus Comment Settings.
+4. Moderation Dashboard.
 
 == Changelog ==
-
-= 8.0.9 =
-* Small bug fix on default values.
-* Performance improved.
-
-= 8.0.8 =
-* Added normal Disqus load when access comment id via url.
-* Modified admin tab.
-* Suggested by - [Ian](http://iag.me/).
-* Fixed alignment issue.
-
-= 8.0.7 =
-* Added easy-to-use tabbed admin page.
-* Ability to show normal Disqus comments in SHORTCODE is not found.
-* Custom loading message to show before loading Disqus comments.
-* Improved performance.
-
-= 8.0.6 =
-* Fixed one jQuery bug.
-* Removed unwanted jQuery codes.
-
-= 8.0.5 =
-* Fixed conflict issue with some plugins.
-* Improved performance.
-
-= 8.0.4 =
-* Fixed jquery conflict issue.
-* Reported by - Raman, Rick
-* Fixed one bug.
-* Improved performance.
-
-= 8.0.3 =
-* Fixed alignment issues on admin page.
-* Hidden unwanted things from comments template.
-* Improved performance.
 
 = 8.0.2 =
 * Bug fix.
 * Removed some unwanted scripts that caused javascript errors.
-* Reported by - [Josef](http://www.blog-it-solutions.de/)
 * Hidden default WordPress comments (it was showing without style before Disqus loads)
 
 = 8.0.1 =
@@ -205,9 +166,10 @@ Yes. You can.
 
 == Upgrade Notice ==
 
-= 8.0.9 =
-* Small bug fix on default values.
-* Performance improved.
+= 8.0.2 =
+* Bug fix.
+* Removed some unwanted scripts that caused javascript errors.
+* Hidden default WordPress comments (it was showing without style before Disqus loads)
 
 == Support ==
 

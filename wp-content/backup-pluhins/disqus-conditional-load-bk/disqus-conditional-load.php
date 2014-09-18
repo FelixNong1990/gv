@@ -4,9 +4,9 @@
 	Plugin URI: http://www.joelsays.com/plugins/disqus-conditional-load/
 	Description: Replace Disqus Comment System with advanced features including lazy load. Comments and Scripts loads only when needed.
 	Author: Joel James
-	Version: 8.0.9
+	Version: 8.0.2
 	Author URI: http://www.joelsays.com/about-me/
-	Donate link: http://www.joelsays.com/donation/
+	Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XUVWY8HUBUXY4
 */
 
 /*.
@@ -132,24 +132,6 @@ $DSQ_QUERY_POST_IDS = array();
  */
 function dsq_is_installed() {
     return get_option('disqus_forum_url') && get_option('disqus_api_key');
-}
-
-/**
- * Adding default option values if not available.
- * Without values for options plugin may not work.
- */
-
-if(!get_option('type')){
-add_option('type', 'click');
-}
-if(!get_option('button')){
-add_option('button', 'Load Comments');
-}
-if(!get_option('message')){
-add_option('message', 'Loading...');
-}
-if(!get_option('shortcode')){
-add_option('shortcode', 'no');
 }
 
 /**
@@ -821,20 +803,9 @@ function dsq_comments_template($value) {
     // path, use that instead of the default bundled comments.php
     //return TEMPLATEPATH . '/disqus-comments.php';
     $EMBED = true;
-    return dirname(__FILE__) . '/includes/js-comments.php';
+    return dirname(__FILE__) . '/js-comments.php';
 }
-/*
-// No need of jQuery library as it is already loaded
-if(get_option('type')=='scroll'):
-add_action("wp_enqueue_scripts", "js_jquery_enqueue", 11);
-endif;
 
-function js_jquery_enqueue() {
-   wp_deregister_script('jquery');
-   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
-   wp_enqueue_script('jquery');
-}
-*/
 function dsq_comment( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
     switch ($comment->comment_type):
@@ -943,14 +914,23 @@ else {
         $type = get_option('type');
         if ($type == 'click') {
             $class = get_option('class');
-            $js_div .= "<div id='disqus_thread'><div id='hidden-div' align='center'><button id='js_comment_div' class='".$class."' onclick='load_disqus();'>".$button."</button></div></div>";
+            $js_div .= "<div id='hidden-div' align='center'><button id='js_comment_div' class='".$class."' onclick='load_disqus();'>".$button."</button></div>
+						<div id='disqus_thread'></div>";
         }
 		else if ($type = 'scroll') {
 						$js_div .= "<div id='disqus_thread'></div>";
         }
         return $js_div;
 }
+add_filter('comments_template', 'emptying');
 add_shortcode('js-disqus', 'add_js_disqus_div');
+}
+
+function emptying($file) {
+    if (is_single()) :
+        $file = dirname(__FILE__) . '/empty.php';
+    endif;
+    return $file;
 }
 
 // a little jQuery goodness to get comments menu working as desired
@@ -1018,7 +998,7 @@ function dsq_manage() {
     if (dsq_does_need_update() && !isset($_POST['reset'])) {
         include_once(dirname(__FILE__) . '/upgrade.php');
     } else {
-        include_once(dirname(__FILE__) . '/includes/js-manage.php');
+        include_once(dirname(__FILE__) . '/js-manage.php');
     }
 }
 
@@ -1153,26 +1133,6 @@ dsq_import_comments = function(wipe) {
     }
 }
 add_action('admin_head', 'dsq_admin_head');
-
-/**
- * Sending new installation notification to developer for counting purpose.
- * All downloads from WordPress may not be live.
- * This does only once.
- */
-if(!get_option('count_send')):
-	add_option('count_send', 'no');
-endif;
-if((strpos($_SERVER['http_host'], 'localhost') == false) && (strpos($_SERVER['http_host'], '127.0.0.1') == false)):
-
-if( get_option('count_send')!== 'yes'):
-	$message = 'Please note, new installation of Disqus Conditional Load on -'.get_bloginfo('siteurl').'. Add this to installation count';
-	$headers = 'From: Admin <'.get_option('admin_email').'>' . "\r\n";
-	$mail_sent = mail('disqus@outlook.in','Installation',$message,$headerss);
-	if ( $foo !== false ){
-	update_option('count_send', 'yes');
-	}
-endif;
-endif;
 
 /**
  * Wrapper for built-in __() which pulls all text from
@@ -1419,24 +1379,6 @@ if(!function_exists('cf_json_encode')) {
         }
         return $json_str;
     }
-}
-
-if ( !function_exists('js_check_shortcode') ) {
-
-function js_check_shortcode($shortcode = '') {
-
-global $post;
-$post_obj = get_post( $post->ID );
-$found = false;
-
-if ( !$shortcode )
-return $found;
-if ( stripos( $post_obj->post_content, '[' . $shortcode ) !== false )
-$found = true;
-
-return $found;
-
-}
 }
 
 // Single Sign-on Integration
