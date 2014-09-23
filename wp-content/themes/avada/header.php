@@ -18,7 +18,7 @@
 	<meta name="alexaVerifyID" content="x2TX5DB__aRSOjQwGXeAAfHjjDA"/>
 	<meta name="msvalidate.01" content="BA526F0F363C43EAA109171B9E27C9A0" />
 	<meta name="p:domain_verify" content="b4526b11b1eca030af379a22e9082779"/>
-	<meta property="og:title" content="<?php echo htmlspecialchars($title); ?>" />
+	<meta property="og:title" content="<?php echo html_entity_decode($title); ?>" />
 	<meta property="og:type" content="Video" />
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
 	<meta property='og:site_name' content='GameVeins' />
