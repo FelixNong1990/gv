@@ -139,8 +139,6 @@ jQuery(document).ready(function($) {
 	jQuery(".sf_ajaxy-selective-close").click(function() {
 		jQuery(this).parent().remove();
 	});
-
-	$('.flexslider.post-slideshow').insertBefore('#main');
 	
 	$('#responsive-menu #menu-visitor > li:first-child > a i').after('<span class="mobile-nav-home">Home</span>');
 	

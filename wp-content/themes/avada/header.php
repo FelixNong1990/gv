@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html xmlns="http<?php echo (is_ssl())? 's' : ''; ?>://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
-	<?php 
+	<?php
+	if (is_user_logged_in() ) {
+	?>
+		<script type="text/javascript">
+		// <![CDATA[
+		if ( window.opener != null && !window.opener.closed ) {
+		    window.close();
+		}
+		// ]]>
+		</script>
+	<?php
+	}
 		$id = get_the_ID();
 		$url = get_post_meta($id, 'post_meta_embed_code', true);
 		if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match)) {
@@ -54,6 +65,8 @@
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/following.css" />';
 	  	} else if(is_page('followers')) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/followers.css" />';
+	  	} else if(is_page('login')) {
+	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/login.css" />';
 	  	} else if(is_search()) {
 	    	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/search.css" />';
 	  	} else {
@@ -98,6 +111,9 @@
 	  	} else if(is_page('followers')) {
 	    	wp_register_script('followersjs', get_bloginfo('template_directory') . '/js/followers.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('followersjs');
+	  	} else if(is_page('login')) {
+	    	wp_register_script('loginjs', get_bloginfo('template_directory') . '/js/login.js', array('bootstrap-js','jquery-ui'), null, true);
+			wp_enqueue_script('loginjs');
 	  	} else if(is_search()) {
 	    	wp_register_script('searchjs', get_bloginfo('template_directory') . '/js/search.js', array('bootstrap-js','jquery-ui'), null, true);
 			wp_enqueue_script('searchjs');

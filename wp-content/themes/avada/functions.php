@@ -1,4 +1,23 @@
 <?php
+function redirect_login_page(){
+    // Store for checking if this page equals wp-login.php
+	$page_viewed = basename($_SERVER['REQUEST_URI']);
+	
+    // Where we want them to go
+ 	$login_page  = site_url() . '/login/';
+ 	//Write your site URL here.
+	// Two things happen here, we make sure we are on the login page
+	// and we also make sure that the request isn't coming from a form
+	// this ensures that our scripts & users can still log in and out.
+	if( $page_viewed == "wp-login.php" && $_SERVER['REQUEST_METHOD'] == 'GET') {
+		wp_redirect($login_page);
+  		exit();
+ 	}
+}
+
+add_action('init','redirect_login_page');
+
+
 
 //Page Slug Body Class
 function add_slug_body_class( $classes ) {

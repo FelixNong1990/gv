@@ -35,5 +35,5 @@ jQuery(document).ready(function($) {
 	    lessLink: '<a href="#">Show less</a>'
 	});
 
-	$('.flexslider.post-slideshow').insertBefore('#main');
+	// $('.flexslider.post-slideshow').insertBefore('#main');
 });
