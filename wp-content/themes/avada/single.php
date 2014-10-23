@@ -247,7 +247,28 @@ foreach ($category as $key) {
 			?>
 		</div>
 	</article>
-	
+
+	<ul class="social_share">
+		<li>
+			<a rel="nofollow" class="ss_btn ss_facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=670,height=436');return false;" target="_blank" title="Share on Facebook">
+				<span class="ss_icon"></span>
+				<span class="ss_vendor">Share on Facebook</span>
+			</a>
+		</li>
+		<li>
+			<a rel="nofollow" class="ss_btn ss_twitter" href="#" onclick="window.open('http://twitter.com/home?status=<?php echo urlencode($post->post_title); ?>:%0a<?php the_permalink(); ?> via @GameVeins','twitter-share-dialog','width=670,height=436');return false;" target="_blank" title="Share on Twitter">
+				<span class="ss_icon"></span>
+				<span class="ss_vendor">Share on Twitter</span>
+			</a>
+		</li>
+		<li>
+			<a rel="nofollow" class="ss_btn ss_google" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="_blank" title="Share on Facebook">
+				<span class="ss_icon"></span>
+				<span class="ss_vendor">Share on Google+</span>
+			</a>
+		</li>
+	</ul>
+
 	<div class="flexslider post-slideshow">
 		<ul class="slides">
 			<li>
@@ -430,7 +451,7 @@ foreach ($category as $key) {
 		</div>
 		<?php if( ! post_password_required($post->ID) ): ?>
 
-		<?php if( $smof_data['social_sharing_box'] ):
+		<?php if( !$smof_data['social_sharing_box'] ):
 		?>
 		<div class="fusion-sharing-box share-box">
 			<h4>Share this video with your friends:</h4>
