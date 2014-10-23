@@ -193,13 +193,67 @@ foreach ($category as $key) {
 
 
 <div id="content" class="single-post-content">
+	<!--<h2 class="vid_description">Posted on <?php //echo $published_date; ?></h2>-->
+	<?php if($smof_data['blog_post_title']): ?>
+	<h1 class="entry-title"><?php the_title(); ?></h1>
+	<?php else: ?>
+	<span class="entry-title" style="display: none;"><?php the_title(); ?></span>
+	<?php endif; ?>
+	
+	<div class="details">
+		<div class="user">
+			<?php
+				$post = get_post( $postID );
+				
+				// Get author id
+				$author_id=$post->post_author; 
+				$protocol = is_localhost();
+				$author_login_name = get_the_author_meta('user_login', $author_id);
+				$author_display_name = get_the_author_meta('display_name', $author_id);
+				$author_url = $protocol . '/profile/' . $author_login_name;
+				$author_email = get_the_author_meta('user_email',$author_id); 
+			?>
+			<a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo get_avatar( $author_email, '40' ); ?></a>
+			<div class="user-data">
+				<span class="user-link">Posted by <a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo $author_display_name; ?></a><i class="fa fa-chevron-right"></i></span>
+				<!--<p>
+					<i class="fa fa-video-camera"></i>
+					<?php
+						// Get total number of post by author id
+						//echo $user_post_count = count_user_posts( $author_id );
+					?>
+					Videos
+				</p>-->
+			</div>
+			
+		</div>
+		<!--<div class="ratings">
+			<?php //if(function_exists("kk_star_ratings")) : echo kk_star_ratings($id); endif; ?>
+		</div>-->
+		<?php
+			//echo getPostLikeLink( $post->ID );
+			//echo get_template_directory_uri();
+		?>
 
+		<div class="clr"></div>
+		
+	</div>
+	
+	<article class="description-wrapper">
+		<div class="video-description">
+			<?php
+				$post_object = get_post( $postID );
+				echo $post_object->post_content;
+			?>
+		</div>
+	</article>
+	
 	<div class="flexslider post-slideshow">
 		<ul class="slides">
 			<li>
 				<div class="full-video">
 					<?php
-					if($video_provider == 'youtube') {
+					if(!$video_provider == 'youtube') {
 					?>
 						<iframe width="854" height="480" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?rel=0&autoplay=1&wmode=opaque" frameborder="0" allowfullscreen></iframe>
 					<?php 
@@ -368,67 +422,7 @@ foreach ($category as $key) {
 		<?php endif; ?>
 		<?php endif; ?>
 		<?php endif; // password check ?>
-		<?php if($smof_data['blog_post_title']): ?>
-		<h2 class="entry-title"><?php the_title(); ?></h2>
-		<?php else: ?>
-		<span class="entry-title" style="display: none;"><?php the_title(); ?></span>
-		<?php endif; ?>
-
-
-
-
-
-
-<div class="details">
-	<div class="user">
-		<?php
-			// Get author id
-			$author_id=$post->post_author; 
-			$protocol = is_localhost();
-			$author_login_name = get_the_author_meta('user_login', $author_id);
-			$author_display_name = get_the_author_meta('display_name', $author_id);
-			$author_url = $protocol . '/profile/' . $author_login_name;
-		?>
-		<a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo get_avatar( get_the_author_email(), '52' ); ?></a>
-		<div class="user-data">
-			<h4>
-			<a title="View <?php echo $author_display_name; ?>'s profile" href="<?php echo $author_url; ?>"><?php echo $author_display_name; ?></a>
-			</h4>
-			<p>
-				<i class="fa fa-video-camera"></i>
-				<?php
-					// Get total number of post by author id
-				 	echo $user_post_count = count_user_posts( $author_id );
-				?>
-				Videos
-			</p>
-		</div>
 		
-	</div>
-	<div class="ratings">
-		<?php if(function_exists("kk_star_ratings")) : echo kk_star_ratings($id); endif; ?>
-	</div>
-	<?php
-		echo getPostLikeLink( $post->ID );
-		//echo get_template_directory_uri();
-	?>
-
-	<div class="clr"></div>
-	
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		<div class="post-content">
 			<?php //the_content(); ?>
@@ -470,12 +464,8 @@ foreach ($category as $key) {
 		<?php
 			$published_date = get_the_time('F jS, Y', $id);
 		?>
-		<h6 class="vid_description">Posted on <?php echo $published_date; ?></h6>
-		<article class="description-wrapper">
-	        <div class="video-description">
-	        	<?php the_content();?>
-	        </div>
-        </article>
+		
+		
 
         <div class="vid_categories">
         	<span class="vid_cat_icon">
