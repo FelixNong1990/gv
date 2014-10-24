@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
 
 	jQuery(document).ready(function() {
 		jQuery("#slider-pro-1").advancedSlider({
-			width: '100%', 
+			width: '82%', 
 			height: 430, 
 			responsive: 1, 
 			skin: 'glossy-curved-square-gray', 

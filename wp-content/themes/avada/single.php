@@ -276,7 +276,7 @@ foreach ($category as $key) {
 					<?php
 					if(!$video_provider == 'youtube') {
 					?>
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?rel=0&autoplay=1&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?rel=0&wmode=opaque&showinfo=0&theme=light" frameborder="0" allowfullscreen></iframe>
 					<?php 
 					} else if($video_provider == 'vimeo') {
 					?>
@@ -484,14 +484,47 @@ foreach ($category as $key) {
 		<div class="clr"></div>
 		<?php
 			$published_date = get_the_time('F jS, Y', $id);
+			$views = getPostViews($id);
 		?>
 		
+		<div class="vid_rating">
+        	<span class="vid_rating_icon">
+				<i class="fa fa-star-o fa-2x"></i>
+				<span class="meta_title">Rating: </span> 
+        	</span>
+			<div class="ratings">
+				<?php if(function_exists("kk_star_ratings")) : echo kk_star_ratings($id); endif; ?>
+			</div>
+        </div>
 		
+		<div class="vid_transcript">
+        	<span class="vid_transcript_icon">
+				<i class="fa fa-star-o fa-2x"></i>
+				<span class="meta_title">Transcript: </span> 
+        	</span>
+			<div class="transcript">
+				<a href="#" id="transcriptButton" class="reveal">
+					<span class="transcript_show">Show Transcript</span>
+					<span class="transcript_hide">Hide Transcript</span>
+				</a>
+				<div id="transcriptContent">
+					<?php the_content(); ?>
+				</div>
+			</div>
+        </div>
+		
+		<div class="vid_views">
+        	<span class="vid_view_icon">
+				<i class="fa fa-eye fa-2x"></i>
+				<span class="meta_title">Views: </span> 
+        	</span>
+			<span class="total_views"><?php echo $views; ?></span>
+        </div>
 
         <div class="vid_categories">
         	<span class="vid_cat_icon">
-				<i class="fa fa-folder-open-o"></i>
-				<span>Categories:</span> 
+				<i class="fa fa-folder-open-o fa-2x"></i>
+				<span class="meta_title">Categories:</span> 
         	</span>
         	<div class="vid_cat_btn">
         	<?php
@@ -508,8 +541,8 @@ foreach ($category as $key) {
 
 		<div class="vid_tags">
         	<span class="vid_tag_icon">
-				<i class="fa fa-tags"></i>
-				<span>Tags:</span> 
+				<i class="fa fa-tags fa-2x"></i>
+				<span class="meta_title">Tags:</span> 
         	</span>
 			<div class="vid_tag_btn">
         	<?php

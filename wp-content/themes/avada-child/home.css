@@ -230,9 +230,9 @@ body .tpl4 .content .info-title a {
 	padding-right:6px
 }
 .utf-content {
-	width:1040px;
+	width:1100px;
 	padding:30px;
-	margin-left:-40px;
+	margin-left: 20px;
 	border:1px solid #ccc;
 	border-radius:8px;
 	-webkit-box-shadow:0 15px 10px rgba(0,0,0,0.7);

@@ -53,4 +53,9 @@ jQuery(document).ready(function($) {
 	
 	//$('.readmore-js-toggle').appendTo('.description-wrapper');
 	// $('.flexslider.post-slideshow').insertBefore('#main');
+	
+	$('#transcriptButton').click(function() {
+		$(this).toggleClass('reveal');
+		$(this).next().slideToggle();
+	});
 });
