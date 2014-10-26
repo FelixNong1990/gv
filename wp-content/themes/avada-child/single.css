@@ -227,10 +227,47 @@ ul.social_share a.ss_btn.ss_google .ss_icon {
 	margin-left: 120px;
 }
 
-#transcriptButton.reveal .transcript_hide,#transcriptContent,#transcriptButton .transcript_show {
+#transcriptButton.reveal .transcript_hide,#transcriptButton i.fa-chevron-down,#transcriptButton.reveal i.fa-chevron-up, #transcriptContent,#transcriptButton .transcript_show {
 	display: none;
 }
 
-#transcriptButton .transcript_hide,#transcriptButton.reveal .transcript_show {
+#transcriptButton .transcript_hide,#transcriptButton.reveal .transcript_show,#transcriptButton i.fa-chevron-up,#transcriptButton.reveal i.fa-chevron-down {
 	display: inline;
+}
+
+.transcript_hide,.transcript_show {
+	font-size: 18px;
+	color: #17658c;
+	position: relative;
+	top: 2px;
+	left: 5px;
+}
+
+.transcript_hide:hover,.transcript_show:hover {
+	text-decoration: underline;
+}
+
+#transcriptButton i{
+	margin-left: 5px;
+	color: #17658c;
+}
+
+#transcriptContent {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: 'Segoe UI', 'Gill Sans', 'Droid Sans', 'Trebuchet MS', sans-serif;
+	padding-left: 15px;
+	border-left: 5px solid #f5f2eb;
+}
+
+#transcriptContent p,.video-description .details p {
+	margin-bottom: .8em;
+}
+
+#transcriptContent center span {
+	font-style: italic;
+	margin-top: 10px;
+	font-size: 15px;
+	display: inline-block;
 }

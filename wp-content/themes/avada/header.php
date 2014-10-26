@@ -6,9 +6,9 @@
 	?>
 		<script type="text/javascript">
 		// <![CDATA[
-		if ( window.opener != null && !window.opener.closed ) {
-		    window.close();
-		}
+		// if ( window.opener != null && !window.opener.closed ) {
+		//     window.close();
+		// }
 		// ]]>
 		</script>
 	<?php

@@ -243,7 +243,9 @@ foreach ($category as $key) {
 		<div class="video-description">
 			<?php
 				$post_object = get_post( $postID );
-				echo $post_object->post_content;
+				$content = $post_object->post_content;
+				$content = apply_filters('the_content', $content);
+				echo $content;
 			?>
 		</div>
 	</article>
@@ -274,7 +276,7 @@ foreach ($category as $key) {
 			<li>
 				<div class="full-video">
 					<?php
-					if(!$video_provider == 'youtube') {
+					if($video_provider == 'youtube') {
 					?>
 						<iframe width="854" height="480" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?rel=0&wmode=opaque&showinfo=0&theme=light" frameborder="0" allowfullscreen></iframe>
 					<?php 
@@ -496,22 +498,30 @@ foreach ($category as $key) {
 				<?php if(function_exists("kk_star_ratings")) : echo kk_star_ratings($id); endif; ?>
 			</div>
         </div>
-		
+		<?php
+			$transcript = get_field('transcript');
+			if($transcript) {
+		?> 
 		<div class="vid_transcript">
         	<span class="vid_transcript_icon">
-				<i class="fa fa-star-o fa-2x"></i>
+				<i class="fa fa-file-text-o fa-2x"></i>
 				<span class="meta_title">Transcript: </span> 
         	</span>
 			<div class="transcript">
 				<a href="#" id="transcriptButton" class="reveal">
-					<span class="transcript_show">Show Transcript</span>
-					<span class="transcript_hide">Hide Transcript</span>
+					<span class="transcript_show">Show Transcript</span> <i class="fa fa-chevron-down"></i>
+					<span class="transcript_hide">Hide Transcript</span> <i class="fa fa-chevron-up"></i>
 				</a>
 				<div id="transcriptContent">
-					<?php the_content(); ?>
+					<?php //the_content(); ?>
+					<?php echo $transcript; ?>
+					<center><span>There may be some errors in this transcript.</span></center>
 				</div>
 			</div>
         </div>
+        <?php
+			}
+		?>
 		
 		<div class="vid_views">
         	<span class="vid_view_icon">
